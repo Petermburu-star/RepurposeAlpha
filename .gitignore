@@ -7,3 +7,11 @@ __pycache__/
 .DS_Store
 data/raw/*
 !data/raw/.gitkeep
+
+# Auth database and secrets (never commit)
+app/users.db
+app/*.db
+app/secrets.toml
+.streamlit/secrets.toml
+logs/
+*.log

@@ -1,6 +1,5 @@
 """
-RepurposeAlpha — Streamlit demo
-Portfolio optimization for drug repurposing.
+RepurposeAlpha — Streamlit demo (auth-protected).
 """
 import streamlit as st
 import pandas as pd
@@ -10,31 +9,43 @@ import plotly.graph_objects as go
 from pathlib import Path
 from pypfopt import EfficientFrontier
 
+import auth  # our auth module
+
 # ---------- Config ----------
 st.set_page_config(page_title="RepurposeAlpha", page_icon="🧬", layout="wide")
 
+# ---------- Auth gate (must come first) ----------
+user = auth.require_login()
+
+# ---------- Data ----------
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data" / "processed"
 
-# ---------- Data ----------
 @st.cache_data
 def load_data():
-    corr = pd.read_csv(DATA_DIR / "pws_correlation_matrix.csv", index_col=0)
-    return corr
+    return pd.read_csv(DATA_DIR / "pws_correlation_matrix.csv", index_col=0)
 
 corr = load_data()
 tickers = list(corr.columns)
 
 # ---------- Header ----------
-st.title("🧬 RepurposeAlpha")
+col_title, col_user = st.columns([5, 1])
+with col_title:
+    st.title("🧬 RepurposeAlpha")
+with col_user:
+    st.caption(f"👤 {user['username']} ({user['role']})")
+    if st.button("Log out"):
+        auth.log_event(user["username"], "logout")
+        st.session_state["user"] = None
+        st.rerun()
+
 st.markdown(
     "**Portfolio optimization for drug repurposing.** "
-    "Treating candidate drugs as correlated, risky assets — and allocating "
-    "validation resources the way a hedge fund allocates capital."
+    "Treating candidate drugs as correlated, risky assets."
 )
 st.divider()
 
-# ---------- Sidebar: assumptions ----------
+# ---------- Sidebar ----------
 st.sidebar.header("Assumptions")
 st.sidebar.caption("Move the sliders — the portfolio updates live.")
 
@@ -57,13 +68,10 @@ for t in tickers:
 
 mu_s = pd.Series(mu)
 sigma_s = pd.Series(sigma)
+cov = pd.DataFrame(np.outer(sigma_s, sigma_s) * corr.values,
+                   index=tickers, columns=tickers)
 
-cov = pd.DataFrame(
-    np.outer(sigma_s, sigma_s) * corr.values,
-    index=tickers, columns=tickers
-)
-
-# ---------- Portfolio calc ----------
+# ---------- Solver ----------
 def solve(mode):
     ef = EfficientFrontier(mu_s, cov, weight_bounds=(0, 1))
     try:
@@ -71,9 +79,9 @@ def solve(mode):
             ef.max_sharpe(risk_free_rate=0.02)
         else:
             ef.min_volatility()
-        weights = ef.clean_weights()
+        w = ef.clean_weights()
         ret, vol, sharpe = ef.portfolio_performance(risk_free_rate=0.02)
-        return pd.Series(weights), ret, vol, sharpe
+        return pd.Series(w), ret, vol, sharpe
     except Exception as e:
         st.warning(f"Solver failed: {e}")
         return pd.Series(0.0, index=tickers), 0.0, 0.0, 0.0
@@ -86,77 +94,47 @@ tab1, tab2, tab3, tab4 = st.tabs(
     ["🔗 Correlation", "📈 Efficient Frontier", "💼 Optimal Portfolio", "🎚️ Sensitivity"]
 )
 
-# ----- Tab 1: correlation -----
 with tab1:
     st.subheader("Candidate correlation matrix")
-    st.markdown(
-        "**1.0 = identical bet · 0.0 = independent.** "
-        "The Carbetocin–Oxytocin pair at ~0.75 means the same oxytocin/vasopressin "
-        "hypothesis is being tested twice."
-    )
+    st.markdown("**1.0 = identical bet · 0.0 = independent.**")
     fig = px.imshow(corr, text_auto=".2f", color_continuous_scale="RdYlGn_r",
                     zmin=0, zmax=1, aspect="auto")
-    fig.update_layout(height=450)
     st.plotly_chart(fig, use_container_width=True)
 
-# ----- Tab 2: efficient frontier -----
 with tab2:
     st.subheader("Efficient frontier")
-    st.markdown("Each point = a portfolio. The curve = best risk-adjusted options.")
-    # Monte Carlo random portfolios
     n = 3000
     rand_w = np.random.dirichlet(np.ones(len(tickers)), n)
     rets = rand_w @ mu_s.values
     vols = np.sqrt(np.einsum("ij,jk,ik->i", rand_w, cov.values, rand_w))
     fig = go.Figure()
-    fig.add_trace(go.Scatter(
-        x=vols, y=rets, mode="markers",
-        marker=dict(size=4, color=rets/vols, colorscale="Viridis",
-                    colorbar=dict(title="Sharpe")),
-        name="Random portfolios"
-    ))
-    fig.add_trace(go.Scatter(
-        x=[v_s, v_m], y=[r_s, r_m], mode="markers+text",
-        marker=dict(size=18, color=["gold", "silver"],
-                    line=dict(color="black", width=1)),
-        text=["Max Sharpe", "Min Vol"], textposition="top center",
-        name="Optimal portfolios"
-    ))
-    fig.update_layout(xaxis_title="Risk (volatility)", yaxis_title="Expected return",
-                      height=520)
+    fig.add_trace(go.Scatter(x=vols, y=rets, mode="markers",
+                             marker=dict(size=4, color=rets/vols, colorscale="Viridis",
+                                         colorbar=dict(title="Sharpe"))))
+    fig.add_trace(go.Scatter(x=[v_s, v_m], y=[r_s, r_m], mode="markers+text",
+                             marker=dict(size=18, color=["gold", "silver"]),
+                             text=["Max Sharpe", "Min Vol"], textposition="top center"))
+    fig.update_layout(xaxis_title="Risk", yaxis_title="Expected return", height=520)
     st.plotly_chart(fig, use_container_width=True)
 
-# ----- Tab 3: optimal portfolio -----
 with tab3:
     st.subheader("Optimal portfolio weights")
-    col1, col2 = st.columns(2)
-    with col1:
+    c1, c2 = st.columns(2)
+    with c1:
         st.markdown("**Max Sharpe**")
         st.dataframe(w_sharpe.rename("weight").to_frame().style.format("{:.3f}"))
         st.metric("Expected return", f"{r_s:.3f}")
         st.metric("Volatility", f"{v_s:.3f}")
         st.metric("Sharpe ratio", f"{s_s:.3f}")
-    with col2:
+    with c2:
         st.markdown("**Min Volatility**")
         st.dataframe(w_minvol.rename("weight").to_frame().style.format("{:.3f}"))
         st.metric("Expected return", f"{r_m:.3f}")
         st.metric("Volatility", f"{v_m:.3f}")
 
-    fig = px.bar(
-        pd.DataFrame({"Max Sharpe": w_sharpe, "Min Vol": w_minvol}),
-        barmode="group", title="Weights by strategy"
-    )
-    st.plotly_chart(fig, use_container_width=True)
-
-# ----- Tab 4: sensitivity -----
 with tab4:
-    st.subheader("How sensitive is the portfolio to the correlation assumption?")
-    st.markdown(
-        "Sweeping the Carbetocin–Oxytocin correlation from 0 to 1. "
-        "Notice the non-monotonic behavior around rho = 0.7."
-    )
+    st.subheader("Sensitivity to correlation assumption")
     rho = st.slider("Carbetocin ↔ Oxytocin correlation", 0.0, 1.0, 0.748, 0.01)
-    # Rebuild correlation with the chosen rho
     corr2 = corr.copy()
     corr2.loc["Carbetocin", "Oxytocin"] = rho
     corr2.loc["Oxytocin", "Carbetocin"] = rho
@@ -165,16 +143,9 @@ with tab4:
     ef = EfficientFrontier(mu_s, cov2, weight_bounds=(0, 1))
     try:
         ef.max_sharpe(risk_free_rate=0.02)
-        w = pd.Series(ef.clean_weights())
-        st.bar_chart(w)
-        st.caption(f"At rho = {rho:.2f}, the optimizer allocates as shown above.")
+        st.bar_chart(pd.Series(ef.clean_weights()))
     except Exception as e:
         st.error(f"Solver error: {e}")
 
-# ---------- Footer ----------
 st.divider()
-st.caption(
-    "RepurposeAlpha · Phase 3.1 demo · "
-    "Data: RepoDB + ChEMBL (public) · Framework: Markowitz via PyPortfolioOpt · "
-    "github.com/Petermburu-star/RepurposeAlpha"
-)
+st.caption("RepurposeAlpha · Phase 3.2.1 · Auth-protected demo")
