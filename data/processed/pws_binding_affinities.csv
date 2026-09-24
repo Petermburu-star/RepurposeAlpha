@@ -1,0 +1,56 @@
+drug_name,chembl_id,target_chembl_id,target_name,standard_type,standard_value,standard_units,assay_description,value_nM
+Carbetocin,CHEMBL3301668,CHEMBL1790,Vasopressin V2 receptor,EC50,170.0,nM,Agonist activity at human vasopressin V2 expressed in HEK293 cells after 5 hrs by firefly luciferase reporter gene assay,170.0
+Carbetocin,CHEMBL3301668,CHEMBL2049,Oxytocin receptor,EC50,0.7,nM,Agonist activity at human oxytocin receptor expressed in CHO-K1 cells after 5 hrs by firefly luciferase reporter gene assay,0.7
+Carbetocin,CHEMBL3301668,CHEMBL1889,Vasopressin V1a receptor,EC50,41.0,nM,Agonist activity at human vasopressin V1a expressed in HEK293 cells after 5 hrs by firefly luciferase reporter gene assay,41.0
+Carbetocin,CHEMBL3301668,CHEMBL1921,Vasopressin V1b receptor,EC50,10000.0,nM,Agonist activity at human vasopressin V1b expressed in HEK293 cells after 5 hrs by firefly luciferase reporter gene assay,10000.0
+Carbetocin,CHEMBL3301668,CHEMBL1889,Vasopressin V1a receptor,IC50,10000.0,nM,Antagonist activity at human vasopressin V1a expressed in AVP-stimulated HEK293 cells after 5 hrs by firefly luciferase reporter gene assay,10000.0
+Carbetocin,CHEMBL3301668,CHEMBL2049,Oxytocin receptor,EC50,41.0,nM,Agonist activity at human OTR receptor expressed in HEK293FT cells assessed as stimulation of calcium release by Aequorin based assay,41.0
+Carbetocin,CHEMBL3301668,CHEMBL3243907,Oxytocin receptor,EC50,62.0,nM,Agonist activity at mouse OTR receptor expressed in HEK293FT cells assessed as stimulation of calcium release by Aequorin based assay,62.0
+Carbetocin,CHEMBL3301668,CHEMBL1889,Vasopressin V1a receptor,EC50,,,Agonist activity at human V1a receptor expressed in HEK293FT cells assessed as stimulation of calcium release by Aequorin based assay,
+Carbetocin,CHEMBL3301668,CHEMBL1921,Vasopressin V1b receptor,EC50,27000.0,nM,Agonist activity at human V1b receptor expressed in HEK293FT cells assessed as stimulation of calcium release by Aequorin based assay,27000.0
+Carbetocin,CHEMBL3301668,CHEMBL1790,Vasopressin V2 receptor,EC50,6700.0,nM,Agonist activity at human V2 receptor expressed in HEK293FT cells assessed as stimulation of calcium release by Aequorin based assay,6700.0
+Carbetocin,CHEMBL3301668,CHEMBL2049,Oxytocin receptor,EC50,10.0,nM,Agonist activity at human OTR receptor expressed in HEK293FT cells incubated for 30 mins by beta-arrestin recruitment assay,10.0
+Carbetocin,CHEMBL3301668,CHEMBL1889,Vasopressin V1a receptor,IC50,,,Agonist activity at human V1a receptor expressed in HEK293FT cells incubated for 30 mins by beta-arrestin recruitment assay,
+Carbetocin,CHEMBL3301668,CHEMBL1921,Vasopressin V1b receptor,EC50,,,Agonist activity at human V1b receptor expressed in HEK293FT cells incubated for 30 mins by beta-arrestin recruitment assay,
+Carbetocin,CHEMBL3301668,CHEMBL1790,Vasopressin V2 receptor,EC50,1100.0,nM,Agonist activity at human V2 receptor expressed in HEK293FT cells incubated for 30 mins by beta-arrestin recruitment assay,1100.0
+Carbetocin,CHEMBL3301668,CHEMBL2049,Oxytocin receptor,EC50,2.99,nM,Agonist activity at recombinant human Gi/Go-coupled OTR expressed in CHOK1 cells assessed as induction of beta-arrestin recruitment measured after 90 mins in presence of 10% FBS by pathhunter assay,2.99
+Carbetocin,CHEMBL3301668,CHEMBL2049,Oxytocin receptor,Ki,1.8,nM,Displacement of [3H]OT from recombinant human OTR expressed in HEK293 cell membranes measured after 1 hr,1.8
+Carbetocin,CHEMBL3301668,CHEMBL2049,Oxytocin receptor,EC50,0.01,nM,Agonist activity at recombinant human OTR expressed in HEK293 cells assessed as increase in intracellular calcium level measured at 3 secs interval for 5 mins by fura-2/AM dye based micro spectrofluor,0.01
+Carbetocin,CHEMBL3301668,CHEMBL1889,Vasopressin V1a receptor,EC50,2.3,nM,Agonist activity at recombinant human V1a receptor expressed in HEK293 cells assessed as increase in intracellular calcium level measured at 3 secs interval for 5 mins by fura-2/AM dye based micro spe,2.3
+Carbetocin,CHEMBL3301668,CHEMBL1921,Vasopressin V1b receptor,EC50,4.8,nM,Agonist activity at recombinant human V1b receptor expressed in HEK293 cells assessed as increase in intracellular calcium level measured at 3 secs interval for 5 mins by fura-2/AM dye based micro spe,4.8
+Oxytocin,CHEMBL395429,CHEMBL3996,Oxytocin receptor,Ki,0.89,nM,Binding affinity against oxytocin receptor in rat uterus,0.89
+Oxytocin,CHEMBL395429,CHEMBL3766,Vasopressin V2 receptor,Ki,61.0,nM,Binding affinity against Vasopressin receptor in rat liver,61.0
+Oxytocin,CHEMBL395429,CHEMBL3766,Vasopressin V2 receptor,Ki,88.0,nM,Binding affinity against Vasopressin receptor in rat kidney medulla,88.0
+Oxytocin,CHEMBL395429,CHEMBL2049,Oxytocin receptor,Kd,6.7,nM,Compound was evaluated for its dissociation constant (Kd) to guinea pig myometrial Oxytocin receptor,6.7
+Oxytocin,CHEMBL395429,CHEMBL376,Rattus norvegicus,EC50,0.6,nM,Effective concentration in rat in the absence of Magnesium,0.6
+Oxytocin,CHEMBL395429,CHEMBL376,Rattus norvegicus,EC50,0.5,nM,Effective concentration in rat in the presence of 1 mM of Magnesium,0.5
+Oxytocin,CHEMBL395429,CHEMBL3996,Oxytocin receptor,Ki,1.7,nM,Binding affinity against Oxytocin receptor was determined in rat uterine membrane using radioligand [3H]oxytocin,1.7
+Oxytocin,CHEMBL395429,CHEMBL2049,Oxytocin receptor,Kd,6.7,nM,Inhibition of radioligand [3H]OT binding to oxytocin receptor (OT) in guinea pig myometrium membrane,6.7
+Oxytocin,CHEMBL395429,CHEMBL2049,Oxytocin receptor,Ki,0.8,nM,Binding affinity for human oxytocin receptor,0.8
+Oxytocin,CHEMBL395429,CHEMBL1889,Vasopressin V1a receptor,Ki,120.0,nM,Binding affinity for human Vasopressin V1a receptor,120.0
+Oxytocin,CHEMBL395429,CHEMBL1921,Vasopressin V1b receptor,Ki,,nM,Binding affinity of compound towards human Vasopressin V1b receptor; Not determined,
+Oxytocin,CHEMBL395429,CHEMBL1790,Vasopressin V2 receptor,Ki,3500.0,nM,Binding affinity towards human Vasopressin V2 receptor,3500.0
+Oxytocin,CHEMBL395429,CHEMBL2049,Oxytocin receptor,IC50,2.7,nM,Displacement of [3H]OT from human OT receptor expressed in HEK cells,2.7
+Oxytocin,CHEMBL395429,CHEMBL613647,Myometrium,EC50,1.7,nM,Induction of contraction in beta-estradiol stimulated rat myometrium,1.7
+Oxytocin,CHEMBL395429,CHEMBL2049,Oxytocin receptor,Ki,6.8,nM,Binding affinity to oxytocin receptor,6.8
+Oxytocin,CHEMBL395429,CHEMBL1889,Vasopressin V1a receptor,Ki,34.9,nM,Binding affinity to vasopressin V1a receptor,34.9
+Oxytocin,CHEMBL395429,CHEMBL368,Trypanosoma cruzi,IC50,,,Antimicrobial activity against Trypanosoma cruzi,
+Oxytocin,CHEMBL395429,CHEMBL612348,Trypanosoma brucei rhodesiense,IC50,,,Antimicrobial activity against Trypanosoma brucei rhodesiense,
+Oxytocin,CHEMBL395429,CHEMBL612851,Trypanosoma brucei brucei,IC50,,,Antimicrobial activity against Trypanosoma brucei brucei,
+Oxytocin,CHEMBL395429,CHEMBL612849,Trypanosoma brucei,IC50,,,Antimicrobial activity against Trypanosoma brucei,
+Oxytocin,CHEMBL395429,CHEMBL612884,Trichomonas vaginalis,IC50,,,Antimicrobial activity against Trichomonas vaginalis,
+Oxytocin,CHEMBL395429,CHEMBL612888,Toxoplasma gondii,IC50,,,Antimicrobial activity against Toxoplasma gondii,
+Oxytocin,CHEMBL395429,CHEMBL613064,Pneumocystis carinii,IC50,,,Antimicrobial activity against Pneumocystis carinii,
+Oxytocin,CHEMBL395429,CHEMBL364,Plasmodium falciparum,IC50,,,Antimicrobial activity against Plasmodium falciparum,
+Oxytocin,CHEMBL395429,CHEMBL2366686,Leishmania,IC50,,,Antimicrobial activity against Leishmania,
+Oxytocin,CHEMBL395429,CHEMBL612880,Leishmania mexicana,IC50,,,Antimicrobial activity against Leishmania mexicana,
+Oxytocin,CHEMBL395429,CHEMBL612879,Leishmania major,IC50,,,Antimicrobial activity against Leishmania major,
+Oxytocin,CHEMBL395429,CHEMBL612848,Leishmania infantum,IC50,,,Antimicrobial activity against Leishmania infantum,
+Oxytocin,CHEMBL395429,CHEMBL367,Leishmania donovani,IC50,,,Antimicrobial activity against Leishmania donovani,
+Oxytocin,CHEMBL395429,CHEMBL612877,Leishmania amazonensis,IC50,,,Antimicrobial activity against Leishmania amazonensis,
+Oxytocin,CHEMBL395429,CHEMBL612853,Entamoeba histolytica,IC50,,,Antimicrobial activity against Entamoeba histolytica,
+Oxytocin,CHEMBL395429,CHEMBL612855,Cryptosporidium parvum,IC50,,,Antimicrobial activity against Cryptosporidium parvum,
+Oxytocin,CHEMBL395429,CHEMBL2049,Oxytocin receptor,Ki,0.79,nM,Displacement of [3H]OT from oxytocin receptor expressed in COS1 cells,0.79
+Oxytocin,CHEMBL395429,CHEMBL2049,Oxytocin receptor,EC50,15.0,nM,Activity at oxytocin receptor expressed in COS1 cells assessed as IP-one generation by HTRF assay,15.0
+Oxytocin,CHEMBL395429,CHEMBL1921,Vasopressin V1b receptor,EC50,24.5,nM,Agonist activity at human vasopressin V1b receptor expressed CHO cells assessed as induction of phospholipase C activity after 15 mins by inositol phosphate accumulation assay,24.5
+Oxytocin,CHEMBL395429,CHEMBL2049,Oxytocin receptor,EC50,10.8,nM,Agonist activity at human oxytocin receptor expressed CHO cells assessed as induction of phospholipase C activity after 15 mins by inositol phosphate accumulation assay,10.8

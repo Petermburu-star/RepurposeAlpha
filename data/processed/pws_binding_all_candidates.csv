@@ -1,0 +1,61 @@
+drug_name,chembl_id,target_chembl_id,target_name,standard_type,standard_value,standard_units,assay_description,value_nM
+Carbetocin,CHEMBL3301668,CHEMBL1790,Vasopressin V2 receptor,EC50,170.0,nM,Agonist activity at human vasopressin V2 expressed in HEK293 cells after 5 hrs by firefly luciferase reporter gene assay,170.0
+Carbetocin,CHEMBL3301668,CHEMBL2049,Oxytocin receptor,EC50,0.7,nM,Agonist activity at human oxytocin receptor expressed in CHO-K1 cells after 5 hrs by firefly luciferase reporter gene assay,0.7
+Carbetocin,CHEMBL3301668,CHEMBL1889,Vasopressin V1a receptor,EC50,41.0,nM,Agonist activity at human vasopressin V1a expressed in HEK293 cells after 5 hrs by firefly luciferase reporter gene assay,41.0
+Carbetocin,CHEMBL3301668,CHEMBL1921,Vasopressin V1b receptor,EC50,10000.0,nM,Agonist activity at human vasopressin V1b expressed in HEK293 cells after 5 hrs by firefly luciferase reporter gene assay,10000.0
+Carbetocin,CHEMBL3301668,CHEMBL1889,Vasopressin V1a receptor,IC50,10000.0,nM,Antagonist activity at human vasopressin V1a expressed in AVP-stimulated HEK293 cells after 5 hrs by firefly luciferase reporter gene assay,10000.0
+Carbetocin,CHEMBL3301668,CHEMBL2049,Oxytocin receptor,EC50,41.0,nM,Agonist activity at human OTR receptor expressed in HEK293FT cells assessed as stimulation of calcium release by Aequorin based assay,41.0
+Carbetocin,CHEMBL3301668,CHEMBL3243907,Oxytocin receptor,EC50,62.0,nM,Agonist activity at mouse OTR receptor expressed in HEK293FT cells assessed as stimulation of calcium release by Aequorin based assay,62.0
+Carbetocin,CHEMBL3301668,CHEMBL1921,Vasopressin V1b receptor,EC50,27000.0,nM,Agonist activity at human V1b receptor expressed in HEK293FT cells assessed as stimulation of calcium release by Aequorin based assay,27000.0
+Carbetocin,CHEMBL3301668,CHEMBL1790,Vasopressin V2 receptor,EC50,6700.0,nM,Agonist activity at human V2 receptor expressed in HEK293FT cells assessed as stimulation of calcium release by Aequorin based assay,6700.0
+Carbetocin,CHEMBL3301668,CHEMBL2049,Oxytocin receptor,EC50,10.0,nM,Agonist activity at human OTR receptor expressed in HEK293FT cells incubated for 30 mins by beta-arrestin recruitment assay,10.0
+Carbetocin,CHEMBL3301668,CHEMBL1790,Vasopressin V2 receptor,EC50,1100.0,nM,Agonist activity at human V2 receptor expressed in HEK293FT cells incubated for 30 mins by beta-arrestin recruitment assay,1100.0
+Carbetocin,CHEMBL3301668,CHEMBL2049,Oxytocin receptor,EC50,2.99,nM,Agonist activity at recombinant human Gi/Go-coupled OTR expressed in CHOK1 cells assessed as induction of beta-arrestin recruitment measured after 90 mins in presence of 10% FBS by pathhunter assay,2.99
+Carbetocin,CHEMBL3301668,CHEMBL2049,Oxytocin receptor,Ki,1.8,nM,Displacement of [3H]OT from recombinant human OTR expressed in HEK293 cell membranes measured after 1 hr,1.8
+Carbetocin,CHEMBL3301668,CHEMBL2049,Oxytocin receptor,EC50,0.01,nM,Agonist activity at recombinant human OTR expressed in HEK293 cells assessed as increase in intracellular calcium level measured at 3 secs interval for 5 mins by fura-2/AM dye based micro spectrofluor,0.01
+Carbetocin,CHEMBL3301668,CHEMBL1889,Vasopressin V1a receptor,EC50,2.3,nM,Agonist activity at recombinant human V1a receptor expressed in HEK293 cells assessed as increase in intracellular calcium level measured at 3 secs interval for 5 mins by fura-2/AM dye based micro spe,2.3
+Carbetocin,CHEMBL3301668,CHEMBL1921,Vasopressin V1b receptor,EC50,4.8,nM,Agonist activity at recombinant human V1b receptor expressed in HEK293 cells assessed as increase in intracellular calcium level measured at 3 secs interval for 5 mins by fura-2/AM dye based micro spe,4.8
+Oxytocin,CHEMBL395429,CHEMBL3996,Oxytocin receptor,Ki,0.89,nM,Binding affinity against oxytocin receptor in rat uterus,0.89
+Oxytocin,CHEMBL395429,CHEMBL3766,Vasopressin V2 receptor,Ki,61.0,nM,Binding affinity against Vasopressin receptor in rat liver,61.0
+Oxytocin,CHEMBL395429,CHEMBL3766,Vasopressin V2 receptor,Ki,88.0,nM,Binding affinity against Vasopressin receptor in rat kidney medulla,88.0
+Oxytocin,CHEMBL395429,CHEMBL2049,Oxytocin receptor,Kd,6.7,nM,Compound was evaluated for its dissociation constant (Kd) to guinea pig myometrial Oxytocin receptor,6.7
+Oxytocin,CHEMBL395429,CHEMBL376,Rattus norvegicus,EC50,0.6,nM,Effective concentration in rat in the absence of Magnesium,0.6
+Oxytocin,CHEMBL395429,CHEMBL376,Rattus norvegicus,EC50,0.5,nM,Effective concentration in rat in the presence of 1 mM of Magnesium,0.5
+Oxytocin,CHEMBL395429,CHEMBL3996,Oxytocin receptor,Ki,1.7,nM,Binding affinity against Oxytocin receptor was determined in rat uterine membrane using radioligand [3H]oxytocin,1.7
+Oxytocin,CHEMBL395429,CHEMBL2049,Oxytocin receptor,Kd,6.7,nM,Inhibition of radioligand [3H]OT binding to oxytocin receptor (OT) in guinea pig myometrium membrane,6.7
+Oxytocin,CHEMBL395429,CHEMBL2049,Oxytocin receptor,Ki,0.8,nM,Binding affinity for human oxytocin receptor,0.8
+Oxytocin,CHEMBL395429,CHEMBL1889,Vasopressin V1a receptor,Ki,120.0,nM,Binding affinity for human Vasopressin V1a receptor,120.0
+Oxytocin,CHEMBL395429,CHEMBL1790,Vasopressin V2 receptor,Ki,3500.0,nM,Binding affinity towards human Vasopressin V2 receptor,3500.0
+Oxytocin,CHEMBL395429,CHEMBL2049,Oxytocin receptor,IC50,2.7,nM,Displacement of [3H]OT from human OT receptor expressed in HEK cells,2.7
+Oxytocin,CHEMBL395429,CHEMBL613647,Myometrium,EC50,1.7,nM,Induction of contraction in beta-estradiol stimulated rat myometrium,1.7
+Oxytocin,CHEMBL395429,CHEMBL2049,Oxytocin receptor,Ki,6.8,nM,Binding affinity to oxytocin receptor,6.8
+Oxytocin,CHEMBL395429,CHEMBL1889,Vasopressin V1a receptor,Ki,34.9,nM,Binding affinity to vasopressin V1a receptor,34.9
+Oxytocin,CHEMBL395429,CHEMBL2049,Oxytocin receptor,Ki,0.79,nM,Displacement of [3H]OT from oxytocin receptor expressed in COS1 cells,0.79
+Oxytocin,CHEMBL395429,CHEMBL2049,Oxytocin receptor,EC50,15.0,nM,Activity at oxytocin receptor expressed in COS1 cells assessed as IP-one generation by HTRF assay,15.0
+Oxytocin,CHEMBL395429,CHEMBL1921,Vasopressin V1b receptor,EC50,24.5,nM,Agonist activity at human vasopressin V1b receptor expressed CHO cells assessed as induction of phospholipase C activity after 15 mins by inositol phosphate accumulation assay,24.5
+Oxytocin,CHEMBL395429,CHEMBL2049,Oxytocin receptor,EC50,10.8,nM,Agonist activity at human oxytocin receptor expressed CHO cells assessed as induction of phospholipase C activity after 15 mins by inositol phosphate accumulation assay,10.8
+Setmelanotide,CHEMBL3301624,CHEMBL3795,Melanocyte-stimulating hormone receptor,EC50,0.1585,nM,Agonist activity at human melanocortin receptor 1 expressed in human T-Rex-293 cells assessed as stimulation of intracellular cAMP accumulation incubated for 45 mins by LANCE cAMP assay,0.1585
+Setmelanotide,CHEMBL3301624,CHEMBL4644,Melanocortin receptor 3,EC50,0.1514,nM,Agonist activity at human melanocortin receptor 3 expressed in human T-REx-293 cells assessed as stimulation of intracellular cAMP accumulation incubated for 45 mins by LANCE cAMP assay,0.1514
+Setmelanotide,CHEMBL3301624,CHEMBL259,Melanocortin receptor 4,EC50,0.389,nM,Agonist activity at human melanocortin receptor 4 expressed in human T-REx-293 cells using low doxycycline assessed as stimulation of intracellular cAMP accumulation incubated for 45 mins by LANCE cAM,0.389
+Setmelanotide,CHEMBL3301624,CHEMBL3795,Melanocyte-stimulating hormone receptor,Ki,4.571,nM,Displacement of [125I]-NDP-alpha-MSH from human MC1R expressed in HEK2936E cell membrane measured after 16-23 hrs by 1450 microbeta trilux scintillation proximity assay,4.571
+Setmelanotide,CHEMBL3301624,CHEMBL4644,Melanocortin receptor 3,Ki,13.18,nM,Displacement of [125I]-NDP-alpha-MSH from human MC3R expressed in HEK2936E cell membrane measured after 16-23 hrs by 1450 microbeta trilux scintillation proximity assay,13.18
+Setmelanotide,CHEMBL3301624,CHEMBL259,Melanocortin receptor 4,Ki,4.074,nM,Displacement of [125I]-NDP-alpha-MSH from human MC4R expressed in HEK2936E cell membrane measured after 16-23 hrs by 1450 microbeta trilux scintillation proximity assay,4.074
+Setmelanotide,CHEMBL3301624,CHEMBL4608,Melanocortin receptor 5,IC50,1905.46,nM,Displacement of [125I]-NDP-alpha-MSH from human MC5R expressed in HEK2936E cell membrane measured after 16-23 hrs by 1450 microbeta trilux scintillation proximity assay,1905.46
+Setmelanotide,CHEMBL3301624,CHEMBL259,Melanocortin receptor 4,EC50,0.05012,nM,Agonist activity at human melanocortin receptor 4 expressed in human T-REx-293 cells using high doxycycline assessed as stimulation of intracellular cAMP accumulation incubated for 45 mins by LANCE cA,0.05012
+Setmelanotide,CHEMBL3301624,CHEMBL3795,Melanocyte-stimulating hormone receptor,Ki,4.571,nM,Displacement of [125I]-NDP-alpha-MSH from human MC1R expressed in HEK2936E cell membrane measured after 16 to 23 hrs by 1450 microbeta trilux scintillation proximity assay,4.571
+Setmelanotide,CHEMBL3301624,CHEMBL4644,Melanocortin receptor 3,Ki,13.18,nM,Displacement of [125I]-NDP-alpha-MSH from human MC3R expressed in HEK2936E cell membrane measured after 16 to 23 hrs by 1450 microbeta trilux scintillation proximity assay,13.18
+Setmelanotide,CHEMBL3301624,CHEMBL259,Melanocortin receptor 4,Ki,4.266,nM,Displacement of [125I]-NDP-alpha-MSH from human MC4R expressed in HEK2936E cell membrane measured after 16 to 23 hrs by 1450 microbeta trilux scintillation proximity assay,4.266
+Setmelanotide,CHEMBL3301624,CHEMBL3795,Melanocyte-stimulating hormone receptor,EC50,0.1585,nM,Agonist activity at human MC1R expressed in HEK2936E cells assessed as cAMP production in presence of IBMX by time resolved fluorescence assay,0.1585
+Setmelanotide,CHEMBL3301624,CHEMBL4644,Melanocortin receptor 3,EC50,0.1514,nM,Agonist activity at human MC3R expressed in HEK2936E cells assessed as cAMP production in presence of IBMX by time resolved fluorescence assay,0.1514
+Setmelanotide,CHEMBL3301624,CHEMBL259,Melanocortin receptor 4,EC50,0.3981,nM,Antagonist activity at human MC4R expressed in HEK2936E cells assessed as cAMP production in presence of IBMX by time resolved fluorescence assay,0.3981
+Setmelanotide,CHEMBL3301624,CHEMBL4608,Melanocortin receptor 5,IC50,1862.09,nM,Agonist activity at human MC5R expressed in HEK2936E cells assessed as cAMP production in presence of IBMX by time resolved fluorescence assay,1862.09
+Setmelanotide,CHEMBL3301624,CHEMBL259,Melanocortin receptor 4,EC50,0.27,nM,Inhibition of human MC4R,0.27
+Setmelanotide,CHEMBL3301624,CHEMBL2700,Melanocortin receptor 4,EC50,0.28,nM,Inhibition of rat MC4R,0.28
+Setmelanotide,CHEMBL3301624,CHEMBL259,Melanocortin receptor 4,Ki,2.1,nM,Agonist activity at human MC4R expressed in CHO-K1 cells assessed as inhibition constant by Cheng-Prusoff equation analysis,2.1
+Setmelanotide,CHEMBL3301624,CHEMBL259,Melanocortin receptor 4,IC50,0.27,nM,Agonist activity at human MC4R expressed in CHO-K1 cells incubated for 40 mins by electro-chemiluminescence assay,0.27
+Setmelanotide,CHEMBL3301624,CHEMBL4644,Melanocortin receptor 3,Ki,10.0,nM,Agonist activity at human MC3R expressed in CHO-K1 cells assessed as inhibition constant by Cheng-Prusoff equation analysis,10.0
+Setmelanotide,CHEMBL3301624,CHEMBL4644,Melanocortin receptor 3,IC50,5.3,nM,Agonist activity at human MC3R expressed in CHO-K1 cells incubated for 40 mins by electro-chemiluminescence assay,5.3
+Setmelanotide,CHEMBL3301624,CHEMBL3795,Melanocyte-stimulating hormone receptor,Ki,3.9,nM,Agonist activity at human MC1R expressed in CHO-K1 cells assessed as inhibition constant by Cheng-Prusoff equation analysis,3.9
+Setmelanotide,CHEMBL3301624,CHEMBL3795,Melanocyte-stimulating hormone receptor,IC50,5.8,nM,Agonist activity at human MC1R expressed in CHO-K1 cells incubated for 40 mins by electro-chemiluminescence assay,5.8
+Tirzepatide,CHEMBL4297839,CHEMBL4383,Gastric inhibitory polypeptide receptor,EC50,0.03,nM,Agonist activity at human GIPR expressed in CHO cells assessed as increase in cAMP production incubated for 30 mins by Eu-cAMP tracer based microplate reader analysis,0.03
+Tirzepatide,CHEMBL4297839,CHEMBL1784,Glucagon-like peptide 1 receptor,EC50,0.77,nM,Agonist activity at human GLP-1R expressed in CHO cells assessed as increase in cAMP production incubated for 30 mins by Eu-cAMP tracer based microplate reader analysis,0.77
