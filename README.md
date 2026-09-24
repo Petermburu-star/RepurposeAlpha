@@ -1,21 +1,28 @@
-# RepurposeAlpha
 
-**A portfolio optimization engine for drug repurposing validation.**
 
-## Mission
-Maximize the probability of clinical success in drug repurposing while
-minimizing experimental cost — by treating candidate drugs as a portfolio
-of risky, correlated assets.
+---
 
-## Core Innovation
-Modern Portfolio Theory (Markowitz) + Monte Carlo simulation applied to
-validation sequencing in drug repurposing.
+## Phase 2 - Progress
 
-## Stack
-- Data: RepoDB, ChEMBL, ClinicalTrials.gov
-- Modeling: Python, pandas, NumPy, scikit-learn, PyPortfolioOpt
-- UI: Streamlit
-- Security: AES, TLS 1.2+, RBAC, 2FA, audit logging
+**Vertical:** Prader-Willi Syndrome (PWS)
 
-## Status
-Phase 1 — Discovery. Created 2026-09-24.
+**Candidates analyzed (4):**
+- Carbetocin (OXTR agonist)
+- Oxytocin (OXTR agonist)
+- Setmelanotide (MC4R agonist)
+- Tirzepatide (GLP1R/GIPR dual agonist)
+
+**Key finding:** Carbetocin vs Oxytocin correlation = **0.748**
+- Same oxytocin/vasopressin receptor family, ~5x affinity difference
+- Markowitz optimizer confirms: moderate correlation is a diversification trap
+
+**Deliverables:**
+- data/processed/pws_correlation_matrix.csv
+- data/processed/pws_optimal_weights.csv
+- data/processed/pws_sensitivity.csv
+- reports/pws_correlation_matrix.png
+- reports/pws_efficient_frontier.png
+- reports/pws_sensitivity_analysis.png
+
+**Methodology:** ChEMBL bioactivity data -> target overlap (Jaccard) + affinity similarity
+(log-scale) -> composite correlation -> Markowitz optimization via PyPortfolioOpt.
