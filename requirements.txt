@@ -1,0 +1,11 @@
+pandas
+numpy
+scipy
+scikit-learn
+requests
+python-dotenv
+cryptography
+PyPortfolioOpt
+streamlit
+matplotlib
+seaborn

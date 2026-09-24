@@ -1,0 +1,2083 @@
+drug_name,drug_id,ind_name,ind_id,status,phase,DetailedStatus
+Lepirudin,DB00001,Heparin-induced thrombocytopenia with thrombosis,C0272275,Approved,,
+Cetuximab,DB00002,Squamous cell carcinoma of mouth,C0585362,Approved,,
+Cetuximab,DB00002,Squamous cell carcinoma of nose,C3163899,Approved,,
+Cetuximab,DB00002,Squamous cell carcinoma of pharynx,C1319317,Approved,,
+Cetuximab,DB00002,Laryngeal Squamous Cell Carcinoma,C0280324,Approved,,
+Etanercept,DB00005,Juvenile arthritis,C3495559,Approved,,
+Leuprolide,DB00007,Precocious Puberty,C0034013,Approved,,
+Alteplase,DB00009,Ischemic stroke,C0948008,Approved,,
+Alteplase,DB00009,Acute myocardial infarction,C0155626,Approved,,
+Sermorelin,DB00010,Pituitary dwarfism,C0013338,Approved,,
+Reteplase,DB00015,Acute myocardial infarction,C0155626,Approved,,
+Erythropoietin,DB00016,Anemia due to chemotherapy,C1998329,Approved,,
+Anakinra,DB00026,Cryopyrin-Associated Periodic Syndromes,C2316212,Approved,,
+Anakinra,DB00026,"Chronic Infantile Neurological, Cutaneous, and Articular Syndrome",C0409818,Approved,,
+Tenecteplase,DB00031,Acute myocardial infarction,C0155626,Approved,,
+Desmopressin,DB00035,von Willebrand Disease,C0042974,Approved,,
+Desmopressin,DB00035,Bedwetting,C0270327,Approved,,
+Coagulation factor VIIa Recombinant Human,DB00036,Hemophilia B,C0008533,Approved,,
+Coagulation factor VIIa Recombinant Human,DB00036,Thrombasthenia,C0040015,Approved,,
+Coagulation factor VIIa Recombinant Human,DB00036,Factor VII Deficiency,C0015503,Approved,,
+Oprelvekin,DB00038,Thrombocytopenia,C0040034,Approved,,
+Palifermin,DB00039,Mucositis following radiation therapy,C0392190,Approved,,
+Palifermin,DB00039,Drug-induced mucositis,C1274988,Approved,,
+Glucagon recombinant,DB00040,Hypoglycemia,C0020615,Approved,,
+Aldesleukin,DB00041,Metastatic Renal Cell Cancer,C0278678,Approved,,
+Collagenase clostridium histolyticum,DB00048,"Dupuytren's disease of finger, with contracture",C0410065,Approved,,
+Collagenase clostridium histolyticum,DB00048,Peyronie Disease,C0030848,Approved,,
+Adalimumab,DB00051,Juvenile arthritis,C3495559,Approved,,
+Adalimumab,DB00051,Hidradenitis Suppurativa,C0162836,Approved,,
+Somatropin recombinant,DB00052,Growth retardation,C0151686,Approved,,
+Somatropin recombinant,DB00052,Prader-Willi Syndrome,C0032897,Approved,,
+Somatropin recombinant,DB00052,Pituitary dwarfism,C0013338,Approved,,
+Somatropin recombinant,DB00052,Turner Syndrome,C0041408,Approved,,
+Vasopressin,DB00067,Bedwetting,C0270327,Approved,,
+Vasopressin,DB00067,von Willebrand Disease,C0042974,Approved,,
+Trastuzumab,DB00072,HER2-positive carcinoma of breast,C1960398,Approved,,
+Trastuzumab,DB00072,Secondary malignant neoplasm of female breast,C0346993,Approved,,
+Trastuzumab,DB00072,Secondary malignant neoplasm of stomach,C0686068,Approved,,
+Daptomycin,DB00080,Right-sided Staphylococcus aureus endocarditis,C1960924,Approved,,
+Pancrelipase,DB00085,Exocrine pancreatic insufficiency,C0267963,Approved,,
+Alglucerase,DB00088,"Gaucher Disease, Type 1",C1961835,Approved,,
+Laronidase,DB00090,Mucopolysaccharidosis I,C0023786,Approved,,
+Cyclosporine,DB00091,Keratoconjunctivitis Sicca,C0022575,Approved,,
+Filgrastim,DB00099,Congenital neutropenia,C0340970,Approved,,
+Filgrastim,DB00099,Cyclic neutropenia,C0221023,Approved,,
+Filgrastim,DB00099,Chronic idiopathic neutropenia,C2267231,Approved,,
+Coagulation Factor IX,DB00100,Hemophilia B,C0008533,Approved,,
+Becaplermin,DB00102,Neuropathic diabetic ulcer - foot,C0406526,Approved,,
+Agalsidase beta,DB00103,Fabry Disease,C0002986,Approved,,
+Octreotide,DB00104,Malignant Carcinoid Syndrome,C0024586,Approved,,
+Abarelix,DB00106,Ischemic priapism,C2711256,Approved,,
+Oxytocin,DB00107,Incomplete spontaneous abortion,C0000810,Approved,,
+Palivizumab,DB00110,Respiratory Syncytial Virus Infections,C0035235,Approved,,
+Bevacizumab,DB00112,Secondary malignant neoplasm of colon,C0346974,Approved,,
+Bevacizumab,DB00112,Nonsquamous nonsmall cell neoplasm of lung,C2585890,Approved,,
+Bevacizumab,DB00112,Glioblastoma Multiforme,C1621958,Approved,,
+Bevacizumab,DB00112,Metastatic Renal Cell Cancer,C0278678,Approved,,
+Bevacizumab,DB00112,Cervix carcinoma,C0302592,Approved,,
+Bevacizumab,DB00112,Malignant tumor of peritoneum,C0153467,Approved,,
+Bevacizumab,DB00112,Malignant epithelial tumor of ovary,C0346161,Approved,,
+Bevacizumab,DB00112,Malignant neoplasm of fallopian tube,C0153579,Approved,,
+Cyanocobalamin,DB00115,Megaloblastic anemia due to folate deficiency,C0151482,Approved,,
+Cyanocobalamin,DB00115,"Anemia, Pernicious",C0002892,Approved,,
+Cyanocobalamin,DB00115,Vitamin B 12 Deficiency,C0042847,Approved,,
+Biotin,DB00121,Biotin deficiency disease,C2937225,Approved,,
+L-Glutamine,DB00130,Short Bowel Syndrome,C0036992,Approved,,
+Calcitriol,DB00136,Renal Osteodystrophy,C0035086,Approved,,
+Xanthophyll,DB00137,Age related macular degeneration,C0242383,Approved,,
+Xanthophyll,DB00137,Meibomian gland dysfunction,C1275684,Approved,,
+Calcidiol,DB00146,Renal Osteodystrophy,C0035086,Approved,,
+L-Cysteine,DB00151,Poisoning by acetaminophen,C0237963,Approved,,
+L-Cysteine,DB00151,Amyloidosis,C0002726,Approved,,
+Thiamine,DB00152,Vitamin B 12 Deficiency,C0042847,Approved,,
+Thiamine,DB00152,Wernicke-Korsakoff Syndrome,C0349464,Approved,,
+Thiamine,DB00152,"Anemia, Pernicious",C0002892,Approved,,
+Thiamine,DB00152,Thiamine Deficiency,C0039841,Approved,,
+Ergocalciferol,DB00153,Vitamin D Deficiency,C0042870,Approved,,
+Ergocalciferol,DB00153,Osteomalacia,C0029442,Approved,,
+Ergocalciferol,DB00153,Vitamin D-dependent rickets,C0221468,Approved,,
+Ergocalciferol,DB00153,"Vitamin D-Resistant Rickets, X-Linked",C3536984,Approved,,
+Folic Acid,DB00158,Megaloblastic anemia due to folate deficiency,C0151482,Approved,,
+Folic Acid,DB00158,Folic Acid Deficiency,C0016412,Approved,,
+Vitamin A,DB00162,Vitamin A Deficiency,C0042842,Approved,,
+Vitamin E,DB00163,Vitamin E Deficiency,C0042875,Approved,,
+Pyridoxine,DB00165,"EPILEPSY, PYRIDOXINE-DEPENDENT",C1849508,Approved,,
+Pyridoxine,DB00165,Vitamin B 6 Deficiency,C0936215,Approved,,
+Lipoic Acid,DB00166,Diabetic peripheral neuropathy,C0740447,Approved,,
+Cholecalciferol,DB00169,Osteomalacia,C0029442,Approved,,
+Cholecalciferol,DB00169,Vitamin D-dependent rickets,C0221468,Approved,,
+Baclofen,DB00181,Muscle spasticity of spinal origin,C1562430,Approved,,
+Nicotine,DB00184,Pellagra,C0030783,Approved,,
+Lorazepam,DB00186,Epileptic drop attack,C0270846,Approved,,
+Esmolol,DB00187,Supraventricular tachycardia,C0039240,Approved,,
+Esmolol,DB00187,Perioperative hypertension,C3661921,Approved,,
+Vidarabine,DB00194,"Keratitis, Dendritic",C0022570,Approved,,
+Vidarabine,DB00194,"Keratitis, Herpetic",C0019357,Approved,,
+Fluconazole,DB00196,Septicemia candida,C0349009,Approved,,
+Fluconazole,DB00196,Mucocutaneous candidiasis,C0006848,Approved,,
+Fluconazole,DB00196,"Meningitis, Cryptococcal",C0085436,Approved,,
+Erythromycin,DB00199,Diphtheria,C0012546,Approved,,
+Erythromycin,DB00199,Pneumococcal pharyngitis,C0275761,Approved,,
+Erythromycin,DB00199,Legionnaires' Disease,C0023241,Approved,,
+Erythromycin,DB00199,Pertussis,C0043167,Approved,,
+Erythromycin,DB00199,Erythrasma,C0014752,Approved,,
+Erythromycin,DB00199,Hepatic Coma,C0019147,Approved,,
+Hydroxocobalamin,DB00200,Vitamin B 12 Deficiency,C0042847,Approved,,
+Hydroxocobalamin,DB00200,"Anemia, Pernicious",C0002892,Approved,,
+Caffeine,DB00201,Apnea in the newborn,C0232058,Approved,,
+Pyrimethamine,DB00205,Toxoplasmosis associated with AIDS,C1720498,Approved,,
+Pyrimethamine,DB00205,Toxoplasmosis,C0040558,Approved,,
+Azithromycin,DB00207,Pulmonary Mycobacterium avium complex infection,C2733595,Approved,,
+Azithromycin,DB00207,Pelvic inflammatory disease due to Mycoplasma hominis,C1261256,Approved,,
+Ticlopidine,DB00208,Cerebrovascular Occlusion,C0596298,Approved,,
+Midodrine,DB00211,"Hypotension, Orthostatic",C0020651,Approved,,
+Moxifloxacin,DB00218,Pneumonic Plague,C0524688,Approved,,
+Moxifloxacin,DB00218,"Plague, Septicemic",C0152936,Approved,,
+Lovastatin,DB00227,Hypoalphalipoproteinemias,C0473527,Approved,,
+Pregabalin,DB00230,Diabetic peripheral neuropathy,C0740447,Approved,,
+Cladribine,DB00242,Hairy Cell Leukemia,C0023443,Approved,,
+Mesalazine,DB00244,Chronic ulcerative proctitis,C2937222,Approved,,
+Mesalazine,DB00244,Ulcerative colitis in remission,C3697010,Approved,,
+Mesalazine,DB00244,Chronic ulcerative rectosigmoiditis,C0267390,Approved,,
+Cabergoline,DB00248,Hyperprolactinemia,C0020514,Approved,,
+Idoxuridine,DB00249,"Keratitis, Herpetic",C0019357,Approved,,
+Dapsone,DB00250,Leprosy,C0023343,Approved,,
+Phenytoin,DB00252,Motor cortex epilepsy,C0234978,Approved,,
+Doxycycline,DB00254,Scrub Typhus,C0036472,Approved,,
+Doxycycline,DB00254,Cutaneous anthrax,C0003177,Approved,,
+Doxycycline,DB00254,Endemic Flea-Borne Typhus,C0041472,Approved,,
+Doxycycline,DB00254,Cholera,C0008354,Approved,,
+Doxycycline,DB00254,Boutonneuse Fever,C0006060,Approved,,
+Doxycycline,DB00254,Q fever endocarditis,C0340354,Approved,,
+Doxycycline,DB00254,Brill-Zinsser Disease,C0006181,Approved,,
+Doxycycline,DB00254,Rickettsia Infections,C0035585,Approved,,
+Doxycycline,DB00254,"Typhus, Epidemic Louse-Borne",C0041473,Approved,,
+Doxycycline,DB00254,Gastrointestinal anthrax,C0152945,Approved,,
+Doxycycline,DB00254,Bartonella Infections,C0004771,Approved,,
+Doxycycline,DB00254,Chlamydia Infections,C0008149,Approved,,
+Calcium Acetate,DB00258,Disorder of electrolytes,C1704431,Approved,,
+Calcium Acetate,DB00258,Hypermagnesemia,C0151714,Approved,,
+Calcium Acetate,DB00258,Hypocalcemic tetany,C0151940,Approved,,
+Sulfanilamide,DB00259,Vulvovaginitis,C0042998,Approved,,
+Anagrelide,DB00261,"Thrombocythemia, Essential",C0040028,Approved,,
+Carmustine,DB00262,Malignant neoplasm of brain,C0153633,Approved,,
+Carmustine,DB00262,Glioblastoma multiforme of brain,C0349543,Approved,,
+Sulfisoxazole,DB00263,Nocardia Infections,C0028242,Approved,,
+Dicoumarol,DB00266,Thromboembolism,C0040038,Approved,,
+Dicoumarol,DB00266,Thrombosis,C0040053,Approved,,
+Dicoumarol,DB00266,Cerebral Embolism,C0007780,Approved,,
+Theophylline,DB00277,Lung diseases,C0024115,Approved,,
+Theophylline,DB00277,Asthma night-time symptoms,C1273489,Approved,,
+Theophylline,DB00277,Asthma-chronic obstructive pulmonary disease overlap syndrome,C4038730,Approved,,
+Argatroban,DB00278,Heparin-induced thrombocytopenia with thrombosis,C0272275,Approved,,
+Liothyronine,DB00279,Malignant neoplasm of thyroid,C0007115,Approved,,
+Liothyronine,DB00279,Endemic goiter,C0018022,Approved,,
+Liothyronine,DB00279,Myxedema,C0027145,Approved,,
+Liothyronine,DB00279,Congenital Hypothyroidism,C0010308,Approved,,
+Liothyronine,DB00279,Goiter,C0018021,Approved,,
+Liothyronine,DB00279,Hypothyroidism,C0020676,Approved,,
+Liothyronine,DB00279,Myxedema coma,C0238298,Approved,,
+Lidocaine,DB00281,Urethritis,C0041976,Approved,,
+Lidocaine,DB00281,Neuralgia,C0027796,Approved,,
+Pamidronate,DB00282,Osteolytic Lesions of Multiple Myeloma,C3898069,Approved,,
+Conjugated Estrogens,DB00286,Dyspareunia,C1384606,Approved,,
+Bleomycin,DB00290,Malignant tumor of cervix,C0007847,Approved,,
+Bleomycin,DB00290,"Pleural Effusion, Malignant",C0080032,Approved,,
+Bleomycin,DB00290,Malignant neoplasm of penis,C0153601,Approved,,
+Bleomycin,DB00290,FIGO stage finding for vulvar carcinoma,C1272826,Approved,,
+Ertapenem,DB00303,Miscarriage with sepsis,C0269398,Approved,,
+Ertapenem,DB00303,Acute bacterial peritonitis,C0275550,Approved,,
+Ertapenem,DB00303,Peptostreptococcus infection,C1096562,Approved,,
+Mitomycin,DB00305,Malignant neoplasm of stomach stage IV,C0278498,Approved,,
+Pentobarbital,DB00312,Cerebral Ischemia,C0917798,Approved,,
+Gefitinib,DB00317,Epidermal growth factor receptor positive non-small cell lung cancer,C1960925,Approved,,
+Piperacillin,DB00319,Septicemia due to enterococcus,C0588233,Approved,,
+Piperacillin,DB00319,Appendicitis,C0003615,Approved,,
+Floxuridine,DB00322,Malignant neoplasm of liver,C0345904,Approved,,
+Floxuridine,DB00322,Primary malignant neoplasm of gastrointestinal tract,C1306632,Approved,,
+Nitroprusside,DB00325,Malignant essential hypertension,C0024588,Approved,,
+Calcium Gluceptate,DB00326,Hypermagnesemia,C0151714,Approved,,
+Calcium Gluceptate,DB00326,Disorder of electrolytes,C1704431,Approved,,
+Calcium Gluceptate,DB00326,Hypocalcemic tetany,C0151940,Approved,,
+Indomethacin,DB00328,shoulder bursitis,C0262399,Approved,,
+Indomethacin,DB00328,Patent ductus arteriosus,C0013274,Approved,,
+Indomethacin,DB00328,Shoulder tendinitis,C0262633,Approved,,
+Indomethacin,DB00328,Rheumatism,C0035435,Approved,,
+Methadone,DB00333,Opioid withdrawal,C0029104,Approved,,
+Pyrazinamide,DB00339,"Tuberculosis, Meningeal",C0041318,Approved,,
+Nitisinone,DB00348,"Tyrosinemia, Type I",C0268490,Approved,,
+Minoxidil,DB00350,Alopecia,C0002170,Approved,,
+Megestrol acetate,DB00351,Nutritional deficiency associated with AIDS,C0276587,Approved,,
+Aminoglutethimide,DB00357,Secondary malignant neoplasm of female breast,C0346993,Approved,,
+Sulfadiazine,DB00359,Toxoplasmosis,C0040558,Approved,,
+Sulfadiazine,DB00359,Chorioretinitis,C0008513,Approved,,
+Sulfadiazine,DB00359,Toxoplasmosis associated with AIDS,C1720498,Approved,,
+Sulfadiazine,DB00359,Skin Ulcer,C0037299,Approved,,
+Sulfadiazine,DB00359,"Toxoplasmosis, Congenital",C0040560,Approved,,
+Sapropterin,DB00360,Classical phenylketonuria,C0751434,Approved,,
+Clozapine,DB00363,Treatment-resistant schizophrenia,C3544321,Approved,,
+Valrubicin,DB00385,Malignant neoplasm of urinary bladder,C0005684,Approved,,
+Phenylephrine,DB00388,Rectal pain,C0034886,Approved,,
+Carbimazole,DB00389,Graves Disease,C0018213,Approved,,
+Digoxin,DB00390,Poisoning by digitalis glycoside,C0274726,Approved,,
+Nimodipine,DB00393,Subarachnoid Hemorrhage,C0038525,Approved,,
+Beclomethasone dipropionate,DB00394,Nasal Polyps,C0027430,Approved,,
+Progesterone,DB00396,Secondary malignant neoplasm of kidney,C0153685,Approved,,
+Progesterone,DB00396,Metrorrhagia,C0025874,Approved,,
+Progesterone,DB00396,Secondary physiologic amenorrhea,C0232940,Approved,,
+Sorafenib,DB00398,Liver carcinoma,C2239176,Approved,,
+Sorafenib,DB00398,Malignant epithelial neoplasm of thyroid,C3163939,Approved,,
+Zoledronic acid,DB00399,Osteolytic Lesions of Multiple Myeloma,C3898069,Approved,,
+Griseofulvin,DB00400,Tinea Capitis,C0040250,Approved,,
+Griseofulvin,DB00400,Tinea barbae,C2349994,Approved,,
+Mupirocin,DB00410,Impetigo,C0021099,Approved,,
+Ampicillin,DB00415,Acute bacterial epiglottitis,C0275555,Approved,,
+Ampicillin,DB00415,Acute epiglottitis,C0155814,Approved,,
+Ampicillin,DB00415,pharyngitis due to Haemophilus influenzae,C2062475,Approved,,
+Ampicillin,DB00415,Septicemia due to enterococcus,C0588233,Approved,,
+Ampicillin,DB00415,Bacterial Endocarditis,C0014121,Approved,,
+Ampicillin,DB00415,Salmonella sepsis,C0152486,Approved,,
+Ampicillin,DB00415,Dysentery,C0013369,Approved,,
+Ampicillin,DB00415,Pneumococcal pharyngitis,C0275761,Approved,,
+Ampicillin,DB00415,Paratyphoid Fever,C0030528,Approved,,
+Miglustat,DB00419,"Niemann-Pick Disease, Type C",C0220756,Approved,,
+Promazine,DB00420,Intractable hiccups,C0744896,Approved,,
+Promazine,DB00420,Acute intermittent porphyria,C0162565,Approved,,
+Promazine,DB00420,Disruptive Behavior Disorder,C0012734,Approved,,
+Spironolactone,DB00421,Ascites,C0003962,Approved,,
+Spironolactone,DB00421,Hyperaldosteronism,C0020428,Approved,,
+Hyoscyamine,DB00424,Sinus bradycardia,C0085610,Approved,,
+Hyoscyamine,DB00424,Sialorrhea,C0037036,Approved,,
+Zolpidem,DB00425,Initial insomnia,C0393760,Approved,,
+Trifluridine,DB00432,Herpes simplex keratoconjunctivitis,C0276228,Approved,,
+Trifluridine,DB00432,"Keratitis, Herpetic",C0019357,Approved,,
+Allopurinol,DB00437,Calcium renal calculus,C1959799,Approved,,
+Allopurinol,DB00437,Uric acid renal calculus,C0558595,Approved,,
+Ceftazidime,DB00438,Ecthyma gangrenosum,C0276085,Approved,,
+Ceftazidime,DB00438,Gonococcal meningitis,C0153225,Approved,,
+Betamethasone,DB00443,Scalp Dermatoses,C0036271,Approved,,
+Chloramphenicol,DB00446,Rickettsia Infections,C0035585,Approved,,
+Chloramphenicol,DB00446,Boutonneuse Fever,C0006060,Approved,,
+Chloramphenicol,DB00446,Paratyphoid Fever,C0030528,Approved,,
+Chloramphenicol,DB00446,Salmonella infections,C0036117,Approved,,
+Levothyroxine,DB00451,Myxedema,C0027145,Approved,,
+Levothyroxine,DB00451,Malignant neoplasm of thyroid,C0007115,Approved,,
+Levothyroxine,DB00451,Congenital Hypothyroidism,C0010308,Approved,,
+Levothyroxine,DB00451,Hypothyroidism,C0020676,Approved,,
+Levothyroxine,DB00451,Hashimoto Disease,C0677607,Approved,,
+Levothyroxine,DB00451,Goiter,C0018021,Approved,,
+Imipramine,DB00458,Bedwetting,C0270327,Approved,,
+Verteporfin,DB00460,Choroidal retinal neovascularization,C0271066,Approved,,
+Verteporfin,DB00460,Choroidal Neovascularization,C0600518,Approved,,
+Verteporfin,DB00460,Ocular histoplasmosis syndrome,C1562543,Approved,,
+Sodium Tetradecyl Sulfate,DB00464,Varicosity,C0042345,Approved,,
+Tenoxicam,DB00469,Arthritis,C0003864,Approved,,
+Fluoxetine,DB00472,Bulimia Nervosa,C2267227,Approved,,
+Chlordiazepoxide,DB00475,Alcohol Withdrawal Delirium,C0001957,Approved,,
+Chlordiazepoxide,DB00475,Alcohol withdrawal syndrome,C0236663,Approved,,
+Duloxetine,DB00476,Diabetic peripheral neuropathy,C0740447,Approved,,
+Duloxetine,DB00476,MUSCULOSKELETAL PAIN CHRONIC,C0746683,Approved,,
+Duloxetine,DB00476,Female stress incontinence,C0038437,Approved,,
+Chlorpromazine,DB00477,Acute intermittent porphyria,C0162565,Approved,,
+Chlorpromazine,DB00477,Intractable hiccups,C0744896,Approved,,
+Chlorpromazine,DB00477,Disruptive Behavior Disorder,C0012734,Approved,,
+Rimantadine,DB00478,Influenza due to Influenza A virus,C2711180,Approved,,
+Amikacin,DB00479,Diverticulitis of gastrointestinal tract,C0349774,Approved,,
+Amikacin,DB00479,Klebsiella sepsis,C0745528,Approved,,
+Amikacin,DB00479,Pseudomonas aeruginosa meningitis,C3665869,Approved,,
+Amikacin,DB00479,Osteomyelitis,C0029443,Approved,,
+Amikacin,DB00479,Meningitis due to Klebsiella mobilis,C1719906,Approved,,
+Amikacin,DB00479,Proteus meningitis,C0338396,Approved,,
+Amikacin,DB00479,Bacterial meningitis due to Gram-negative bacteria,C0854215,Approved,,
+Amikacin,DB00479,Pneumonia due to Gram negative bacteria,C0854248,Approved,,
+Cefotaxime,DB00493,Haemophilus influenzae type b infection,C2028293,Approved,,
+Cefotaxime,DB00493,Meningitis due to Klebsiella mobilis,C1719906,Approved,,
+Cefotaxime,DB00493,"Arthritis, Bacterial",C1692886,Approved,,
+Flutamide,DB00499,Prostatic Neoplasms,C0033578,Approved,,
+Cimetidine,DB00501,Upper gastrointestinal hemorrhage,C0041909,Approved,,
+Haloperidol,DB00502,Chronic schizophrenia,C0221765,Approved,,
+Haloperidol,DB00502,Gilles de la Tourette syndrome,C0040517,Approved,,
+Nitazoxanide,DB00507,Cryptosporidiosis,C0010418,Approved,,
+Vancomycin,DB00512,Bacterial Endocarditis,C0014121,Approved,,
+Vancomycin,DB00512,Staphylococcal Infections,C0038160,Approved,,
+Vancomycin,DB00512,"Enterocolitis, Pseudomembranous",C0014358,Approved,,
+Vancomycin,DB00512,Staphylococcal enterocolitis,C0038157,Approved,,
+Dextromethorphan,DB00514,Pseudobulbar affect,C2316460,Approved,,
+Albendazole,DB00518,Echinococcus granulosus infection of liver,C0153289,Approved,,
+Albendazole,DB00518,Echinococcus granulosus infection of lung,C0153290,Approved,,
+Albendazole,DB00518,Neurocysticercosis,C0338437,Approved,,
+Albendazole,DB00518,Echinococcus granulosus infection,C0152068,Approved,,
+Tolnaftate,DB00525,Tinea manus,C0153246,Approved,,
+Tolnaftate,DB00525,Tinea Capitis,C0040250,Approved,,
+Tolnaftate,DB00525,Tinea barbae,C2349994,Approved,,
+Cyclophosphamide,DB00531,Lymphoma,C0024299,Approved,,
+Guanidine,DB00536,Lambert-Eaton Myasthenic Syndrome,C0022972,Approved,,
+Ciprofloxacin,DB00537,Acute osteomyelitis,C0158371,Approved,,
+Ciprofloxacin,DB00537,Enteric campylobacteriosis,C0275982,Approved,,
+Vincristine,DB00541,Rhabdomyosarcoma,C0035412,Approved,,
+Vincristine,DB00541,Nephroblastoma,C0027708,Approved,,
+Fluorouracil,DB00544,Superficial basal cell carcinoma,C0862889,Approved,,
+Pyridostigmine,DB00545,Myasthenia Gravis,C0026896,Approved,,
+Propylthiouracil,DB00550,Thyroid Crisis,C0040127,Approved,,
+Pentostatin,DB00552,Hairy Cell Leukemia,C0023443,Approved,,
+Methoxsalen,DB00553,Vitiligo,C0042900,Approved,,
+Tigecycline,DB00560,Complicated appendicitis,C1632842,Approved,,
+Doxapram,DB00561,Respiratory Depression,C0235063,Approved,,
+Methotrexate,DB00563,Gestational Trophoblastic Neoplasms,C1135868,Approved,,
+Methotrexate,DB00563,Meningeal Leukemia,C0948840,Approved,,
+Methotrexate,DB00563,Osteosarcoma of bone,C0585442,Approved,,
+Carbamazepine,DB00564,Glossopharyngeal Neuralgia,C0154731,Approved,,
+Carbamazepine,DB00564,mixed; epileptic,C1398376,Approved,,
+Carbamazepine,DB00564,Trigeminal Neuralgia,C0040997,Approved,,
+Succimer,DB00566,Accidental poisoning by lead and its compounds and fumes,C0261486,Approved,,
+Fondaparinux sodium,DB00569,Pulmonary Thromboembolisms,C0524702,Approved,,
+Vinblastine,DB00570,Gestational Trophoblastic Neoplasms,C1135868,Approved,,
+Vinblastine,DB00570,Letterer-Siwe Disease,C0023381,Approved,,
+Vinblastine,DB00570,Malignant neoplasm of testis,C0153594,Approved,,
+Propranolol,DB00571,Idiopathic hypertrophic subaortic stenosis,C0700053,Approved,,
+Propranolol,DB00571,Supraventricular tachycardia,C0039240,Approved,,
+Propranolol,DB00571,Hypertrophic Cardiomyopathy,C0007194,Approved,,
+Propranolol,DB00571,Hemangioma,C0018916,Approved,,
+Valaciclovir,DB00577,Chickenpox,C0008049,Approved,,
+Valaciclovir,DB00577,Genital Herpes,C0019342,Approved,,
+Lactulose,DB00581,Hyperammonemia,C0220994,Approved,,
+Voriconazole,DB00582,Fusariosis,C0276758,Approved,,
+L-Carnitine,DB00583,Carnitine deficiency,C1142132,Approved,,
+Enalapril,DB00584,Asymptomatic left ventricular systolic dysfunction,C3698411,Approved,,
+Enalapril,DB00584,Congestive heart failure,C0018802,Approved,,
+Diclofenac,DB00586,"Osteoarthritis, Knee",C0409959,Approved,,
+Lisuride,DB00589,Amenorrhea,C0002453,Approved,,
+Fluocinolone Acetonide,DB00591,Choroiditis,C0008526,Approved,,
+Piperazine,DB00592,Enterobiasis,C0086227,Approved,,
+Piperazine,DB00592,Ascariasis,C0003950,Approved,,
+Thiopental,DB00599,Pseudotumor Cerebri,C0033845,Approved,,
+Ivermectin,DB00602,Onchocerciasis,C0029001,Approved,,
+Ivermectin,DB00602,Strongyloidiasis,C0038463,Approved,,
+Medroxyprogesterone acetate,DB00603,Secondary malignant neoplasm of kidney,C0153685,Approved,,
+Medroxyprogesterone acetate,DB00603,Metrorrhagia,C0025874,Approved,,
+Medroxyprogesterone acetate,DB00603,Secondary physiologic amenorrhea,C0232940,Approved,,
+Nafcillin,DB00607,Staphylococcal Infections,C0038160,Approved,,
+Chloroquine,DB00608,Quartan malaria,C0024536,Approved,,
+Chloroquine,DB00608,Ovale malaria,C0152072,Approved,,
+Rifabutin,DB00615,Pulmonary Mycobacterium avium complex infection,C2733595,Approved,,
+Demeclocycline,DB00618,pharyngitis due to Haemophilus influenzae,C2062475,Approved,,
+Imatinib,DB00619,"Leukemia, Myeloid, Chronic-Phase",C0023474,Approved,,
+Imatinib,DB00619,Blast Phase,C0005699,Approved,,
+Imatinib,DB00619,Chronic eosinophilic leukemia,C0346421,Approved,,
+Imatinib,DB00619,Philadelphia chromosome-positive acute lymphoblastic leukemia,C1960397,Approved,,
+Imatinib,DB00619,Dermatofibrosarcoma Protuberans,C0392784,Approved,,
+Imatinib,DB00619,Idiopathic Hypereosinophilic Syndrome,C0206141,Approved,,
+Imatinib,DB00619,Gastrointestinal Stromal Tumors,C0238198,Approved,,
+Triamcinolone,DB00620,Giant Cell Arteritis,C0039483,Approved,,
+Triamcinolone,DB00620,Keloid,C0022548,Approved,,
+Triamcinolone,DB00620,Gingival Diseases,C0017563,Approved,,
+Triamcinolone,DB00620,Alopecia Areata,C0002171,Approved,,
+Triamcinolone,DB00620,Lichen Planus,C0023646,Approved,,
+Triamcinolone,DB00620,"Ophthalmia, Sympathetic",C0029077,Approved,,
+Triamcinolone,DB00620,Subacute bursitis,C1290159,Approved,,
+Triamcinolone,DB00620,Necrobiosis Lipoidica Diabeticorum,C0392445,Approved,,
+Testosterone,DB00624,Primary hypogonadism,C0948896,Approved,,
+Testosterone,DB00624,Cryptorchidism,C0010417,Approved,,
+Testosterone,DB00624,Klinefelter Syndrome,C0022735,Approved,,
+Testosterone,DB00624,Hypopituitarism,C0020635,Approved,,
+Clorazepate,DB00628,Alcohol withdrawal syndrome,C0236663,Approved,,
+Sulfacetamide,DB00634,Amebiasis,C0002438,Approved,,
+Sulfacetamide,DB00634,Vulvovaginitis,C0042998,Approved,,
+Simvastatin,DB00641,Hypoalphalipoproteinemias,C0473527,Approved,,
+Pemetrexed,DB00642,Malignant Pleural Mesothelioma,C0812413,Approved,,
+Mebendazole,DB00643,Enterobiasis,C0086227,Approved,,
+Mebendazole,DB00643,Ascariasis,C0003950,Approved,,
+Mebendazole,DB00643,Infection by Trichuris trichiura,C0040954,Approved,,
+Gonadorelin,DB00644,Amenorrhea,C0002453,Approved,,
+Nystatin,DB00646,Mucocutaneous candidiasis,C0006848,Approved,,
+Nystatin,DB00646,Gastrointestinal candidiasis,C0343886,Approved,,
+Mitotane,DB00648,Carcinoma in situ of adrenal cortex,C0686510,Approved,,
+Leucovorin,DB00650,Poisoning by pyrimethamine,C0274478,Approved,,
+Leucovorin,DB00650,Methotrexate poisoning,C0568062,Approved,,
+Leucovorin,DB00650,"Anemia, Megaloblastic",C0002888,Approved,,
+Leucovorin,DB00650,Folic Acid Deficiency,C0016412,Approved,,
+Leucovorin,DB00650,Poisoning by sulfadiazine,C0274462,Approved,,
+Dyphylline,DB00651,Asthma night-time symptoms,C1273489,Approved,,
+Dyphylline,DB00651,Asthma-chronic obstructive pulmonary disease overlap syndrome,C4038730,Approved,,
+Magnesium Sulfate,DB00653,Eclampsia in pregnancy,C0156677,Approved,,
+Magnesium Sulfate,DB00653,Mild pre-eclampsia,C0269658,Approved,,
+Magnesium Sulfate,DB00653,Severe pre-eclampsia,C0341950,Approved,,
+Nafarelin,DB00666,Precocious Puberty,C0034013,Approved,,
+Epinephrine,DB00668,anaphylaxis,C0002792,Approved,,
+Epinephrine,DB00668,Dyspnea,C0013404,Approved,,
+Epinephrine,DB00668,Wheezing,C0043144,Approved,,
+Galantamine,DB00674,Alzheimer's Disease,C0002395,Approved,,
+Tamoxifen,DB00675,Invasive Ductal Breast Carcinoma,C1134719,Approved,,
+Losartan,DB00678,Diabetic Nephropathy,C0011881,Approved,,
+Thioridazine,DB00679,Treatment-resistant schizophrenia,C3544321,Approved,,
+Amphotericin B,DB00681,Rhinocerebral phycomycosis,C1636205,Approved,,
+Amphotericin B,DB00681,Coccidioidomycosis,C0009186,Approved,,
+Amphotericin B,DB00681,Fungal infection of lung,C0151874,Approved,,
+Amphotericin B,DB00681,"Meningitis, Fungal",C0085438,Approved,,
+Amphotericin B,DB00681,Histoplasmosis,C0019655,Approved,,
+Amphotericin B,DB00681,Mucormycosis,C0026718,Approved,,
+Amphotericin B,DB00681,Pulmonary cryptococcosis,C0276688,Approved,,
+Amphotericin B,DB00681,"Leishmaniasis, Visceral",C0023290,Approved,,
+Amphotericin B,DB00681,Septicemia candida,C0349009,Approved,,
+Amphotericin B,DB00681,Fungal septicemia,C2960008,Approved,,
+Amphotericin B,DB00681,Infection by Cryptococcus neoformans,C0010414,Approved,,
+Amphotericin B,DB00681,Blastomycosis,C0005716,Approved,,
+Amphotericin B,DB00681,Candidal meningitis,C0153256,Approved,,
+Amphotericin B,DB00681,Candidal endocarditis,C0153254,Approved,,
+Amphotericin B,DB00681,Disseminated sporotrichosis,C0276725,Approved,,
+Amphotericin B,DB00681,Mycotic endocarditis,C0276648,Approved,,
+Amphotericin B,DB00681,Leishmaniasis,C0023281,Approved,,
+Amphotericin B,DB00681,Urinary tract infection fungal,C0877131,Approved,,
+Warfarin,DB00682,Thrombosis,C0040053,Approved,,
+Warfarin,DB00682,Thromboembolism,C0040038,Approved,,
+Warfarin,DB00682,Cerebral Embolism,C0007780,Approved,,
+Midazolam,DB00683,Agitation,C0085631,Approved,,
+Tobramycin,DB00684,Keratoconjunctivitis,C0022573,Approved,,
+Trovafloxacin,DB00685,Endomyometritis,C0269050,Approved,,
+Trovafloxacin,DB00685,Female pelvic cellulitis,C0349734,Approved,,
+Trovafloxacin,DB00685,Miscarriage with sepsis,C0269398,Approved,,
+Trovafloxacin,DB00685,Postnatal infection,C1278797,Approved,,
+Pentosan Polysulfate,DB00686,Bladder pain,C0232849,Approved,,
+Phentolamine,DB00692,Hypertensive emergency,C0745136,Approved,,
+Phentolamine,DB00692,Pheochromocytoma,C0031511,Approved,,
+Phentolamine,DB00692,Cerebral Ischemia,C0917798,Approved,,
+Phentolamine,DB00692,Paroxysmal hypertension,C0221154,Approved,,
+Daunorubicin,DB00694,Acute monocytic leukemia,C0023465,Approved,,
+Daunorubicin,DB00694,Acute Erythroblastic Leukemia,C0023440,Approved,,
+Furosemide,DB00695,Acute pulmonary edema,C0155919,Approved,,
+Tizanidine,DB00697,Muscle spasticity of spinal origin,C1562430,Approved,,
+Methazolamide,DB00703,Angle Closure Glaucoma,C0017605,Approved,,
+Methazolamide,DB00703,Secondary glaucoma,C0149893,Approved,,
+Porfimer,DB00707,Malignant neoplasm of esophagus,C0546837,Approved,,
+Sufentanil,DB00708,"Pain, Postoperative",C0030201,Approved,,
+Ibandronate,DB00710,Hypercalcemia,C0020437,Approved,,
+Diethylcarbamazine,DB00711,Eosinophilic Pneumonia,C1527407,Approved,,
+Diethylcarbamazine,DB00711,Filarial Elephantiases,C0013884,Approved,,
+Diethylcarbamazine,DB00711,Loiasis,C0023968,Approved,,
+Diethylcarbamazine,DB00711,Onchocerciasis,C0029001,Approved,,
+Diethylcarbamazine,DB00711,Elephantiasis,C0013882,Approved,,
+Oxacillin,DB00713,Staphylococcal Infections,C0038160,Approved,,
+Paroxetine,DB00715,Post-Traumatic Stress Disorder,C0038436,Approved,,
+Norethisterone,DB00717,Secondary physiologic amenorrhea,C0232940,Approved,,
+Norethisterone,DB00717,Metrorrhagia,C0025874,Approved,,
+Imiquimod,DB00724,Condylomata Acuminata,C0009663,Approved,,
+Imiquimod,DB00724,Superficial basal cell carcinoma,C0862889,Approved,,
+Imiquimod,DB00724,Common wart,C0043037,Approved,,
+Nitroglycerin,DB00727,Perioperative hypertension,C3661921,Approved,,
+Thiabendazole,DB00730,"Larva Migrans, Cutaneous",C0546999,Approved,,
+Thiabendazole,DB00730,Infection by Uncinaria,C0041648,Approved,,
+Thiabendazole,DB00730,Toxocariasis,C0040553,Approved,,
+Thiabendazole,DB00730,Enterobiasis,C0086227,Approved,,
+Thiabendazole,DB00730,Ascariasis,C0003950,Approved,,
+Thiabendazole,DB00730,Infection by Trichuris trichiura,C0040954,Approved,,
+Thiabendazole,DB00730,Strongyloidiasis,C0038463,Approved,,
+Pralidoxime,DB00733,Organophosphate poisoning,C0700359,Approved,,
+Risperidone,DB00734,Autistic Disorder,C0004352,Approved,,
+Pentamidine,DB00738,African Trypanosomiasis,C0041228,Approved,,
+Riluzole,DB00740,Amyotrophic Lateral Sclerosis,C0002736,Approved,,
+Hydrocortisone,DB00741,Itching of ear,C0849907,Approved,,
+Hydrocortisone,DB00741,Chronic ulcerative proctitis,C2937222,Approved,,
+Hydrocortisone,DB00741,Gingival Diseases,C0017563,Approved,,
+Mannitol,DB00742,Pseudotumor Cerebri,C0033845,Approved,,
+Deferoxamine,DB00746,Chronic iron overload,C1739382,Approved,,
+Deferoxamine,DB00746,Poisoning by iron AND/OR its compounds,C0412842,Approved,,
+Scopolamine,DB00747,Posterior synechiae,C0152253,Approved,,
+Scopolamine,DB00747,Cycloplegia,C0235238,Approved,,
+Tretinoin,DB00755,Hyperkeratosis,C0870082,Approved,,
+Tretinoin,DB00755,Senile lentigo,C0036651,Approved,,
+Clopidogrel,DB00758,Acute ST segment elevation myocardial infarction (disorder),C1303258,Approved,,
+Clopidogrel,DB00758,Non-Q wave myocardial infarction,C0542269,Approved,,
+Clopidogrel,DB00758,Cerebral Embolism,C0007780,Approved,,
+Meropenem,DB00760,Complicated appendicitis,C1632842,Approved,,
+Irinotecan,DB00762,Secondary malignant neoplasm of pancreas,C0346976,Approved,,
+Metyrosine,DB00765,Pheochromocytoma,C0031511,Approved,,
+Alprostadil,DB00770,Congenital atresia of pulmonary valve,C0242855,Approved,,
+Alprostadil,DB00770,Tricuspid Atresia,C0243002,Approved,,
+Alprostadil,DB00770,Aortic coarctation,C0003492,Approved,,
+Alprostadil,DB00770,Tetralogy of Fallot,C0039685,Approved,,
+Clidinium,DB00771,Enterocolitis,C0014356,Approved,,
+Tirofiban,DB00775,Non-Q wave myocardial infarction,C0542269,Approved,,
+Estradiol,DB00783,Urethral atrophy,C0520577,Approved,,
+Aciclovir,DB00787,Chickenpox,C0008049,Approved,,
+Aciclovir,DB00787,Herpes simplex infection of skin,C0349719,Approved,,
+Aciclovir,DB00787,Herpes encephalitis,C0276226,Approved,,
+Aciclovir,DB00787,Herpes Simplex Infections,C0019348,Approved,,
+Aciclovir,DB00787,Genital Herpes,C0019342,Approved,,
+Naproxen,DB00788,Myalgia,C0231528,Approved,,
+Uracil mustard,DB00791,Polycythemia Vera,C0032463,Approved,,
+Tolazoline,DB00797,Cerebrovascular Disorders,C0007820,Approved,,
+Tolazoline,DB00797,Vascular Diseases,C0042373,Approved,,
+Gentamicin,DB00798,Pseudomonas aeruginosa meningitis,C3665869,Approved,,
+Gentamicin,DB00798,Folliculitis,C0016436,Approved,,
+Gentamicin,DB00798,Citrobacter sepsis,C1096254,Approved,,
+Gentamicin,DB00798,Paronychia Inflammation,C0030578,Approved,,
+Gentamicin,DB00798,Klebsiella sepsis,C0745528,Approved,,
+Gentamicin,DB00798,Furunculosis,C0016867,Approved,,
+Tazarotene,DB00799,Facial hyperpigmentation,C2677857,Approved,,
+Fenoldopam,DB00800,Malignant essential hypertension,C0024588,Approved,,
+Colistin,DB00803,Pseudomonas aeruginosa infection,C0854135,Approved,,
+Colistin,DB00803,Enterobacter infection,C0948205,Approved,,
+Colistin,DB00803,Klebsiella Infections,C0022729,Approved,,
+Tropicamide,DB00809,Cycloplegia,C0235238,Approved,,
+Ribavirin,DB00811,Respiratory Syncytial Virus Infections,C0035235,Approved,,
+Acetazolamide,DB00819,Malignant glaucoma,C0271152,Approved,,
+Acetazolamide,DB00819,Peripheral edema,C0085649,Approved,,
+Acetazolamide,DB00819,Secondary glaucoma,C0149893,Approved,,
+Acetazolamide,DB00819,Angle Closure Glaucoma,C0017605,Approved,,
+Acetazolamide,DB00819,Altitude Sickness,C0002351,Approved,,
+Natamycin,DB00826,Fungal conjunctivitis,C0339170,Approved,,
+Natamycin,DB00826,Fungal keratitis,C1262117,Approved,,
+Diazepam,DB00829,Alcohol Withdrawal Delirium,C0001957,Approved,,
+Diazepam,DB00829,Alcohol withdrawal syndrome,C0236663,Approved,,
+Diazepam,DB00829,Tetanus,C0039614,Approved,,
+Dobutamine,DB00841,"Shock, Cardiogenic",C0036980,Approved,,
+Dobutamine,DB00841,Heart Decompensation,C1961112,Approved,,
+Oxazepam,DB00842,Alcohol Withdrawal Delirium,C0001957,Approved,,
+Donepezil,DB00843,Alzheimer's Disease,C0002395,Approved,,
+Clofazimine,DB00845,Dapsone resistant mycobacterium leprae disease,C1563054,Approved,,
+Clofazimine,DB00845,Pyoderma Gangrenosum,C0085652,Approved,,
+Clofazimine,DB00845,Erythema nodosum leprosum,C0343467,Approved,,
+Clofazimine,DB00845,Leprosy,C0023343,Approved,,
+Clofazimine,DB00845,"Leprosy, Multibacillary",C1562585,Approved,,
+Cysteamine,DB00847,Nephropathic cystinosis,C2931187,Approved,,
+Methylphenobarbital,DB00849,apprehension,C0233485,Approved,,
+Methylphenobarbital,DB00849,Tension,C0233494,Approved,,
+Temozolomide,DB00853,Glioblastoma multiforme of brain,C0349543,Approved,,
+Terbinafine,DB00857,Tinea Capitis,C0040250,Approved,,
+Terbinafine,DB00857,Onychomycosis of fingernails,C1274469,Approved,,
+Drostanolone,DB00858,Hypoplastic anemia,C0178416,Approved,,
+Penicillamine,DB00859,Hepatolenticular Degeneration,C0019202,Approved,,
+Penicillamine,DB00859,Cystinuria,C0010691,Approved,,
+Prednisolone,DB00860,"Ophthalmia, Sympathetic",C0029077,Approved,,
+Prednisolone,DB00860,Eosinophilic Pneumonia,C1527407,Approved,,
+Prednisolone,DB00860,Sjogren's Syndrome,C1527336,Approved,,
+Prednisolone,DB00860,Stevens-Johnson Syndrome,C0038325,Approved,,
+Prednisolone,DB00860,Ocular Rosacea,C0406486,Approved,,
+Prednisolone,DB00860,Giant Cell Arteritis,C0039483,Approved,,
+Prednisolone,DB00860,"Aspergillosis, Allergic Bronchopulmonary",C0004031,Approved,,
+Prednisolone,DB00860,Extrinsic allergic alveolitis,C0002390,Approved,,
+Prednisolone,DB00860,Polymyalgia Rheumatica,C0032533,Approved,,
+Prednisolone,DB00860,Pulmonary Fibrosis,C0034069,Approved,,
+Tacrolimus,DB00864,Liver transplant rejection,C0400968,Approved,,
+Ritodrine,DB00867,Premature Obstetric Labor,C0022876,Approved,,
+Conivaptan,DB00872,Hyponatremia,C0020625,Approved,,
+Loteprednol,DB00873,Herpes zoster keratoconjunctivitis,C0153027,Approved,,
+Loteprednol,DB00873,Ocular Rosacea,C0406486,Approved,,
+Sirolimus,DB00877,Pulmonary lymphangioleiomyomatosis,C0349649,Approved,,
+Chlorhexidine,DB00878,Gingivitis,C0017574,Approved,,
+Clomifene,DB00882,Female infertility,C0021361,Approved,,
+Mechlorethamine,DB00888,Malignant pericardial effusion,C0220655,Approved,,
+Mechlorethamine,DB00888,"Pleural Effusion, Malignant",C0080032,Approved,,
+Mechlorethamine,DB00888,Malignant ascites,C0220656,Approved,,
+Dienestrol,DB00890,Dyspareunia,C1384606,Approved,,
+Bimatoprost,DB00905,Hypertrichosis of eyelid,C0155213,Approved,,
+Quinidine,DB00908,Pseudobulbar affect,C2316460,Approved,,
+Tinidazole,DB00911,Acute amebiasis,C0152499,Approved,,
+Tinidazole,DB00911,Trichomonas Infections,C0040921,Approved,,
+Tinidazole,DB00911,Bacterial Vaginosis,C0085166,Approved,,
+Tinidazole,DB00911,"Liver Abscess, Amebic",C0023886,Approved,,
+Amantadine,DB00915,Influenza due to Influenza A virus,C2711180,Approved,,
+Metronidazole,DB00916,"Liver Abscess, Amebic",C0023886,Approved,,
+Metronidazole,DB00916,Bacteroides empyema,C2062454,Approved,,
+Metronidazole,DB00916,Infection due to anaerobic bacteria,C0854328,Approved,,
+Metronidazole,DB00916,Acute amebiasis,C0152499,Approved,,
+Metronidazole,DB00916,Trichomonas Infections,C0040921,Approved,,
+Metronidazole,DB00916,Liver Abscess,C0023885,Approved,,
+Metronidazole,DB00916,Tubo-ovarian abscess,C0041343,Approved,,
+Metronidazole,DB00916,Bacterial Vaginosis,C0085166,Approved,,
+Metronidazole,DB00916,Brain Abscess,C0006105,Approved,,
+Metronidazole,DB00916,Meningitis due to Bacteroides,C0865436,Approved,,
+Dinoprostone,DB00917,"Hydatidiform mole, benign",C0549315,Approved,,
+Dinoprostone,DB00917,Incomplete spontaneous abortion,C0000810,Approved,,
+Levosimendan,DB00922,Congestive heart failure,C0018802,Approved,,
+Phenoxybenzamine,DB00925,Pheochromocytoma,C0031511,Approved,,
+Methacycline,DB00931,Bacterial enteritis,C0152516,Approved,,
+Salicylic acid,DB00936,Hyperkeratosis,C0870082,Approved,,
+Salicylic acid,DB00936,Plantar wart,C0042548,Approved,,
+Salicylic acid,DB00936,Greasy skin,C0234925,Approved,,
+Salicylic acid,DB00936,Disorder of keratinization,C0475811,Approved,,
+Salicylic acid,DB00936,Corns and callus,C0157726,Approved,,
+Methantheline,DB00940,Urinary Incontinence,C0042024,Approved,,
+Phenprocoumon,DB00946,Thrombosis,C0040053,Approved,,
+Phenprocoumon,DB00946,Thromboembolism,C0040038,Approved,,
+Methylprednisolone,DB00959,"Rhinitis, Allergic, Perennial",C0035457,Approved,,
+Zaleplon,DB00962,Initial insomnia,C0393760,Approved,,
+Apraclonidine,DB00964,Cerebrovascular Occlusion,C0596298,Approved,,
+Desloratadine,DB00967,Allergic urticaria,C0149526,Approved,,
+Dactinomycin,DB00970,Gestational Trophoblastic Neoplasms,C1135868,Approved,,
+Dactinomycin,DB00970,Nephroblastoma,C0027708,Approved,,
+Dactinomycin,DB00970,Rhabdomyosarcoma,C0035412,Approved,,
+Ezetimibe,DB00973,Sitosterolemia,C0342907,Approved,,
+Edetic Acid,DB00974,Accidental poisoning by lead and its compounds and fumes,C0261486,Approved,,
+Edetic Acid,DB00974,Hypercalcemia,C0020437,Approved,,
+Dipyridamole,DB00975,Platelet aggregation inhibition,C0919737,Approved,,
+Cyclopentolate,DB00979,Cycloplegia,C0235238,Approved,,
+Ramelteon,DB00980,Initial insomnia,C0393760,Approved,,
+Physostigmine,DB00981,anticholinergic toxicity,C0237996,Approved,,
+Glycopyrronium,DB00986,Sialorrhea,C0037036,Approved,,
+Cytarabine,DB00987,Meningeal Leukemia,C0948840,Approved,,
+Cytarabine,DB00987,Metastatic Malignant Neoplasm to the Leptomeninges,C1704231,Approved,,
+Dopamine,DB00988,Low Cardiac Output Syndrome,C0600177,Approved,,
+Rivastigmine,DB00989,Alzheimer's Disease,C0002395,Approved,,
+Rivastigmine,DB00989,Dementia associated with Parkinson's Disease,C1828079,Approved,,
+Neomycin,DB00994,Hepatic Coma,C0019147,Approved,,
+Doxorubicin,DB00997,Osteosarcoma of bone,C0585442,Approved,,
+Doxorubicin,DB00997,AIDS with Kaposi's sarcoma,C0276535,Approved,,
+Doxorubicin,DB00997,Nephroblastoma,C0027708,Approved,,
+Doxorubicin,DB00997,Malignant neoplasm of stomach stage IV,C0278498,Approved,,
+Doxorubicin,DB00997,Malignant neoplasm of thyroid,C0007115,Approved,,
+Cromoglicic acid,DB01003,"Conjunctivitis, Giant Papillary",C0009769,Approved,,
+Cromoglicic acid,DB01003,"Conjunctivitis, Vernal",C0009773,Approved,,
+Cromoglicic acid,DB01003,Allergic keratoconjunctivitis,C1112631,Approved,,
+Cromoglicic acid,DB01003,"Keratoconjunctivitis, Vernal",C0022577,Approved,,
+Ganciclovir,DB01004,"Keratitis, Dendritic",C0022570,Approved,,
+Ganciclovir,DB01004,Cytomegalovirus Retinitis,C0206178,Approved,,
+Hydroxyurea,DB01005,Hemoglobin SS disease with crisis,C0238425,Approved,,
+Hydroxyurea,DB01005,"Anemia, Sickle Cell",C0002895,Approved,,
+Clobetasol propionate,DB01013,Scalp Dermatoses,C0036271,Approved,,
+Clobetasol propionate,DB01013,Nummular eczema,C0085656,Approved,,
+Sulfamethoxazole,DB01015,Toxoplasmosis,C0040558,Approved,,
+Sulfamethoxazole,DB01015,Nocardia Infections,C0028242,Approved,,
+Minocycline,DB01017,Infection by Campylobacter fetus,C0275979,Approved,,
+Minocycline,DB01017,Plague,C0032064,Approved,,
+Minocycline,DB01017,Cholera,C0008354,Approved,,
+Minocycline,DB01017,Meningococcus carrier,C0421162,Approved,,
+Minocycline,DB01017,Bartonella Infections,C0004771,Approved,,
+Phylloquinone,DB01022,Factor II deficiency,C3203356,Approved,,
+Ketoconazole,DB01026,Coccidioidomycosis,C0009186,Approved,,
+Ketoconazole,DB01026,Chromoblastomycosis,C0008582,Approved,,
+Ketoconazole,DB01026,Histoplasmosis,C0019655,Approved,,
+Ketoconazole,DB01026,Paracoccidioidomycosis,C0030409,Approved,,
+Ketoconazole,DB01026,Blastomycosis,C0005716,Approved,,
+Ketoconazole,DB01026,Adrenal Gland Hyperfunction,C0001622,Approved,,
+Irbesartan,DB01029,Diabetic Nephropathy,C0011881,Approved,,
+Topotecan,DB01030,Malignant tumor of cervix,C0007847,Approved,,
+Probenecid,DB01032,Chronic gouty arthritis,C0268108,Approved,,
+Fenofibrate,DB01039,Hypoalphalipoproteinemias,C0473527,Approved,,
+Thalidomide,DB01041,Erythema nodosum leprosum,C0343467,Approved,,
+Rifampicin,DB01045,Meningococcus carrier,C0421162,Approved,,
+Lubiprostone,DB01046,Chronic idiopathic constipation,C0267509,Approved,,
+Lubiprostone,DB01046,Irritable bowel syndrome characterized by constipation,C1868889,Approved,,
+Ergoloid mesylate,DB01049,Dementia,C0497327,Approved,,
+Benzylpenicillin,DB01053,Septicemia due to enterococcus,C0588233,Approved,,
+Benzylpenicillin,DB01053,Streptococcal toxic shock syndrome,C0343532,Approved,,
+Benzylpenicillin,DB01053,Botulism,C0006057,Approved,,
+Benzylpenicillin,DB01053,Gonococcal joint infection,C0153216,Approved,,
+Benzylpenicillin,DB01053,"Syphilis, Congenital",C0039131,Approved,,
+Benzylpenicillin,DB01053,Neurosyphilis,C0027927,Approved,,
+Benzylpenicillin,DB01053,"Syphilis, secondary",C0149985,Approved,,
+Benzylpenicillin,DB01053,Pasteurella Infections,C0030636,Approved,,
+Benzylpenicillin,DB01053,Infection by Pasteurella multocida,C1260911,Approved,,
+Benzylpenicillin,DB01053,Abdominal actinomycosis,C0001263,Approved,,
+Benzylpenicillin,DB01053,Latent yaws,C0153240,Approved,,
+Benzylpenicillin,DB01053,Tetanus,C0039614,Approved,,
+Benzylpenicillin,DB01053,Infection due to Erysipelothrix rhusiopathiae (disorder),C1276801,Approved,,
+Benzylpenicillin,DB01053,Cutaneous anthrax,C0003177,Approved,,
+Benzylpenicillin,DB01053,Late latent syphilis,C1260915,Approved,,
+Benzylpenicillin,DB01053,Listerial endocarditis,C0348868,Approved,,
+Benzylpenicillin,DB01053,Rat-Bite Fever,C0034686,Approved,,
+Benzylpenicillin,DB01053,"Syphilis, Latent",C0039133,Approved,,
+Benzylpenicillin,DB01053,Pulmonary actinomycosis,C0275566,Approved,,
+Benzylpenicillin,DB01053,Anthrax sepsis,C0152946,Approved,,
+Benzylpenicillin,DB01053,Pinta,C0031946,Approved,,
+Benzylpenicillin,DB01053,Bejel,C0004945,Approved,,
+Benzylpenicillin,DB01053,"Pneumonia, Necrotizing",C0264515,Approved,,
+Benzylpenicillin,DB01053,Cervicofacial actinomycosis,C0001264,Approved,,
+Benzylpenicillin,DB01053,Lung Abscess,C0024110,Approved,,
+Benzylpenicillin,DB01053,"Syphilis, tertiary",C0153188,Approved,,
+Benzylpenicillin,DB01053,Primary genital syphilis,C0017418,Approved,,
+Benzylpenicillin,DB01053,"Early latent syphilis, positive serology, negative cerebrospinal fluid, less than 2 years after infection",C0275842,Approved,,
+Benzylpenicillin,DB01053,Bacterial Endocarditis,C0014121,Approved,,
+Benzylpenicillin,DB01053,Gas gangrene caused by clostridium perfringens,C0343500,Approved,,
+Benzylpenicillin,DB01053,"Meningitis, Listeria",C0025293,Approved,,
+Benzylpenicillin,DB01053,Gastrointestinal anthrax,C0152945,Approved,,
+Benzylpenicillin,DB01053,Tertiary lesion of yaws,C0343833,Approved,,
+Benzylpenicillin,DB01053,Meningococcemia,C0025306,Approved,,
+Echothiophate,DB01057,Glaucoma,C0017601,Approved,,
+Echothiophate,DB01057,Esotropia,C0014877,Approved,,
+Echothiophate,DB01057,Stargardt's disease,C0271093,Approved,,
+Praziquantel,DB01058,Opisthorchiasis,C0029106,Approved,,
+Praziquantel,DB01058,Schistosomiasis,C0036323,Approved,,
+Norfloxacin,DB01059,Female pelvic cellulitis,C0349734,Approved,,
+Norfloxacin,DB01059,Miscarriage with sepsis,C0269398,Approved,,
+Norfloxacin,DB01059,Postnatal infection,C1278797,Approved,,
+Norfloxacin,DB01059,Acute osteomyelitis,C0158371,Approved,,
+Norfloxacin,DB01059,Endomyometritis,C0269050,Approved,,
+Norfloxacin,DB01059,Enteric campylobacteriosis,C0275982,Approved,,
+Norfloxacin,DB01059,Chronic tubotympanic suppurative otitis media,C0155440,Approved,,
+Amoxicillin,DB01060,pharyngitis due to Haemophilus influenzae,C2062475,Approved,,
+Amoxicillin,DB01060,Staphylococcal pharyngitis,C0275794,Approved,,
+Amoxicillin,DB01060,Helicobacter-associated gastritis,C0343378,Approved,,
+Amoxicillin,DB01060,Staphylococcal tonsillitis,C0275793,Approved,,
+Oxybutynin,DB01062,Neurogenic Urinary Bladder,C0005697,Approved,,
+Isoprenaline,DB01064,Low Cardiac Output Syndrome,C0600177,Approved,,
+Isoprenaline,DB01064,Atrioventricular Block,C0004245,Approved,,
+Isoprenaline,DB01064,Hypovolemic Shock,C0020683,Approved,,
+Clonazepam,DB01068,Epileptic drop attack,C0270846,Approved,,
+Dihydrotachysterol,DB01070,Tetany,C0039621,Approved,,
+Etidronic acid,DB01077,Heterotopic Ossification,C0029396,Approved,,
+Vigabatrin,DB01080,West Syndrome,C0037769,Approved,,
+Streptomycin,DB01082,Plague,C0032064,Approved,,
+Streptomycin,DB01082,Endocarditis haemophilus,C0854528,Approved,,
+Pilocarpine,DB01085,Xerostomia,C0043352,Approved,,
+Benzocaine,DB01086,Tinea,C0040247,Approved,,
+Oxamniquine,DB01096,Schistosomiasis,C0036323,Approved,,
+Pimozide,DB01100,Gilles de la Tourette syndrome,C0040517,Approved,,
+Sertraline,DB01104,Post-Traumatic Stress Disorder,C0038436,Approved,,
+Trilostane,DB01108,Adrenal Gland Hyperfunction,C0001622,Approved,,
+Heparin,DB01109,Non-Q wave myocardial infarction,C0542269,Approved,,
+Heparin,DB01109,Disseminated Intravascular Coagulation,C0012739,Approved,,
+Heparin,DB01109,Peripheral arterial embolism,C0564750,Approved,,
+Colistimethate,DB01111,Enterobacter infection,C0948205,Approved,,
+Colistimethate,DB01111,Pseudomonas aeruginosa infection,C0854135,Approved,,
+Colistimethate,DB01111,Klebsiella Infections,C0022729,Approved,,
+Cefuroxime,DB01112,Impetigo,C0021099,Approved,,
+Cefuroxime,DB01112,Lyme Disease,C0024198,Approved,,
+Papaverine,DB01113,Cerebral Ischemia,C0917798,Approved,,
+Trimethaphan,DB01116,Hypertensive emergency,C0745136,Approved,,
+Trimethaphan,DB01116,Pulmonary Edema,C0034063,Approved,,
+Amiodarone,DB01118,Ventricular Fibrillation,C0042510,Approved,,
+Diazoxide,DB01119,Hyperinsulinism,C0020459,Approved,,
+Diazoxide,DB01119,insulinoma,C0021670,Approved,,
+Diazoxide,DB01119,Nesidioblastosis,C0027773,Approved,,
+Diazoxide,DB01119,Hypertensive emergency,C0745136,Approved,,
+Ambenonium,DB01122,Myasthenia Gravis,C0026896,Approved,,
+Sulfinpyrazone,DB01138,Chronic gouty arthritis,C0268108,Approved,,
+Micafungin,DB01141,Septicemia candida,C0349009,Approved,,
+Doxepin,DB01142,Severe major depression with psychotic features,C0270458,Approved,,
+Diclofenamide,DB01144,Angle Closure Glaucoma,C0017605,Approved,,
+Diclofenamide,DB01144,Secondary glaucoma,C0149893,Approved,,
+Flavoxate,DB01148,Nocturia,C0028734,Approved,,
+Flavoxate,DB01148,Urinary Incontinence,C0042024,Approved,,
+Flavoxate,DB01148,Suprapubic pain,C0241310,Approved,,
+Bupropion,DB01156,Seasonal Affective Disorder,C0085159,Approved,,
+Bretylium,DB01158,Ventricular Fibrillation,C0042510,Approved,,
+Dinoprost Tromethamine,DB01160,"Hydatidiform mole, benign",C0549315,Approved,,
+Dinoprost Tromethamine,DB01160,Incomplete spontaneous abortion,C0000810,Approved,,
+Calcium Chloride,DB01164,Hypermagnesemia,C0151714,Approved,,
+Calcium Chloride,DB01164,Disorder of electrolytes,C1704431,Approved,,
+Calcium Chloride,DB01164,Hypocalcemic tetany,C0151940,Approved,,
+Ofloxacin,DB01165,Chronic tubotympanic suppurative otitis media,C0155440,Approved,,
+Ofloxacin,DB01165,Enteric campylobacteriosis,C0275982,Approved,,
+Ofloxacin,DB01165,Acute osteomyelitis,C0158371,Approved,,
+Cilostazol,DB01166,Intermittent Claudication,C0021775,Approved,,
+Itraconazole,DB01167,Onychomycosis of fingernails,C1274469,Approved,,
+Itraconazole,DB01167,Fusariosis,C0276758,Approved,,
+Itraconazole,DB01167,Blastomycosis,C0005716,Approved,,
+Itraconazole,DB01167,Histoplasmosis,C0019655,Approved,,
+Arsenic trioxide,DB01169,Acute myelomonocytic leukemia,C0023479,Approved,,
+Podofilox,DB01179,Condylomata Acuminata,C0009663,Approved,,
+Propafenone,DB01182,Paroxysmal atrial fibrillation,C0235480,Approved,,
+Propafenone,DB01182,Paroxysmal atrial flutter,C0741292,Approved,,
+Naloxone,DB01183,Poisoning by opiate analgesic drug,C0412850,Approved,,
+Fluoxymesterone,DB01185,Noonan Syndrome,C0028326,Approved,,
+Fluoxymesterone,DB01185,Cryptorchidism,C0010417,Approved,,
+Fluoxymesterone,DB01185,Klinefelter Syndrome,C0022735,Approved,,
+Fluoxymesterone,DB01185,Generalized Myotonia of Thomsen,C2936781,Approved,,
+Clindamycin,DB01190,Gas gangrene caused by clostridium perfringens,C0343500,Approved,,
+Clindamycin,DB01190,Septicemia due to anaerobes,C0152967,Approved,,
+Clindamycin,DB01190,"Empyema, Pleural",C0014013,Approved,,
+Clindamycin,DB01190,Bacterial Vaginosis,C0085166,Approved,,
+Acebutolol,DB01193,Premature ventricular contractions,C0151636,Approved,,
+Flecainide,DB01195,Paroxysmal atrial flutter,C0741292,Approved,,
+Flecainide,DB01195,Paroxysmal atrial fibrillation,C0235480,Approved,,
+Estramustine,DB01196,Prostatic Neoplasms,C0033578,Approved,,
+Captopril,DB01197,Diabetic Nephropathy,C0011881,Approved,,
+Bromocriptine,DB01200,Hyperprolactinemia,C0020514,Approved,,
+Lomustine,DB01206,Brain Neoplasms,C0006118,Approved,,
+Clarithromycin,DB01211,Pulmonary Mycobacterium avium complex infection,C2733595,Approved,,
+Clarithromycin,DB01211,Helicobacter-associated gastritis,C0343378,Approved,,
+Ceftriaxone,DB01212,Gonococcal endocarditis,C0153227,Approved,,
+Ceftriaxone,DB01212,Septic arthritis haemophilus,C0860048,Approved,,
+Ceftriaxone,DB01212,Meningitis due to Klebsiella mobilis,C1719906,Approved,,
+Ceftriaxone,DB01212,Gonococcal meningitis,C0153225,Approved,,
+Ceftriaxone,DB01212,"Arthritis, Bacterial",C1692886,Approved,,
+Ceftriaxone,DB01212,Gonococcal joint infection,C0153216,Approved,,
+Ceftriaxone,DB01212,Salmonella sepsis,C0152486,Approved,,
+Ceftriaxone,DB01212,Haemophilus influenzae type b infection,C2028293,Approved,,
+Fomepizole,DB01213,Accidental poisoning by methyl alcohol,C0261439,Approved,,
+Fomepizole,DB01213,Ethylene glycol poisoning (disorder),C0413194,Approved,,
+Finasteride,DB01216,"Alopecia, Male Pattern",C4083212,Approved,,
+Dantrolene,DB01219,Malignant hyperpyrexia due to anesthesia,C0024591,Approved,,
+Dantrolene,DB01219,Muscle spasticity of spinal origin,C1562430,Approved,,
+Budesonide,DB01222,Crohn's disease in remission,C1960764,Approved,,
+Aminophylline,DB01223,Lung diseases,C0024115,Approved,,
+Aminophylline,DB01223,Asthma night-time symptoms,C1273489,Approved,,
+Aminophylline,DB01223,Asthma-chronic obstructive pulmonary disease overlap syndrome,C4038730,Approved,,
+Encainide,DB01228,Premature ventricular contractions,C0151636,Approved,,
+Paclitaxel,DB01229,Secondary malignant neoplasm of pancreas,C0346976,Approved,,
+Metoclopramide,DB01233,Gastroparesis due to diabetes mellitus,C0267176,Approved,,
+Dexamethasone,DB01234,Keloid,C0022548,Approved,,
+Dexamethasone,DB01234,Branch retinal vein occlusion with macular edema,C0339507,Approved,,
+Dexamethasone,DB01234,Allergic otitis externa,C1320547,Approved,,
+Dexamethasone,DB01234,Central retinal vein occlusion with macular edema,C0339498,Approved,,
+Aripiprazole,DB01238,Autistic Disorder,C0004352,Approved,,
+Olsalazine,DB01250,Ulcerative colitis in remission,C3697010,Approved,,
+Dasatinib,DB01254,Philadelphia chromosome-positive acute lymphoblastic leukemia,C1960397,Approved,,
+Dasatinib,DB01254,Blast Phase,C0005699,Approved,,
+Dasatinib,DB01254,"Leukemia, Myeloid, Chronic-Phase",C0023474,Approved,,
+Lisdexamfetamine,DB01255,Binge eating disorder,C0596170,Approved,,
+Retapamulin,DB01256,Impetigo,C0021099,Approved,,
+Retapamulin,DB01256,Superficial bacterial infection of skin,C0342985,Approved,,
+Eculizumab,DB01257,Paroxysmal nocturnal hemoglobinuria,C0024790,Approved,,
+Eculizumab,DB01257,Congenital hemolytic uremic syndrome,C2919522,Approved,,
+Desonide,DB01260,Crohn's disease in remission,C1960764,Approved,,
+Posaconazole,DB01263,Fusariosis,C0276758,Approved,,
+Posaconazole,DB01263,Chromoblastomycosis,C0008582,Approved,,
+Posaconazole,DB01263,Mycetoma,C0024449,Approved,,
+Posaconazole,DB01263,Coccidioidomycosis,C0009186,Approved,,
+Sinecatechins,DB01266,Condylomata Acuminata,C0009663,Approved,,
+Sinecatechins,DB01266,Perianal warts,C0343730,Approved,,
+Sunitinib,DB01268,Gastrointestinal Stromal Tumors,C0238198,Approved,,
+Panitumumab,DB01269,Secondary malignant neoplasm of colon,C0346974,Approved,,
+Ranibizumab,DB01270,Central retinal vein occlusion with macular edema,C0339498,Approved,,
+Ranibizumab,DB01270,Branch retinal vein occlusion with macular edema,C0339507,Approved,,
+Ranibizumab,DB01270,Diabetic macular edema,C0730285,Approved,,
+Ranibizumab,DB01270,Diabetic Retinopathy,C0011884,Approved,,
+Idursulfase,DB01271,Mucopolysaccharidosis II,C0026705,Approved,,
+Alglucosidase alfa,DB01272,Generalized glycogen storage disease of infants,C0342751,Approved,,
+Mecasermin,DB01277,Laron Syndrome,C0271568,Approved,,
+Galsulfase,DB01279,Mucopolysaccharidosis VI,C0026709,Approved,,
+Nelarabine,DB01280,Precursor T-Cell Lymphoblastic Leukemia-Lymphoma,C1961099,Approved,,
+Nelarabine,DB01280,Precursor T-cell lymphoblastic lymphoma,C1292758,Approved,,
+Abatacept,DB01281,Juvenile arthritis,C3495559,Approved,,
+Carbetocin,DB01282,Prader-Willi Syndrome,C0032897,Approved,,
+Carbetocin,DB01282,Uterine Inertia,C0042135,Approved,,
+Corticotropin,DB01285,West Syndrome,C0037769,Approved,,
+Corticotropin,DB01285,Exacerbation of multiple sclerosis,C0581392,Approved,,
+Corticotropin,DB01285,Stevens-Johnson Syndrome,C0038325,Approved,,
+Pirbuterol,DB01291,Lung diseases,C0024115,Approved,,
+Cefoxitin,DB01331,Female pelvic cellulitis,C0349734,Approved,,
+Cefoxitin,DB01331,Lung Abscess,C0024110,Approved,,
+Cortisone acetate,DB01380,Gingival Diseases,C0017563,Approved,,
+Cortisone acetate,DB01380,Chronic ulcerative proctitis,C2937222,Approved,,
+Cortisone acetate,DB01380,Itching of ear,C0849907,Approved,,
+Colchicine,DB01394,Familial Mediterranean Fever,C0031069,Approved,,
+Colchicine,DB01394,Chronic gouty arthritis,C0268108,Approved,,
+Magnesium salicylate,DB01397,Shoulder tendinitis,C0262633,Approved,,
+Neostigmine,DB01400,Myasthenia Gravis,C0026896,Approved,,
+Danazol,DB01406,Breast Fibrocystic Disease,C0016034,Approved,,
+Testosterone Propionate,DB01420,Cryptorchidism,C0010417,Approved,,
+Testosterone Propionate,DB01420,Klinefelter Syndrome,C0022735,Approved,,
+Paromomycin,DB01421,Chronic intestinal amebiasis,C0002440,Approved,,
+Paromomycin,DB01421,Hepatic Coma,C0019147,Approved,,
+Aprindine,DB01429,Supraventricular arrhythmia,C0428974,Approved,,
+Alfacalcidol,DB01436,Renal Osteodystrophy,C0035086,Approved,,
+Alfacalcidol,DB01436,Hyperparathyroidism,C0020502,Approved,,
+Alfacalcidol,DB01436,Neonatal hypocalcemia,C0342634,Approved,,
+Gamma Hydroxybutyric Acid,DB01440,Narcolepsy-Cataplexy Syndrome,C0751362,Approved,,
+Ursodeoxycholic acid,DB01586,Cholelithiasis,C0008350,Approved,,
+Ursodeoxycholic acid,DB01586,Primary biliary cirrhosis,C0008312,Approved,,
+Everolimus,DB01590,Angiomyolipoma of kidney,C0241961,Approved,,
+Everolimus,DB01590,Tuberous Sclerosis,C0041341,Approved,,
+Iron,DB01592,Anemia of prematurity,C0158996,Approved,,
+Iron,DB01592,Megaloblastic anemia due to folate deficiency,C0151482,Approved,,
+Tazobactam,DB01606,Appendicitis,C0003615,Approved,,
+Ticarcillin,DB01607,Lung Abscess,C0024110,Approved,,
+Ticarcillin,DB01607,Salpingitis,C0036130,Approved,,
+Ticarcillin,DB01607,"Empyema, Pleural",C0014013,Approved,,
+Ticarcillin,DB01607,Pelvic abscess,C0030785,Approved,,
+Deferasirox,DB01609,Chronic iron overload,C1739382,Approved,,
+Deferasirox,DB01609,beta Thalassemia,C0005283,Approved,,
+Hydroxychloroquine,DB01611,Ovale malaria,C0152072,Approved,,
+Hydroxychloroquine,DB01611,Quartan malaria,C0024536,Approved,,
+Lincomycin,DB01627,Pneumococcal Infections,C0032269,Approved,,
+Roflumilast,DB01656,Severe chronic obstructive pulmonary disease,C0730607,Approved,,
+Cholic Acid,DB02659,Biliary Tract Diseases,C0005424,Approved,,
+Cholic Acid,DB02659,Cholelithiasis,C0008350,Approved,,
+Cholic Acid,DB02659,3-Beta-hydroxy-delta-5-C27-steroid dehydrogenase deficiency,C0342826,Approved,,
+Cholic Acid,DB02659,Delta-4-3-oxosteroid-5-beta-reductase deficiency,C0342827,Approved,,
+Cholic Acid,DB02659,"Xanthomatosis, Cerebrotendinous",C0238052,Approved,,
+Nicotinamide,DB02701,Pellagra,C0030783,Approved,,
+Fusidic Acid,DB02703,Furunculosis,C0016867,Approved,,
+Fusidic Acid,DB02703,Endemic Flea-Borne Typhus,C0041472,Approved,,
+Fusidic Acid,DB02703,Keratoconjunctivitis,C0022573,Approved,,
+Fusidic Acid,DB02703,Rickettsia Infections,C0035585,Approved,,
+Fusidic Acid,DB02703,Boutonneuse Fever,C0006060,Approved,,
+Fusidic Acid,DB02703,Citrobacter sepsis,C1096254,Approved,,
+Fusidic Acid,DB02703,Q fever endocarditis,C0340354,Approved,,
+Fusidic Acid,DB02703,Pneumococcal Infections,C0032269,Approved,,
+Fusidic Acid,DB02703,Cutaneous anthrax,C0003177,Approved,,
+Fusidic Acid,DB02703,Paronychia Inflammation,C0030578,Approved,,
+Fusidic Acid,DB02703,Folliculitis,C0016436,Approved,,
+Fusidic Acid,DB02703,Brill-Zinsser Disease,C0006181,Approved,,
+Fusidic Acid,DB02703,Cholera,C0008354,Approved,,
+Fusidic Acid,DB02703,"Typhus, Epidemic Louse-Borne",C0041473,Approved,,
+Fusidic Acid,DB02703,Pseudomonas aeruginosa meningitis,C3665869,Approved,,
+Fusidic Acid,DB02703,Klebsiella sepsis,C0745528,Approved,,
+Fusidic Acid,DB02703,Chlamydia Infections,C0008149,Approved,,
+Fusidic Acid,DB02703,Gastrointestinal anthrax,C0152945,Approved,,
+Fusidic Acid,DB02703,Bartonella Infections,C0004771,Approved,,
+Fusidic Acid,DB02703,Scrub Typhus,C0036472,Approved,,
+Hemin,DB03404,Acute intermittent porphyria,C0162565,Approved,,
+Deoxycholic Acid,DB03619,Excess subcutaneous fat,C0424620,Approved,,
+Benzoic Acid,DB03793,Dermatomyositis,C0011633,Approved,,
+Benzoic Acid,DB03793,Morphea,C1527383,Approved,,
+Benzoic Acid,DB03793,Peyronie Disease,C0030848,Approved,,
+Benzoic Acid,DB03793,Hyperammonemia,C0220994,Approved,,
+Urea,DB03904,Impacted cerumen,C0021092,Approved,,
+Lactose,DB04465,Lactose Intolerance,C0022951,Approved,,
+Trioxsalen,DB04571,Photosensitivity of skin,C0349506,Approved,,
+Trioxsalen,DB04571,Vitiligo,C0042900,Approved,,
+Thiotepa,DB04572,"Pleural Effusion, Malignant",C0080032,Approved,,
+Thiotepa,DB04572,Malignant ascites,C0220656,Approved,,
+Thiotepa,DB04572,Malignant pericardial effusion,C0220655,Approved,,
+Thiotepa,DB04572,Malignant neoplasm of urinary bladder,C0005684,Approved,,
+Suramin,DB04786,African Trypanosomiasis,C0041228,Approved,,
+Dronedarone,DB04855,Paroxysmal atrial fibrillation,C0235480,Approved,,
+Nilotinib,DB04868,"Leukemia, Myeloid, Chronic-Phase",C0023474,Approved,,
+Nesiritide,DB04899,Decompensated chronic heart failure,C1827266,Approved,,
+Flibanserin,DB04908,Hypoactive Sexual Desire Disorder,C0020594,Approved,,
+Oritavancin,DB04911,"Skin Diseases, Bacterial",C0162627,Approved,,
+Oritavancin,DB04911,Staphylococcal Skin Infections,C0038166,Approved,,
+Oritavancin,DB04911,Streptococcal infection of skin,C1274355,Approved,,
+Permethrin,DB04930,Body louse infestation,C0030758,Approved,,
+Afamelanotide,DB04931,Erythropoietic Protoporphyria,C0162568,Approved,,
+Defibrotide,DB04932,Hepatic Veno-Occlusive Disease,C0019156,Approved,,
+Ospemifene,DB04938,Dyspareunia,C1384606,Approved,,
+Crofelemer,DB04941,Non-infective diarrhea,C0267436,Approved,,
+Lofexidine,DB04948,Opioid withdrawal,C0029104,Approved,,
+Ataluren,DB05016,"Muscular Dystrophy, Duchenne",C0013264,Approved,,
+Trabectedin,DB05109,liposarcoma,C0023827,Approved,,
+Trabectedin,DB05109,leiomyosarcoma,C0023269,Approved,,
+Silver sulfadiazine,DB05245,Skin Ulcer,C0037299,Approved,,
+Vandetanib,DB05294,Malignant epithelial neoplasm of thyroid,C3163939,Approved,,
+Ecallantide,DB05311,"Angioedemas, Hereditary",C0019243,Approved,,
+Romiplostim,DB05332,Chronic idiopathic thrombocytopenic purpura,C0272293,Approved,,
+Ramucirumab,DB05578,Gastric Adenocarcinoma,C0278701,Approved,,
+Sodium stibogluconate,DB05630,Leishmaniasis,C0023281,Approved,,
+Trastuzumab emtansine,DB05773,HER2-positive carcinoma of breast,C1960398,Approved,,
+Sulfathiazole,DB06147,Vulvovaginitis,C0042998,Approved,,
+Acetylcysteine,DB06151,Poisoning by acetaminophen,C0237963,Approved,,
+Acetylcysteine,DB06151,Amyloidosis,C0002726,Approved,,
+Canakinumab,DB06168,Cryopyrin-Associated Periodic Syndromes,C2316212,Approved,,
+Canakinumab,DB06168,Systemic onset juvenile chronic arthritis,C1384600,Approved,,
+Canakinumab,DB06168,Deficiency of mevalonate kinase,C0342731,Approved,,
+Canakinumab,DB06168,Familial Mediterranean Fever,C0031069,Approved,,
+Canakinumab,DB06168,TNF receptor-associated periodic fever syndrome (TRAPS),C1275126,Approved,,
+Icatibant,DB06196,"Angioedemas, Hereditary",C0019243,Approved,,
+Eltrombopag,DB06210,Chronic idiopathic thrombocytopenic purpura,C0272293,Approved,,
+Doripenem,DB06211,Complicated appendicitis,C1632842,Approved,,
+Doripenem,DB06211,Cholecystitis,C0008325,Approved,,
+Tolvaptan,DB06212,Inappropriate ADH Syndrome,C0021141,Approved,,
+Tolvaptan,DB06212,Hyponatremia,C0020625,Approved,,
+Tolvaptan,DB06212,"Polycystic Kidney, Autosomal Dominant",C0085413,Approved,,
+Dalbavancin,DB06219,Staphylococcal Skin Infections,C0038166,Approved,,
+Dalbavancin,DB06219,"Skin Diseases, Bacterial",C0162627,Approved,,
+Eflornithine,DB06243,African Trypanosomiasis,C0041228,Approved,,
+Tocilizumab,DB06273,Angiolymphoid hyperplasia,C0017531,Approved,,
+Alvimopan,DB06274,Postoperative ileus,C0400877,Approved,,
+Ziconotide,DB06283,Pain in spine,C0423673,Approved,,
+Amisulpride,DB06288,Chronic schizophrenia,C0221765,Approved,,
+Pertuzumab,DB06366,HER2-positive carcinoma of breast,C1960398,Approved,,
+Rilonacept,DB06372,Cryopyrin-Associated Periodic Syndromes,C2316212,Approved,,
+Oxymetholone,DB06412,Hypoplastic anemia,C0178416,Approved,,
+Pazopanib,DB06589,Sarcoma,C1261473,Approved,,
+Apixaban,DB06605,Arterial embolus and thrombosis,C0155749,Approved,,
+Mepolizumab,DB06612,Eosinophilic Pneumonia,C1527407,Approved,,
+Bosutinib,DB06616,Blast Phase,C0005699,Approved,,
+Isavuconazonium,DB06636,Mucormycosis,C0026718,Approved,,
+Denosumab,DB06643,Drug-induced osteoporosis,C0264115,Approved,,
+Pasireotide,DB06663,Adrenal Gland Hyperfunction,C0001622,Approved,,
+Aprotinin,DB06692,Hemorrhage,C0019080,Approved,,
+Betahistine,DB06698,Meniere Disease,C0025281,Approved,,
+Stanozolol,DB06718,"Angioedemas, Hereditary",C0019243,Approved,,
+Velaglucerase alfa,DB06720,"Gaucher Disease, Type 1",C1961835,Approved,,
+Glycine betaine,DB06756,Homocystinuria,C0019880,Approved,,
+Sacrosidase,DB06760,"Sucrase-isomaltase deficiency, congenital",C1283620,Approved,,
+Ammonium lactate,DB06768,Dry skin,C0151908,Approved,,
+Capsaicin,DB06774,Neuralgia,C0027796,Approved,,
+Chenodeoxycholic acid,DB06777,Cholelithiasis,C0008350,Approved,,
+Dimercaprol,DB06782,Arsenic Poisoning,C0311375,Approved,,
+Dimercaprol,DB06782,Accidental poisoning by lead and its compounds and fumes,C0261486,Approved,,
+Prussian blue,DB06783,Thallium poisoning,C0238452,Approved,,
+Histrelin,DB06788,Precocious Puberty,C0034013,Approved,,
+Lanreotide,DB06791,Hypersomatotropic gigantism,C0001207,Approved,,
+Lodoxamide,DB06794,"Conjunctivitis, Vernal",C0009773,Approved,,
+Lodoxamide,DB06794,"Keratoconjunctivitis, Vernal",C0022577,Approved,,
+Niclosamide,DB06803,Teniasis,C0039254,Approved,,
+Niclosamide,DB06803,Diphyllobothriasis,C0012561,Approved,,
+Polidocanol,DB06811,Varicosity,C0042345,Approved,,
+Sodium phenylbutyrate,DB06819,Carbamoyl-Phosphate Synthase I Deficiency Disease,C0751753,Approved,,
+Sodium phenylbutyrate,DB06819,Citrullinemia,C0175683,Approved,,
+Sodium phenylbutyrate,DB06819,"Urea Cycle Disorders, Inborn",C0154246,Approved,,
+Tiopronin,DB06823,Cystinuria,C0010691,Approved,,
+Triethylenetetramine,DB06824,Hepatolenticular Degeneration,C0019202,Approved,,
+Tranilast,DB07615,Keloid,C0022548,Approved,,
+Tranilast,DB07615,"Cicatrix, Hypertrophic",C0162810,Approved,,
+Diloxanide,DB08792,Amebiasis,C0002438,Approved,,
+Azidocillin,DB08795,Respiratory Tract Infections,C0035243,Approved,,
+Bupranolol,DB08808,Glaucoma,C0017601,Approved,,
+Deferiprone,DB08826,beta Thalassemia,C0005283,Approved,,
+Deferiprone,DB08826,Iron Overload,C0282193,Approved,,
+Vismodegib,DB08828,Basal cell carcinoma,C0007117,Approved,,
+Ulipristal,DB08867,Uterine Fibroids,C0042133,Approved,,
+Tesamorelin,DB08869,Lipodystrophy due to Human immunodeficiency virus infection and antiretroviral therapy,C3854116,Approved,,
+Brentuximab vedotin,DB08870,Anaplastic large T-cell systemic malignant lymphoma,C1275317,Approved,,
+Eribulin,DB08871,liposarcoma,C0023827,Approved,,
+Fidaxomicin,DB08874,"Enterocolitis, Pseudomembranous",C0014358,Approved,,
+Fidaxomicin,DB08874,Clostridium difficile infection,C0343386,Approved,,
+Fidaxomicin,DB08874,Clostridium Infections,C0009062,Approved,,
+Cabozantinib,DB08875,Medullary carcinoma of thyroid,C0238462,Approved,,
+Ruxolitinib,DB08877,Myelofibrosis,C0026987,Approved,,
+Aflibercept,DB08885,Central retinal vein occlusion with macular edema,C0339498,Approved,,
+Aflibercept,DB08885,Branch retinal vein occlusion with macular edema,C0339507,Approved,,
+Aflibercept,DB08885,Diabetic macular edema,C0730285,Approved,,
+Ocriplasmin,DB08888,Vitreomacular traction syndrome,C0730274,Approved,,
+Linaclotide,DB08890,Irritable bowel syndrome characterized by constipation,C1868889,Approved,,
+Linaclotide,DB08890,Chronic idiopathic constipation,C0267509,Approved,,
+Regorafenib,DB08896,Gastrointestinal Stromal Tumors,C0238198,Approved,,
+Teduglutide,DB08900,Short Bowel Syndrome,C0036992,Approved,,
+Ponatinib,DB08901,Philadelphia chromosome-positive acute lymphoblastic leukemia,C1960397,Approved,,
+Bedaquiline,DB08903,"Tuberculosis, Drug-Resistant",C0206525,Approved,,
+Glycerol Phenylbutyrate,DB08909,"Urea Cycle Disorders, Inborn",C0154246,Approved,,
+Afatinib,DB08916,Epidermal growth factor receptor positive non-small cell lung cancer,C1960925,Approved,,
+Riociguat,DB08931,Chronic thromboembolic pulmonary hypertension,C2363973,Approved,,
+Isoxsuprine,DB08941,Vascular Diseases,C0042373,Approved,,
+Isoxsuprine,DB08941,Cerebrovascular Disorders,C0007820,Approved,,
+Isoxsuprine,DB08941,Raynaud Disease,C0034734,Approved,,
+Floctafenine,DB08976,Acute onset pain,C0184567,Approved,,
+Captodiame,DB09014,Anxiety Disorders,C0003469,Approved,,
+Miltefosine,DB09031,"Leishmaniasis, Visceral",C0023290,Approved,,
+Miltefosine,DB09031,"Leishmaniasis, Cutaneous",C0023283,Approved,,
+Miltefosine,DB09031,Mucocutaneous leishmaniasis,C1328252,Approved,,
+Nivolumab,DB09035,Squamous cell carcinoma of lung,C0149782,Approved,,
+Nivolumab,DB09035,Metastatic Renal Cell Cancer,C0278678,Approved,,
+Siltuximab,DB09036,Angiolymphoid hyperplasia,C0017531,Approved,,
+Efinaconazole,DB09040,Onychomycosis due to Trichophyton mentagrophytes,C0276755,Approved,,
+Tavaborole,DB09041,Onychomycosis due to Trichophyton mentagrophytes,C0276755,Approved,,
+Tavaborole,DB09041,Onychomycosis due to Trichophyton rubrum,C0276754,Approved,,
+Tedizolid Phosphate,DB09042,Staphylococcal Skin Infections,C0038166,Approved,,
+Tedizolid Phosphate,DB09042,"Skin Diseases, Bacterial",C0162627,Approved,,
+Tedizolid Phosphate,DB09042,Streptococcal infection of skin,C1274355,Approved,,
+Metreleptin,DB09046,Familial generalized lipodystrophy,C0221032,Approved,,
+Metreleptin,DB09046,Acquired generalized lipodystrophy,C0271693,Approved,,
+Metreleptin,DB09046,Acquired partial lipodystrophy,C0220989,Approved,,
+Finafloxacin,DB09047,Acute otitis externa,C0149948,Approved,,
+Elosulfase alfa,DB09051,"Mucopolysaccharidosis, MPS-IV-A",C0086651,Approved,,
+Blinatumomab,DB09052,Pre B-cell acute lymphoblastic leukemia,C0349636,Approved,,
+Idelalisib,DB09054,Small Lymphocytic Lymphoma,C0855095,Approved,,
+Tasimelteon,DB09071,Non-24 hour sleep-wake cycle,C0393772,Approved,,
+Sodium oxybate,DB09072,Narcolepsy-Cataplexy Syndrome,C0751362,Approved,,
+Palbociclib,DB09073,Human epidermal growth factor 2 negative carcinoma of breast,C2316304,Approved,,
+Olaparib,DB09074,Malignant tumor of peritoneum,C0153467,Approved,,
+Olaparib,DB09074,Epithelial tumor of ovary,C0341823,Approved,,
+Edoxaban,DB09075,Embolism,C0013922,Approved,,
+Lenvatinib,DB09078,Follicular thyroid carcinoma,C0206682,Approved,,
+Lenvatinib,DB09078,Papillary thyroid carcinoma,C0238463,Approved,,
+Nintedanib,DB09079,Hamman-Rich syndrome,C0085786,Approved,,
+Idebenone,DB09081,"Optic Atrophy, Hereditary, Leber",C0917796,Approved,,
+Asfotase Alfa,DB09105,Hypophosphatasia,C0020630,Approved,,
+Diiodohydroxyquinoline,DB09115,Amebiasis,C0002438,Approved,,
+Stiripentol,DB09118,Infantile Severe Myoclonic Epilepsy,C0751122,Approved,,
+Potassium Citrate,DB09125,Calcium renal calculus,C1959799,Approved,,
+Potassium Citrate,DB09125,Renal tubular acidosis,C0001126,Approved,,
+Potassium Citrate,DB09125,RENAL CALCULUS CALCIUM OXALATE,C0748267,Approved,,
+Potassium Citrate,DB09125,Uric acid renal calculus,C0558595,Approved,,
+Protamine sulfate,DB09141,Heparin overdose,C0573789,Approved,,
+Sonidegib,DB09143,Basal cell carcinoma,C0007117,Approved,,
+Uridine triacetate,DB09144,Hereditary orotic aciduria,C0220987,Approved,,
+Uridine triacetate,DB09144,Antimetabolite overdose,C0572583,Approved,,
+Sucroferric Oxyhydroxide,DB09146,Hyperphosphatemia (disorder),C0085681,Approved,,
+Ferric Citrate,DB09162,Hyperphosphatemia (disorder),C0085681,Approved,,
+Viloxazine,DB09185,Narcolepsy-Cataplexy Syndrome,C0751362,Approved,,
+Moxisylyte,DB09205,Raynaud Disease,C0034734,Approved,,
+Conestat alfa,DB09228,Hereditary C1 esterase inhibitor deficiency - deficient factor,C0398775,Approved,,
+Idarucizumab,DB09264,Drug-induced coagulation inhibitor disorder,C0272373,Approved,,
+Phenylacetic acid,DB09269,Hyperammonemia,C0220994,Approved,,
+Scopolamine butylbromide,DB09300,Gastric spasm (disorder),C0581358,Approved,,
+Alirocumab,DB09302,Complex dyslipidemia,C3875286,Approved,,
+Evolocumab,DB09303,Complex dyslipidemia,C3875286,Approved,,
+Coagulation Factor XIII A-Subunit (Recombinant),DB09310,Hereditary factor XIII A subunit deficiency,C2584877,Approved,,
+Procaine benzylpenicillin,DB09320,"Syphilis, tertiary",C0153188,Approved,,
+Procaine benzylpenicillin,DB09320,"Syphilis, secondary",C0149985,Approved,,
+Procaine benzylpenicillin,DB09320,"Syphilis, Latent",C0039133,Approved,,
+Procaine benzylpenicillin,DB09320,Neurosyphilis,C0027927,Approved,,
+Procaine benzylpenicillin,DB09320,Bejel,C0004945,Approved,,
+Procaine benzylpenicillin,DB09320,Primary genital syphilis,C0017418,Approved,,
+Procaine benzylpenicillin,DB09320,Rat-Bite Fever,C0034686,Approved,,
+Procaine benzylpenicillin,DB09320,"Syphilis, Congenital",C0039131,Approved,,
+Procaine benzylpenicillin,DB09320,Pinta,C0031946,Approved,,
+Zinc oxide,DB09321,Arthropod bite wound,C1444173,Approved,,
+Zinc oxide,DB09321,Burn injury,C0006434,Approved,,
+Zinc oxide,DB09321,Injury wounds,C0043250,Approved,,
+Zinc oxide,DB09321,Rectal pain,C0034886,Approved,,
+Zinc sulfate,DB09322,Zinc deficiency,C0235950,Approved,,
+Osimertinib,DB09330,Epidermal growth factor receptor positive non-small cell lung cancer,C1960925,Approved,,
+Kappadione,DB09332,"Jaundice, Obstructive",C0022354,Approved,,
+Pramocaine,DB09345,Injury wounds,C0043250,Approved,,
+Pramocaine,DB09345,Rectal pain,C0034886,Approved,,
+Pramocaine,DB09345,Arthropod bite wound,C1444173,Approved,,
+Pramocaine,DB09345,Dry skin,C0151908,Approved,,
+Pramocaine,DB09345,Burn injury,C0006434,Approved,,
+Pramocaine,DB09345,Itching of ear,C0849907,Approved,,
+Pramocaine,DB09345,Allergic otitis externa,C1320547,Approved,,
+Piperonyl butoxide,DB09350,Body louse infestation,C0030758,Approved,,
+Sulfur,DB09353,Necrotizing Ulcerative Gingivitis,C0017575,Approved,,
+Sulfur,DB09353,Acneiform Eruptions,C0175167,Approved,,
+Sulfur,DB09353,Greasy skin,C0234925,Approved,,
+Dexpanthenol,DB09357,Paralytic Ileus,C0030446,Approved,,
+Dexpanthenol,DB09357,Contact dermatitis due to Rhus diversiloba,C0263283,Approved,,
+Dexpanthenol,DB09357,Eczema,C0013595,Approved,,
+Dexpanthenol,DB09357,Arthropod bite wound,C1444173,Approved,,
+Enalaprilat,DB09477,Asymptomatic left ventricular systolic dysfunction,C3698411,Approved,,
+Enalaprilat,DB09477,Congestive heart failure,C0018802,Approved,,
+Cysteine hydrochloride,DB09485,Poisoning by acetaminophen,C0237963,Approved,,
+Cysteine hydrochloride,DB09485,Amyloidosis,C0002726,Approved,,
+Octinoxate,DB09496,Discoloration of skin,C0151907,Approved,,
+Sodium ferric gluconate complex,DB09517,Anemia of prematurity,C0158996,Approved,,
+"Sodium phosphate, monobasic, monohydrate",DB09525,Calcium renal calculus,C1959799,Approved,,
+Hydroquinone,DB09526,Facial hyperpigmentation,C2677857,Approved,,
+Hydroquinone,DB09526,Discoloration of skin,C0151907,Approved,,
+Filgrastim-sndz,DB09560,Congenital neutropenia,C0340970,Approved,,
+Filgrastim-sndz,DB09560,Cyclic neutropenia,C0221023,Approved,,
+Filgrastim-sndz,DB09560,Chronic idiopathic neutropenia,C2267231,Approved,,
+Sebelipase alfa,DB11563,Wolman Disease,C0043208,Approved,,
+Atezolizumab,DB11595,"Carcinoma, Transitional Cell",C0007138,Approved,,
+Levoleucovorin,DB11596,Poisoning by sulfadiazine,C0274462,Approved,,
+Levoleucovorin,DB11596,Methotrexate poisoning,C0568062,Approved,,
+Levoleucovorin,DB11596,Poisoning by pyrimethamine,C0274478,Approved,,
+Levoleucovorin,DB11596,"Anemia, Megaloblastic",C0002888,Approved,,
+Levoleucovorin,DB11596,Folic Acid Deficiency,C0016412,Approved,,
+Susoctocog alfa,DB11606,"Factor 8 deficiency, acquired",C0272325,Approved,,
+Eftrenonacog alfa,DB11608,Hemophilia B,C0008533,Approved,,
+Buprenorphine,DB00921,Heroin Dependence,C0019337,Terminated,Phase 2,
+Buprenorphine,DB00921,Opioid-Related Disorders,C0027412,Terminated,Phase 2,
+Dextroamphetamine,DB01576,Cocaine-Related Disorders,C0236736,Terminated,Phase 1,Original P.I. left the institution
+Buprenorphine,DB00921,Heroin Dependence,C0019337,Terminated,Phase 2,
+Buprenorphine,DB00921,Opioid-Related Disorders,C0027412,Terminated,Phase 2,
+Methotrexate,DB00563,Sensorineural Hearing Loss (disorder),C0018784,Terminated,Phase 3,
+Zidovudine,DB00495,Kidney Diseases,C0022658,Withdrawn,Phase 1,
+Foscarnet,DB00529,Cytomegalovirus Retinitis,C0206178,Withdrawn,Phase 2,
+Vitamin E,DB00163,Carotid Artery Diseases,C0007273,Terminated,Phase 2,
+Vitamin E,DB00163,Intracranial Arteriosclerosis,C0007771,Terminated,Phase 2,
+Vitamin E,DB00163,Heart Diseases,C0018799,Terminated,Phase 2,
+Foscarnet,DB00529,Radiculitis,C0034544,Withdrawn,Phase 1,
+Ganciclovir,DB01004,Radiculitis,C0034544,Withdrawn,Phase 1,
+Cidofovir,DB00369,Cytomegalovirus Retinitis,C0206178,Withdrawn,Phase 1,
+Daclizumab,DB00111,Pure Red-Cell Aplasia,C0034902,Terminated,Phase 2,DSMB recommended closing the study and publishing the results
+Nitric Oxide,DB00435,"Infant, Small for Gestational Age",C0021296,Terminated,Phase 3,Preliminary results showed increased intraventricular hemorrhage (IVH) in experimental arm
+Betamethasone,DB00443,Pregnancy Complications,C0032962,Terminated,Phase 3,Concerns regarding neonatal data
+Doxorubicin,DB00997,"soft tissue sarcoma, adult, stage IVA",C0279771,Withdrawn,Phase 2,
+Ifosfamide,DB01181,"soft tissue sarcoma, adult, stage IVA",C0279771,Withdrawn,Phase 2,
+Doxorubicin,DB00997,"soft tissue sarcoma, adult, stage IIB",C0796438,Withdrawn,Phase 2,
+Ifosfamide,DB01181,"soft tissue sarcoma, adult, stage IIB",C0796438,Withdrawn,Phase 2,
+Doxorubicin,DB00997,"soft tissue sarcoma, adult, stage IIC",C0796439,Withdrawn,Phase 2,
+Ifosfamide,DB01181,"soft tissue sarcoma, adult, stage IIC",C0796439,Withdrawn,Phase 2,
+Alendronic acid,DB00630,Secondary malignant neoplasm of bone,C0153690,Terminated,Phase 2,
+Ketoconazole,DB01026,Secondary malignant neoplasm of bone,C0153690,Terminated,Phase 2,
+Gemcitabine,DB00441,Renal Pelvis and Ureter Urothelial Carcinoma,C0220648,Terminated,Phase 2,Permanently Closed Due to Poor Accrual
+Paclitaxel,DB01229,Renal Pelvis and Ureter Urothelial Carcinoma,C0220648,Terminated,Phase 2,Permanently Closed Due to Poor Accrual
+Gemcitabine,DB00441,Urethral Carcinoma,C0700101,Terminated,Phase 2,Permanently Closed Due to Poor Accrual
+Paclitaxel,DB01229,Urethral Carcinoma,C0700101,Terminated,Phase 2,Permanently Closed Due to Poor Accrual
+Amifostine,DB01143,Oral Complication,C3898092,Terminated,Phase 2,low accrual
+Amifostine,DB01143,Radiation Sickness,C1510432,Terminated,Phase 2,low accrual
+Celecoxib,DB00482,Precancerous Conditions,C0032927,Withdrawn,Phase 2/Phase 3,
+Doxorubicin,DB00997,Primary Systemic Amyloidosis,C0281479,Terminated,Phase 1,Administratively complete.
+Pentostatin,DB00552,Acute GVH disease,C0856825,Terminated,Phase 1/Phase 2,
+Celecoxib,DB00482,Adenomatous Polyposis Coli,C0032580,Terminated,Phase 2,Slow recruitment.
+Eflornithine,DB06243,Adenomatous Polyposis Coli,C0032580,Terminated,Phase 2,Slow recruitment.
+Pegfilgrastim,DB00019,Hemoglobinopathies,C0019045,Terminated,Phase 2,
+Pegfilgrastim,DB00019,Thalassemia,C0039730,Terminated,Phase 2,
+Isotretinoin,DB00982,Hematologic Neoplasms,C0376545,Terminated,Phase 2,
+Docetaxel,DB01248,thorax/respiratory cancer,C0279170,Withdrawn,Phase 3,The study was not activated.
+Docetaxel,DB01248,adult solid tumor,C0280099,Withdrawn,Phase 3,The study was not activated.
+Docetaxel,DB01248,kidney/urinary cancer,C0279521,Withdrawn,Phase 3,The study was not activated.
+Docetaxel,DB01248,male reproductive cancer,C0699888,Withdrawn,Phase 3,The study was not activated.
+Nitric Oxide,DB00435,Hypoxemia,C0700292,Terminated,Phase 1/Phase 2,slow enrollment
+Nitric Oxide,DB00435,"Acidosis, Respiratory",C0001127,Terminated,Phase 1/Phase 2,slow enrollment
+Nitric Oxide,DB00435,Anoxemia,C0003129,Terminated,Phase 3,Study stopped due to poor enrollment
+Decitabine,DB01262,"Leukemia, Myeloid, Chronic, Atypical, BCR-ABL Negative",C1292772,Terminated,Phase 1,
+Alemtuzumab,DB00087,Graft failure,C1262018,Terminated,Phase 1/Phase 2,
+Erlotinib,DB00530,adult primary hepatocellular carcinoma,C0279607,Terminated,Phase 2,Administratively complete.
+Erlotinib,DB00530,advanced adult primary liver cancer,C0278774,Terminated,Phase 2,Administratively complete.
+Erlotinib,DB00530,localized unresectable adult primary liver cancer,C0278773,Terminated,Phase 2,Administratively complete.
+Micafungin,DB01141,Invasive Fungal Infections,C1262313,Terminated,Phase 3,Inadequate enrollment
+Verteporfin,DB00460,Basal Cell Nevus Syndrome,C0004779,Terminated,Phase 3,
+Aldesleukin,DB00041,childhood chronic myelogenous leukemia,C1327920,Terminated,Phase 1/Phase 2,
+Aldesleukin,DB00041,Childhood myelodysplastic syndrome,C2347761,Terminated,Phase 1/Phase 2,
+Aldesleukin,DB00041,recurrent childhood acute myeloid leukemia,C0278776,Terminated,Phase 1/Phase 2,
+Aldesleukin,DB00041,Cutaneous T-cell lymphoma stage I,C0278566,Terminated,Phase 1/Phase 2,Administratively complete.
+Aldesleukin,DB00041,Mycosis fungoides/Sezary syndrome stage I,C0862211,Terminated,Phase 1/Phase 2,Administratively complete.
+Aldesleukin,DB00041,Cutaneous T-cell lymphoma stage II,C0278568,Terminated,Phase 1/Phase 2,Administratively complete.
+Aldesleukin,DB00041,Mycosis fungoides/Sezary syndrome stage II,C0862216,Terminated,Phase 1/Phase 2,Administratively complete.
+Aldesleukin,DB00041,Cutaneous T-cell lymphoma stage III,C0278570,Terminated,Phase 1/Phase 2,Administratively complete.
+Aldesleukin,DB00041,Mycosis fungoides/Sezary syndrome stage III,C0862221,Terminated,Phase 1/Phase 2,Administratively complete.
+Aldesleukin,DB00041,Cutaneous T-cell lymphoma stage IV,C0278572,Terminated,Phase 1/Phase 2,Administratively complete.
+Aldesleukin,DB00041,Mycosis fungoides/Sezary syndrome stage IV,C0862226,Terminated,Phase 1/Phase 2,Administratively complete.
+Azathioprine,DB00993,Pulmonary Fibrosis,C0034069,Terminated,Phase 3,Study design changes were needed based on GIPF-001 results
+Aldesleukin,DB00041,Neuroblastoma recurrent,C0278695,Terminated,Phase 1,Administratively complete.
+Gemcitabine,DB00441,stage IV adult Hodgkin's lymphoma,C0278473,Terminated,Phase 1,Administratively complete.
+Gemcitabine,DB00441,stage IV adult immunoblastic large cell lymphoma,C0280177,Terminated,Phase 1,Administratively complete.
+Gemcitabine,DB00441,stage IV adult lymphoblastic lymphoma,C0280178,Terminated,Phase 1,Administratively complete.
+Gemcitabine,DB00441,Adult T-cell lymphoma/leukaemia stage IV,C0280426,Terminated,Phase 1,Administratively complete.
+Gemcitabine,DB00441,Cutaneous T-cell lymphoma stage IV,C0278572,Terminated,Phase 1,Administratively complete.
+Gemcitabine,DB00441,stage IV adult diffuse small cleaved cell lymphoma,C0280173,Terminated,Phase 1,Administratively complete.
+Gemcitabine,DB00441,stage IV adult diffuse mixed cell lymphoma,C0280174,Terminated,Phase 1,Administratively complete.
+Gemcitabine,DB00441,stage IV grade 1 follicular lymphoma,C0280169,Terminated,Phase 1,Administratively complete.
+Gemcitabine,DB00441,stage IV grade 2 follicular lymphoma,C0280170,Terminated,Phase 1,Administratively complete.
+Gemcitabine,DB00441,stage IV grade 3 follicular lymphoma,C0280172,Terminated,Phase 1,Administratively complete.
+Gemcitabine,DB00441,Mantle cell lymphoma stage IV,C0677721,Terminated,Phase 1,Administratively complete.
+Gemcitabine,DB00441,Marginal zone lymphoma stage IV,C1541270,Terminated,Phase 1,Administratively complete.
+Rituximab,DB00073,"Lymphoma, Mixed-Cell, Follicular",C0079758,Terminated,Phase 3,
+Arsenic trioxide,DB01169,Esophageal neoplasm metastatic,C0278562,Terminated,Phase 2,Administratively complete.
+Nitric Oxide,DB00435,Reperfusion Injury,C0035126,Terminated,Phase 3,Slow Enrollment
+Treprostinil,DB00374,Critical limb ischemia,C1142264,Terminated,Phase 3,
+Treprostinil,DB00374,Foot Ulcer,C0085119,Terminated,Phase 3,
+Cisplatin,DB00515,diffuse adenocarcinoma of the stomach,C0279635,Terminated,Phase 1/Phase 2,Discontinued development of G3139 (oblimersen)
+Fluorouracil,DB00544,diffuse adenocarcinoma of the stomach,C0279635,Terminated,Phase 1/Phase 2,Discontinued development of G3139 (oblimersen)
+Cisplatin,DB00515,intestinal adenocarcinoma of the stomach,C0279633,Terminated,Phase 1/Phase 2,Discontinued development of G3139 (oblimersen)
+Fluorouracil,DB00544,intestinal adenocarcinoma of the stomach,C0279633,Terminated,Phase 1/Phase 2,Discontinued development of G3139 (oblimersen)
+Cisplatin,DB00515,mixed adenocarcinoma of the stomach,C0279638,Terminated,Phase 1/Phase 2,Discontinued development of G3139 (oblimersen)
+Fluorouracil,DB00544,mixed adenocarcinoma of the stomach,C0279638,Terminated,Phase 1/Phase 2,Discontinued development of G3139 (oblimersen)
+Cisplatin,DB00515,Oesophageal carcinoma recurrent,C0854761,Terminated,Phase 1/Phase 2,Discontinued development of G3139 (oblimersen)
+Fluorouracil,DB00544,Oesophageal carcinoma recurrent,C0854761,Terminated,Phase 1/Phase 2,Discontinued development of G3139 (oblimersen)
+Cisplatin,DB00515,recurrent gastric cancer,C0278502,Terminated,Phase 1/Phase 2,Discontinued development of G3139 (oblimersen)
+Fluorouracil,DB00544,recurrent gastric cancer,C0278502,Terminated,Phase 1/Phase 2,Discontinued development of G3139 (oblimersen)
+Cisplatin,DB00515,Squamous cell carcinoma of esophagus,C0279626,Terminated,Phase 1/Phase 2,Discontinued development of G3139 (oblimersen)
+Fluorouracil,DB00544,Squamous cell carcinoma of esophagus,C0279626,Terminated,Phase 1/Phase 2,Discontinued development of G3139 (oblimersen)
+Cisplatin,DB00515,Stage IIIC Gastric Cancer,C2981365,Terminated,Phase 1/Phase 2,Discontinued development of G3139 (oblimersen)
+Fluorouracil,DB00544,Stage IIIC Gastric Cancer,C2981365,Terminated,Phase 1/Phase 2,Discontinued development of G3139 (oblimersen)
+Cisplatin,DB00515,Esophageal neoplasm metastatic,C0278562,Terminated,Phase 1/Phase 2,Discontinued development of G3139 (oblimersen)
+Fluorouracil,DB00544,Esophageal neoplasm metastatic,C0278562,Terminated,Phase 1/Phase 2,Discontinued development of G3139 (oblimersen)
+Modafinil,DB00745,Postpoliomyelitis Syndrome,C0080040,Terminated,Phase 3,
+Armodafinil,DB06413,Postpoliomyelitis Syndrome,C0080040,Terminated,Phase 3,
+Chlorhexidine,DB00878,Dental caries,C0011334,Terminated,Phase 3,Unable to recruit sufficient number of subjects
+Amphetamine,DB00182,Neurotoxicity Syndromes,C0235032,Terminated,Phase 2,Only 12 subjects enrolled. DSMB recommended closing due to lack of feasibility
+Methylphenidate,DB00422,Neurotoxicity Syndromes,C0235032,Terminated,Phase 2,Only 12 subjects enrolled. DSMB recommended closing due to lack of feasibility
+Romidepsin,DB06176,Renal Pelvis and Ureter Urothelial Carcinoma,C0220648,Terminated,Phase 2,Permanently Closed Due to Poor Accrual
+Romidepsin,DB06176,Urethral Carcinoma,C0700101,Terminated,Phase 2,Permanently Closed Due to Poor Accrual
+Erlotinib,DB00530,Stage IA Non-Small Cell Lung Carcinoma,C1336119,Terminated,Phase 2,
+Erlotinib,DB00530,Stage IB Non-Small Cell Lung Carcinoma,C1336139,Terminated,Phase 2,
+Erlotinib,DB00530,Stage IIA Non-Small Cell Lung Carcinoma,C1336167,Terminated,Phase 2,
+Triptorelin,DB06825,Drug toxicity,C0013221,Terminated,Phase 2,Early closure due to low accrual
+Fluorouracil,DB00544,Biliary Tract Cancer,C0750952,Terminated,Phase 3,Futility reasons after Independent Data Monitoring Committee interim analysis
+Capsaicin,DB06774,Peripheral Neuropathy,C0031117,Terminated,Phase 3,Terminated in view of the C107 findings demonstrating efficacy at doses of 90 and 30 minutes
+Gefitinib,DB00317,Recurrent Head and Neck Carcinoma,C1335703,Terminated,Phase 3,It was unlikely that the primary endpoint would be reached based on the fifth interim analysis
+Docetaxel,DB01248,Recurrent Head and Neck Carcinoma,C1335703,Terminated,Phase 3,It was unlikely that the primary endpoint would be reached based on the fifth interim analysis
+Gefitinib,DB00317,Head and neck cancer metastatic,C0744619,Terminated,Phase 3,It was unlikely that the primary endpoint would be reached based on the fifth interim analysis
+Docetaxel,DB01248,Head and neck cancer metastatic,C0744619,Terminated,Phase 3,It was unlikely that the primary endpoint would be reached based on the fifth interim analysis
+Metronidazole,DB00916,Small cell lung cancer extensive stage,C0278726,Terminated,Phase 1,
+Docetaxel,DB01248,Small cell lung cancer extensive stage,C0278726,Terminated,Phase 1,
+Metronidazole,DB00916,Small cell lung cancer recurrent,C0278727,Terminated,Phase 1,
+Docetaxel,DB01248,Small cell lung cancer recurrent,C0278727,Terminated,Phase 1,
+Romidepsin,DB06176,Glucagonoma,C0017689,Terminated,Phase 2,
+Romidepsin,DB06176,insulinoma,C0021670,Terminated,Phase 2,
+Romidepsin,DB06176,pancreatic polypeptide tumor,C1882278,Terminated,Phase 2,
+Romidepsin,DB06176,Carcinoid tumor of lung,C0280089,Terminated,Phase 2,
+Romidepsin,DB06176,recurrent gastrointestinal carcinoid tumor,C0278750,Terminated,Phase 2,
+Romidepsin,DB06176,recurrent islet cell carcinoma,C0278843,Terminated,Phase 2,
+Romidepsin,DB06176,regional gastrointestinal carcinoid tumor,C0278748,Terminated,Phase 2,
+Valsartan,DB00177,Kidney Diseases,C0022658,Withdrawn,Phase 3,
+Capsaicin,DB06774,Diabetic Neuropathies,C0011882,Terminated,Phase 2,
+Capsaicin,DB06774,Polyneuropathy,C0152025,Terminated,Phase 2,
+Capsaicin,DB06774,Peripheral Neuropathy,C0031117,Terminated,Phase 2,
+Doxorubicin,DB00997,stage I adult soft tissue sarcoma,C0278661,Terminated,Phase 2,
+Thalidomide,DB01041,stage I adult soft tissue sarcoma,C0278661,Terminated,Phase 2,
+Ifosfamide,DB01181,stage I adult soft tissue sarcoma,C0278661,Terminated,Phase 2,
+Doxorubicin,DB00997,stage II adult soft tissue sarcoma,C0278662,Terminated,Phase 2,
+Thalidomide,DB01041,stage II adult soft tissue sarcoma,C0278662,Terminated,Phase 2,
+Ifosfamide,DB01181,stage II adult soft tissue sarcoma,C0278662,Terminated,Phase 2,
+Vitamin C,DB00126,refractory plasma cell neoplasm,C0278620,Withdrawn,Phase 2,
+Melphalan,DB01042,refractory plasma cell neoplasm,C0278620,Withdrawn,Phase 2,
+Arsenic trioxide,DB01169,refractory plasma cell neoplasm,C0278620,Withdrawn,Phase 2,
+Rituximab,DB00073,Lymphoproliferative Disorders,C0024314,Terminated,Phase 1,Lack of Accrual
+Vancomycin,DB00512,Gram-Positive Bacterial Infections,C0085426,Terminated,Phase 3,See Detailed Description
+Linezolid,DB00601,Gram-Positive Bacterial Infections,C0085426,Terminated,Phase 3,See Detailed Description
+Cefazolin,DB01327,Gram-Positive Bacterial Infections,C0085426,Terminated,Phase 3,See Detailed Description
+Lenalidomide,DB00480,Reflex Sympathetic Dystrophy,C0034931,Terminated,Phase 2,Interim analysis showed the primary outcome was not reached
+Thalidomide,DB01041,Reflex Sympathetic Dystrophy,C0034931,Terminated,Phase 2,Interim analysis showed the primary outcome was not reached
+Lopinavir,DB01601,Human immunodeficiency virus I infection,C0276500,Terminated,Phase 2,
+Ezetimibe,DB00973,"Lipid Metabolism, Inborn Errors",C0023772,Terminated,Phase 3,
+Erlotinib,DB00530,Metastatic malignant neoplasm to brain,C0220650,Terminated,Phase 3,
+Temozolomide,DB00853,Metastatic malignant neoplasm to brain,C0220650,Terminated,Phase 3,
+Bortezomib,DB00188,adult grade III lymphomatoid granulomatosis,C1541468,Terminated,Phase 1,
+Bortezomib,DB00188,stage III adult Burkitt's lymphoma,C0280166,Terminated,Phase 1,
+Bortezomib,DB00188,stage III adult diffuse mixed cell lymphoma,C0280161,Terminated,Phase 1,
+Bortezomib,DB00188,stage III adult diffuse small cleaved cell lymphoma,C0280160,Terminated,Phase 1,
+Bortezomib,DB00188,stage III adult Hodgkin's lymphoma,C0278472,Terminated,Phase 1,
+Bortezomib,DB00188,stage III adult immunoblastic large cell lymphoma,C0280164,Terminated,Phase 1,
+Bortezomib,DB00188,stage III adult lymphoblastic lymphoma,C0280165,Terminated,Phase 1,
+Bortezomib,DB00188,Adult T-cell lymphoma/leukaemia stage III,C0280425,Terminated,Phase 1,
+Bortezomib,DB00188,Cutaneous T-cell lymphoma stage III,C0278570,Terminated,Phase 1,
+Bortezomib,DB00188,stage III grade 1 follicular lymphoma,C0280156,Terminated,Phase 1,
+Bortezomib,DB00188,stage III grade 2 follicular lymphoma,C0280157,Terminated,Phase 1,
+Bortezomib,DB00188,stage III grade 3 follicular lymphoma,C0280159,Terminated,Phase 1,
+Bortezomib,DB00188,Mantle cell lymphoma stage III,C0677714,Terminated,Phase 1,
+Bortezomib,DB00188,Marginal zone lymphoma stage III,C1541269,Terminated,Phase 1,
+Bortezomib,DB00188,Mycosis fungoides/Sezary syndrome stage III,C0862221,Terminated,Phase 1,
+Bortezomib,DB00188,stage IV adult diffuse mixed cell lymphoma,C0280174,Terminated,Phase 1,
+Bortezomib,DB00188,stage IV adult diffuse small cleaved cell lymphoma,C0280173,Terminated,Phase 1,
+Bortezomib,DB00188,stage IV adult Hodgkin's lymphoma,C0278473,Terminated,Phase 1,
+Bortezomib,DB00188,stage IV adult immunoblastic large cell lymphoma,C0280177,Terminated,Phase 1,
+Bortezomib,DB00188,stage IV adult lymphoblastic lymphoma,C0280178,Terminated,Phase 1,
+Bortezomib,DB00188,Adult T-cell lymphoma/leukaemia stage IV,C0280426,Terminated,Phase 1,
+Bortezomib,DB00188,Cutaneous T-cell lymphoma stage IV,C0278572,Terminated,Phase 1,
+Bortezomib,DB00188,AIDS-related peripheral/systemic lymphoma,C0281240,Terminated,Phase 1,
+Bortezomib,DB00188,stage IV grade 1 follicular lymphoma,C0280169,Terminated,Phase 1,
+Bortezomib,DB00188,stage IV grade 2 follicular lymphoma,C0280170,Terminated,Phase 1,
+Bortezomib,DB00188,stage IV grade 3 follicular lymphoma,C0280172,Terminated,Phase 1,
+Bortezomib,DB00188,Mantle cell lymphoma stage IV,C0677721,Terminated,Phase 1,
+Bortezomib,DB00188,Marginal zone lymphoma stage IV,C1541270,Terminated,Phase 1,
+Bortezomib,DB00188,Mycosis fungoides/Sezary syndrome stage IV,C0862226,Terminated,Phase 1,
+Sorafenib,DB00398,insular thyroid cancer,C1134506,Terminated,Phase 2,
+Nicotinamide,DB02701,insular thyroid cancer,C1134506,Terminated,Phase 2,
+Sorafenib,DB00398,stage III follicular thyroid cancer,C0279178,Terminated,Phase 2,
+Nicotinamide,DB02701,stage III follicular thyroid cancer,C0279178,Terminated,Phase 2,
+Sorafenib,DB00398,stage III papillary thyroid cancer,C0279179,Terminated,Phase 2,
+Nicotinamide,DB02701,stage III papillary thyroid cancer,C0279179,Terminated,Phase 2,
+Sorafenib,DB00398,stage IV follicular thyroid cancer,C0278854,Terminated,Phase 2,
+Nicotinamide,DB02701,stage IV follicular thyroid cancer,C0278854,Terminated,Phase 2,
+Sorafenib,DB00398,Metastatic papillary thyroid carcinoma,C0278851,Terminated,Phase 2,
+Nicotinamide,DB02701,Metastatic papillary thyroid carcinoma,C0278851,Terminated,Phase 2,
+Venlafaxine,DB00285,Anxiety Disorders,C0003469,Terminated,Phase 2,European reports of liver toxicity from kava meant that the study had to stop
+Metronidazole,DB00916,Bladder Adenocarcinoma,C0279682,Terminated,Phase 1,
+Metronidazole,DB00916,Bladder Squamous Cell Carcinoma,C0279681,Terminated,Phase 1,
+Metronidazole,DB00916,Transitional cell carcinoma of bladder,C0279680,Terminated,Phase 1,
+Metronidazole,DB00916,Bladder cancer recurrent,C0278827,Terminated,Phase 1,
+Metronidazole,DB00916,Bladder cancer stage II,C0278823,Terminated,Phase 1,
+Infliximab,DB00065,Giant Cell Arteritis,C0039483,Terminated,Phase 2,"Interim analysis, infliximab did not reduce number of first relapses in GCA or cumulative"
+Abciximab,DB00054,Brain Ischemia,C0007786,Terminated,Phase 3,"Based on the data and observed benefit-risk profile, the trial's independent oversight"
+Abciximab,DB00054,Acute Disease,C0001314,Terminated,Phase 3,"Based on the data and observed benefit-risk profile, the trial's independent oversight"
+Celecoxib,DB00482,High-Grade Squamous Intraepithelial Lesions,C0333875,Withdrawn,Phase 2,drug issues
+Thalidomide,DB01041,Stomatitis,C0038362,Terminated,Phase 2,unable to enroll adequate subjects
+Bortezomib,DB00188,Bronchioloalveolar Adenocarcinoma,C0007120,Terminated,Phase 2,insufficient efficacy
+Tacrolimus,DB00864,Graft-vs-Host Disease,C0018133,Terminated,Phase 2/Phase 3,safety reasons
+Sirolimus,DB00877,Graft-vs-Host Disease,C0018133,Terminated,Phase 2/Phase 3,safety reasons
+Everolimus,DB01590,Graft-vs-Host Disease,C0018133,Terminated,Phase 2/Phase 3,safety reasons
+Bevacizumab,DB00112,childhood acute basophilic leukemia,C0279649,Terminated,Phase 2,Administratively complete.
+Cytarabine,DB00987,childhood acute basophilic leukemia,C0279649,Terminated,Phase 2,Administratively complete.
+Idarubicin,DB01177,childhood acute basophilic leukemia,C0279649,Terminated,Phase 2,Administratively complete.
+Bevacizumab,DB00112,childhood acute eosinophilic leukemia,C0279648,Terminated,Phase 2,Administratively complete.
+Cytarabine,DB00987,childhood acute eosinophilic leukemia,C0279648,Terminated,Phase 2,Administratively complete.
+Idarubicin,DB01177,childhood acute eosinophilic leukemia,C0279648,Terminated,Phase 2,Administratively complete.
+Bevacizumab,DB00112,childhood acute erythroleukemia (M6),C0279647,Terminated,Phase 2,Administratively complete.
+Cytarabine,DB00987,childhood acute erythroleukemia (M6),C0279647,Terminated,Phase 2,Administratively complete.
+Idarubicin,DB01177,childhood acute erythroleukemia (M6),C0279647,Terminated,Phase 2,Administratively complete.
+Bevacizumab,DB00112,childhood acute megakaryocytic leukemia (M7),C0279650,Terminated,Phase 2,Administratively complete.
+Cytarabine,DB00987,childhood acute megakaryocytic leukemia (M7),C0279650,Terminated,Phase 2,Administratively complete.
+Idarubicin,DB01177,childhood acute megakaryocytic leukemia (M7),C0279650,Terminated,Phase 2,Administratively complete.
+Bevacizumab,DB00112,childhood acute myeloblastic leukemia with maturation (M2),C0279636,Terminated,Phase 2,Administratively complete.
+Cytarabine,DB00987,childhood acute myeloblastic leukemia with maturation (M2),C0279636,Terminated,Phase 2,Administratively complete.
+Idarubicin,DB01177,childhood acute myeloblastic leukemia with maturation (M2),C0279636,Terminated,Phase 2,Administratively complete.
+Bevacizumab,DB00112,childhood acute myeloblastic leukemia without maturation (M1),C0279634,Terminated,Phase 2,Administratively complete.
+Cytarabine,DB00987,childhood acute myeloblastic leukemia without maturation (M1),C0279634,Terminated,Phase 2,Administratively complete.
+Idarubicin,DB01177,childhood acute myeloblastic leukemia without maturation (M1),C0279634,Terminated,Phase 2,Administratively complete.
+Bevacizumab,DB00112,childhood acute myelomonocytic leukemia (M4),C0279644,Terminated,Phase 2,Administratively complete.
+Cytarabine,DB00987,childhood acute myelomonocytic leukemia (M4),C0279644,Terminated,Phase 2,Administratively complete.
+Idarubicin,DB01177,childhood acute myelomonocytic leukemia (M4),C0279644,Terminated,Phase 2,Administratively complete.
+Bevacizumab,DB00112,untreated childhood acute myeloid leukemia and other myeloid malignancies,C0279090,Terminated,Phase 2,Administratively complete.
+Cytarabine,DB00987,untreated childhood acute myeloid leukemia and other myeloid malignancies,C0279090,Terminated,Phase 2,Administratively complete.
+Idarubicin,DB01177,untreated childhood acute myeloid leukemia and other myeloid malignancies,C0279090,Terminated,Phase 2,Administratively complete.
+Cidofovir,DB00369,BK virus nephropathy,C1697878,Terminated,Phase 1/Phase 2,
+Sildenafil,DB00203,Pre-Eclampsia,C0032914,Terminated,Phase 2,Study prematurely discont’d 20-Apr-2006 after interim analysis suggested sample size could be
+Alefacept,DB00092,Lichen Planus,C0023646,Terminated,Phase 2,Pharmaceutical sponsor withdrew financial support.
+Pioglitazone,DB01132,HIV-Associated Lipodystrophy Syndrome,C1136321,Terminated,Phase 3,
+Memantine,DB01043,Chronic schizophrenia,C0221765,Terminated,Phase 3,
+Clonidine,DB00575,Treatment related secondary malignancy,C0877578,Withdrawn,Phase 1/Phase 2,Study was never initiated
+Octreotide,DB00104,Proliferative diabetic retinopathy,C0154830,Terminated,Phase 3,"trial stopped on Sept 24, 2007"
+Oxaliplatin,DB00526,Colonic Neoplasms,C0009375,Terminated,Phase 2,
+Irinotecan,DB00762,Colonic Neoplasms,C0009375,Terminated,Phase 2,
+Oxaliplatin,DB00526,Rectal Neoplasms,C0034885,Terminated,Phase 2,
+Irinotecan,DB00762,Rectal Neoplasms,C0034885,Terminated,Phase 2,
+Oxaliplatin,DB00526,Appendiceal Neoplasms,C0003614,Terminated,Phase 2,
+Irinotecan,DB00762,Appendiceal Neoplasms,C0003614,Terminated,Phase 2,
+Oxaliplatin,DB00526,Peritoneal Neoplasms,C0031149,Terminated,Phase 2,
+Irinotecan,DB00762,Peritoneal Neoplasms,C0031149,Terminated,Phase 2,
+Oxaliplatin,DB00526,Endocrine Gland Neoplasms,C0014132,Terminated,Phase 2,
+Irinotecan,DB00762,Endocrine Gland Neoplasms,C0014132,Terminated,Phase 2,
+Rituximab,DB00073,Primary Effusion Lymphoma,C1292753,Terminated,Phase 2,Insufficient Accrual
+Doxorubicin,DB00997,Primary Effusion Lymphoma,C1292753,Terminated,Phase 2,Insufficient Accrual
+Simvastatin,DB00641,Coronary Artery Disease,C1956346,Terminated,Phase 1,Unable to enroll subjects
+Sertraline,DB01104,Coronary Artery Disease,C1956346,Terminated,Phase 1,Unable to enroll subjects
+Erythropoietin,DB00016,Malignant neoplasm of gastrointestinal tract,C0685938,Terminated,Phase 3,
+Pentoxifylline,DB00806,"Hepatitis, Alcoholic",C0019187,Terminated,Phase 1,lack of funding
+Salicylic acid,DB00936,Adenomatous polyp of colon,C0850572,Terminated,Phase 3,
+Acetylsalicylic acid,DB00945,Adenomatous polyp of colon,C0850572,Terminated,Phase 3,
+Rituximab,DB00073,"Purpura, Thrombotic Thrombocytopenic",C0034155,Withdrawn,Phase 1/Phase 2,
+Nandrolone phenpropionate,DB00984,Malnutrition,C0162429,Terminated,Phase 2,drug no longer available in canada
+Nandrolone decanoate,DB08804,Malnutrition,C0162429,Terminated,Phase 2,drug no longer available in canada
+Nandrolone phenpropionate,DB00984,Critical Illness,C0010340,Terminated,Phase 2,drug no longer available in canada
+Nandrolone decanoate,DB08804,Critical Illness,C0010340,Terminated,Phase 2,drug no longer available in canada
+Rituximab,DB00073,Immune thrombocytopenic purpura,C0398650,Terminated,Phase 2,
+Methylphenidate,DB00422,Asthenia,C0004093,Terminated,Phase 3,difficulty of recrutement
+Arsenic trioxide,DB01169,MYELODYSPLASTIC SYNDROME,C3463824,Terminated,Phase 2,terminated due to lack of accrual.
+Erythropoietin,DB00016,Chemotherapy-induced peripheral neuropathy,C3873567,Terminated,Phase 2,Slow enrollment
+Diclofenac,DB00586,Non-cyclical mastalgia,C0405473,Terminated,Phase 2/Phase 3,"Lack of funds; FDA approved a topical form of diclofenac during study, no need to continue"
+Octreotide,DB00104,Diabetic Retinopathy,C0011884,Terminated,Phase 3,Inconsistent treatment benefit
+Bupropion,DB01156,Tobacco Dependence,C0040332,Terminated,Phase 2/Phase 3,PI left NIH
+Toremifene,DB00539,"Neoplasms, Hormone-Dependent",C0027661,Terminated,Phase 3,This was a follow-on study to Biomed 777-CLP-029 which did not meet superiority endpoint
+Letrozole,DB01006,"Neoplasms, Hormone-Dependent",C0027661,Terminated,Phase 3,This was a follow-on study to Biomed 777-CLP-029 which did not meet superiority endpoint
+Pemetrexed,DB00642,Lung Neoplasms,C0024121,Terminated,Phase 3,FDA Hold May 2007
+Labetalol,DB00598,Pregnancy associated hypertension,C0852036,Suspended,Phase 2/Phase 3,Lack of funding
+Magnesium Sulfate,DB00653,Pregnancy associated hypertension,C0852036,Suspended,Phase 2/Phase 3,Lack of funding
+Labetalol,DB00598,hypertension chronic,C0745114,Suspended,Phase 2/Phase 3,Lack of funding
+Magnesium Sulfate,DB00653,hypertension chronic,C0745114,Suspended,Phase 2/Phase 3,Lack of funding
+Topiramate,DB00273,Metabolic Syndrome X,C0524620,Suspended,Phase 3,Study was discontinued because of high drop out rate.
+Methamphetamine,DB01577,Sexually Transmitted Diseases,C0036916,Terminated,Phase 1,Slow enrollment
+Lidocaine,DB00281,Carpal Tunnel Syndrome,C0007286,Terminated,Phase 3,Sponsor decision
+Cyclosporine,DB00091,"Leukemia, Large Granular Lymphocytic",C1522378,Terminated,Phase 2,Study terminated due to low accrual and the investigator left the NIH.
+Micafungin,DB01141,invasive aspergillosis,C0238013,Terminated,Phase 2,Study was stopped due to difficulties in recruitment and changes in standard care for invasive
+Infliximab,DB00065,Toxic Epidermal Necrolysis,C0014518,Withdrawn,Phase 2,slow enrollment
+Peginterferon alfa-2b,DB00022,Liver Cirrhosis,C0023890,Withdrawn,Phase 3,Non-protocol feasibility
+Nitazoxanide,DB00507,Clostridium difficile infection,C0343386,Terminated,Phase 3,Study was terminated early due to slow recruitment.
+Vancomycin,DB00512,Clostridium difficile infection,C0343386,Terminated,Phase 3,Study was terminated early due to slow recruitment.
+Nitazoxanide,DB00507,Clostridium Infections,C0009062,Terminated,Phase 3,Study was terminated early due to slow recruitment.
+Vancomycin,DB00512,Clostridium Infections,C0009062,Terminated,Phase 3,Study was terminated early due to slow recruitment.
+Mitomycin,DB00305,Urinary Bladder Diseases,C0005686,Terminated,Phase 3,slow accrual
+Mitomycin,DB00305,Malignant neoplasm of urinary bladder,C0005684,Terminated,Phase 3,slow accrual
+Mitomycin,DB00305,Urologic Diseases,C0042075,Terminated,Phase 3,slow accrual
+Mitomycin,DB00305,Urologic Neoplasms,C0042076,Terminated,Phase 3,slow accrual
+Teriparatide,DB06285,Myelofibrosis,C0026987,Terminated,Phase 2,Study stopped because of toxicity concerns.
+Valproic Acid,DB00313,Locally advanced breast cancer,C3495949,Terminated,Phase 2,
+Hydralazine,DB01275,Locally advanced breast cancer,C3495949,Terminated,Phase 2,
+Heparin,DB01109,Diabetic Angiopathies,C0011875,Terminated,Phase 2/Phase 3,
+Scopolamine,DB00747,Unipolar Depression,C0041696,Terminated,Phase 2,
+Bevacizumab,DB00112,Adenocarcinoma of lung (disorder),C0152013,Terminated,Phase 1,
+Carboplatin,DB00958,Adenocarcinoma of lung (disorder),C0152013,Terminated,Phase 1,
+Paclitaxel,DB01229,Adenocarcinoma of lung (disorder),C0152013,Terminated,Phase 1,
+Bevacizumab,DB00112,Large cell carcinoma of lung,C0345958,Terminated,Phase 1,
+Carboplatin,DB00958,Large cell carcinoma of lung,C0345958,Terminated,Phase 1,
+Paclitaxel,DB01229,Large cell carcinoma of lung,C0345958,Terminated,Phase 1,
+Bevacizumab,DB00112,Non-small cell lung cancer stage II,C0278505,Terminated,Phase 1,
+Carboplatin,DB00958,Non-small cell lung cancer stage II,C0278505,Terminated,Phase 1,
+Paclitaxel,DB01229,Non-small cell lung cancer stage II,C0278505,Terminated,Phase 1,
+Imatinib,DB00619,Choroidal retinal neovascularization,C0271066,Withdrawn,Phase 1,Lack of recruitment
+Imatinib,DB00619,Choroidal Neovascularization,C0600518,Withdrawn,Phase 1,Lack of recruitment
+Metoprolol,DB00264,Sudden Cardiac Death,C0085298,Terminated,Phase 2,Difficult accrual
+Metoprolol,DB00264,Ventricular Fibrillation,C0042510,Terminated,Phase 2,Difficult accrual
+Minocycline,DB01017,Carotid Stenosis,C0007282,Terminated,Phase 2,PI moved to a new facility
+Gabapentin,DB00996,Chronic intractable pain,C0476481,Terminated,Phase 2,Study closed and subject follow-up completed following analysis of blinded study data.
+Erlotinib,DB00530,adult brain tumor,C0220624,Terminated,Phase 2,Insufficient accrual of population likely to benefit; progression in 6 patients
+Fentanyl,DB00813,Breakthrough Pain,C1135120,Terminated,Phase 3,The sponsor felt enough information was available for the exploratory assessment of the effect
+Dacarbazine,DB00851,Mixed Oligodendroglioma-Astrocytoma,C0280793,Terminated,Phase 2,AOI Pharma terminated the license agreement. IND Transferred to NCI
+Temozolomide,DB00853,Mixed Oligodendroglioma-Astrocytoma,C0280793,Terminated,Phase 2,AOI Pharma terminated the license agreement. IND Transferred to NCI
+Sunitinib,DB01268,Acute Undifferentiated Leukemia,C0280141,Terminated,Phase 2,
+Sunitinib,DB01268,"Leukemia, Myeloid, Chronic, Atypical, BCR-ABL Negative",C1292772,Terminated,Phase 2,
+Sunitinib,DB01268,"Leukemia, Myelomonocytic, Chronic",C0023480,Terminated,Phase 2,
+Sunitinib,DB01268,"Leukemia, Mast-Cell",C0023461,Terminated,Phase 2,
+Sunitinib,DB01268,meningeal chronic myelogenous leukemia,C0279083,Terminated,Phase 2,
+Sunitinib,DB01268,Primary Myelofibrosis,C0001815,Terminated,Phase 2,
+Sunitinib,DB01268,"progressive hairy cell leukemia, initial treatment",C0279779,Terminated,Phase 2,
+Sunitinib,DB01268,Chronic lymphocytic leukaemia stage 1,C0278767,Terminated,Phase 2,
+Sunitinib,DB01268,Chronic lymphocytic leukaemia stage 2,C0854803,Terminated,Phase 2,
+Sunitinib,DB01268,untreated adult acute lymphoblastic leukemia,C0279088,Terminated,Phase 2,
+Sunitinib,DB01268,untreated hairy cell leukemia,C0279778,Terminated,Phase 2,
+Phenylephrine,DB00388,Fecal Incontinence,C0015732,Withdrawn,Phase 3,"Terminated, new protocol to be developed"
+Oxymetazoline,DB00935,Fecal Incontinence,C0015732,Withdrawn,Phase 3,"Terminated, new protocol to be developed"
+Losartan,DB00678,Prehypertension,C1696708,Terminated,Phase 2,"Few subjects recruited, sponsor withdrew support."
+Hydrochlorothiazide,DB00999,Prehypertension,C1696708,Terminated,Phase 2,"Few subjects recruited, sponsor withdrew support."
+Losartan,DB00678,Prediabetes syndrome,C0362046,Terminated,Phase 2,"Few subjects recruited, sponsor withdrew support."
+Hydrochlorothiazide,DB00999,Prediabetes syndrome,C0362046,Terminated,Phase 2,"Few subjects recruited, sponsor withdrew support."
+Gemcitabine,DB00441,cervical cancer,C4048328,Terminated,Phase 2,Problems of recruitment
+Lidocaine,DB00281,Overactive Bladder,C0878773,Terminated,Phase 3,Data collection complete; analysis to take place
+Salbutamol,DB01001,"Respiratory Distress Syndrome, Adult",C0035222,Terminated,Phase 2/Phase 3,Stopped for futility by DSMB
+Sunitinib,DB01268,Pancreatic Endocrine Carcinoma,C1328479,Terminated,Phase 3,Refer to Detailed Description.
+Sunitinib,DB01268,Pancreatic carcinoma,C0235974,Terminated,Phase 3,Refer to Detailed Description.
+Imatinib,DB00619,Malignant Peripheral Nerve Sheath Tumor,C0751690,Terminated,Phase 2/Phase 3,stopped due to slow recruitment and no effect
+Rituximab,DB00073,Churg-Strauss Syndrome,C0008728,Terminated,Phase 2,Company providing study drug terminated study due to lack of funds
+Sunitinib,DB01268,Recurrent disease,C0277556,Terminated,Phase 2,Too frequent grade 3-4 toxicities
+Sodium phenylbutyrate,DB06819,"Muscular Atrophy, Spinal, Type II",C0393538,Terminated,Phase 1/Phase 2,Due to poor compliance with study drug administration.
+Sodium phenylbutyrate,DB06819,Juvenile Spinal Muscular Atrophy,C0152109,Terminated,Phase 1/Phase 2,Due to poor compliance with study drug administration.
+Daptomycin,DB00080,Soft Tissue Infections,C0149778,Terminated,Phase 3,
+Vancomycin,DB00512,Soft Tissue Infections,C0149778,Terminated,Phase 3,
+Teicoplanin,DB06149,Soft Tissue Infections,C0149778,Terminated,Phase 3,
+Atorvastatin,DB01076,Venous Thromboembolism,C1861172,Terminated,Phase 2,Competitive trials and slow recruitment rate
+Ropivacaine,DB00296,Phantom Limb Syndrome,C0031315,Terminated,Phase 3,lack of patients
+Darbepoetin alfa,DB00012,Kidney Diseases,C0022658,Terminated,Phase 3,Study Terminated; Commitment met per Regulatory Authorities.
+Mycophenolate mofetil,DB00688,Painful Bladder Syndrome,C1720830,Terminated,Phase 3,The major and primary reason for the study termination is the observed reduced efficacy of
+Mycophenolic acid,DB01024,Painful Bladder Syndrome,C1720830,Terminated,Phase 3,The major and primary reason for the study termination is the observed reduced efficacy of
+,DB01024,Painful Bladder Syndrome,C1720830,Terminated,Phase 3,The major and primary reason for the study termination is the observed reduced efficacy of
+Dapsone,DB00250,Pemphigus Vulgaris,C0030809,Terminated,Phase 2,
+Hydroxyprogesterone caproate,DB06789,Premature Birth,C0151526,Terminated,Phase 3,Halted by NICHD after recommendation by DSMC to stop for futility
+Hydroxyprogesterone caproate,DB06789,transvaginal ultrasound: length of cervix,C2145605,Terminated,Phase 3,Halted by NICHD after recommendation by DSMC to stop for futility
+Lidocaine,DB00281,Vulvar Vestibulitis,C0269084,Terminated,Phase 2,lack of funding
+Erythropoietin,DB00016,Kidney Failure,C0035078,Terminated,Phase 3,The termination of the study is not linked to a product recall or result of any safety signal.
+Bevacizumab,DB00112,Esophageal Diseases,C0014852,Terminated,Phase 2,Slow accrual
+Erlotinib,DB00530,Esophageal Diseases,C0014852,Terminated,Phase 2,Slow accrual
+Flibanserin,DB04908,Psychosexual Disorders,C0033953,Terminated,Phase 3,terminated for administrative reasons
+Methamphetamine,DB01577,Substance Dependence,C0038580,Withdrawn,Phase 2,This study was withdrawn for lack of progress. No subjects were recruited.
+Sildenafil,DB00203,Coronary Artery Vasospasm,C0010073,Suspended,Phase 3,Patient study insurance expired
+Tolterodine,DB01036,Overactive Bladder,C0878773,Terminated,Phase 2,side effect profile did not match expectations
+Tolterodine,DB01036,Urinary Incontinence,C0042024,Terminated,Phase 2,side effect profile did not match expectations
+Sodium phenylbutyrate,DB06819,HMN (Hereditary Motor Neuropathy) Proximal Type I,C0043116,Terminated,Phase 1/Phase 2,Extremely slow enrollment
+Rituximab,DB00073,"Lymphoma, Diffuse",C3714542,Terminated,Phase 2,Accrual was too slow. Trial terminated
+Rimonabant,DB06155,Microalbuminuria,C0730345,Terminated,Phase 3,Company decision has been taken in light of recent demands by certain national health
+Gemcitabine,DB00441,Unknown Primary Tumors,C0087135,Withdrawn,Phase 2,never been started
+Cisplatin,DB00515,Unknown Primary Tumors,C0087135,Withdrawn,Phase 2,never been started
+Paclitaxel,DB01229,Unknown Primary Tumors,C0087135,Withdrawn,Phase 2,never been started
+Cyclosporine,DB00091,Corneal Diseases,C0010034,Terminated,Phase 3,The primary efficacy endpoint was not met
+Piracetam,DB09210,"Epilepsy, Post-Traumatic",C0014557,Terminated,Phase 3,Sponsor decision because of to small enrollment
+Levonorgestrel,DB00367,Hereditary Nonpolyposis Colorectal Cancer,C1333990,Terminated,Phase 3,Withdrawn due to poor accrual
+Norgestrel,DB09389,Hereditary Nonpolyposis Colorectal Cancer,C1333990,Terminated,Phase 3,Withdrawn due to poor accrual
+Cyclosporine,DB00091,Myeloid Leukemia,C0023470,Terminated,Phase 3,Poor accrual
+Mycophenolate mofetil,DB00688,Myeloid Leukemia,C0023470,Terminated,Phase 3,Poor accrual
+Mycophenolic acid,DB01024,Myeloid Leukemia,C0023470,Terminated,Phase 3,Poor accrual
+Omeprazole,DB00338,Laryngeal Diseases,C0023051,Withdrawn,Phase 3,The decision of terminate the study was reached due to difficulties surrounding recruitment
+Esomeprazole,DB00736,Laryngeal Diseases,C0023051,Withdrawn,Phase 3,The decision of terminate the study was reached due to difficulties surrounding recruitment
+Rituximab,DB00073,Chronic rejection of renal transplant,C0403592,Terminated,Phase 2,lacking recruitment
+Sunitinib,DB01268,Kaposi's sarcoma classical type,C0279084,Withdrawn,Phase 2,No participants enrolled.
+Ethanol,DB00898,Pancreatic Cyst,C0030283,Terminated,Phase 3,Inability to enroll subjects.
+Trastuzumab,DB00072,Advanced breast cancer,C3495917,Terminated,Phase 2,"change in development plan, not due to safety concerns."
+Nicotine,DB00184,Postoperative Nausea and Vomiting,C0520909,Terminated,Phase 2,Unexpected difficult recruitment. Study drug expired
+Sirolimus,DB00877,Hepatitis C recurrent,C2938989,Terminated,Phase 2,
+Everolimus,DB01590,Hepatitis C recurrent,C2938989,Terminated,Phase 2,
+Penicillamine,DB00859,Lead Poisoning,C0023176,Withdrawn,Phase 2/Phase 3,
+Cisplatin,DB00515,Primary peritoneal carcinoma,C1514428,Terminated,Phase 2,Study completed per investigator.
+Paclitaxel,DB01229,Primary peritoneal carcinoma,C1514428,Terminated,Phase 2,Study completed per investigator.
+Gemcitabine,DB00441,Pancreatic Neoplasm,C0030297,Terminated,Phase 3,Data Monitoring Committee concluded after a planned interim analysis that aflibercept added to
+Paclitaxel,DB01229,"Mammary Carcinoma, Human",C1257930,Terminated,Phase 1/Phase 2,Avastin approved for first-in-line treatment.
+Vancomycin,DB00512,"Pneumonia, Ventilator-Associated",C1701940,Terminated,Phase 2,Trial terminated due to financial resource limitations
+Milrinone,DB00235,Congenital Heart Defects,C0018798,Terminated,Phase 2,DSMB recommended termination based on interim outcomes analysis
+Nitric Oxide,DB00435,Varicose Ulcer,C0042344,Terminated,Phase 2,Strategic direction of the sponsor changed
+Progesterone,DB00396,Premature Birth,C0151526,Terminated,Phase 3,
+Tadalafil,DB00820,Priapism,C0033117,Terminated,Phase 2,
+Aminolevulinic acid,DB00855,"Leukoplakia, Oral",C0023532,Terminated,Phase 1,
+Dacarbazine,DB00851,"Carcinoma, Large Cell",C0206704,Terminated,Phase 2,
+Temozolomide,DB00853,"Carcinoma, Large Cell",C0206704,Terminated,Phase 2,
+Erythropoietin,DB00016,Brain Injuries,C0270611,Terminated,Phase 2,
+Erythropoietin,DB00016,Ventricular hemorrhage,C0240059,Terminated,Phase 2,
+Erythropoietin,DB00016,"Leukomalacia, Periventricular",C0023529,Terminated,Phase 2,
+Fluticasone Propionate,DB00588,Bronchiolitis,C0006271,Terminated,Phase 2,Terminated due to slow accrual.
+Lithium,DB01356,Canavan Disease,C0206307,Withdrawn,Phase 2,
+Lenalidomide,DB00480,T-Cell Lymphoma,C0079772,Terminated,Phase 2,Decision not to pursue as single agent in the study population.
+Thalidomide,DB01041,T-Cell Lymphoma,C0079772,Terminated,Phase 2,Decision not to pursue as single agent in the study population.
+Reboxetine,DB00234,Diabetic Neuropathies,C0011882,Terminated,Phase 2,Study was terminated for futility following the planned interim analysis.
+Cetuximab,DB00002,Esophageal carcinoma,C0152018,Withdrawn,Phase 2,lack of funding
+Bevacizumab,DB00112,Esophageal carcinoma,C0152018,Withdrawn,Phase 2,lack of funding
+Mesalazine,DB00244,Diverticulitis,C0012813,Terminated,Phase 3,
+Lovastatin,DB00227,Severe persistent asthma,C1960048,Withdrawn,Phase 1/Phase 2,Study never opened
+Nitroprusside,DB00325,Sarcopenia,C0872084,Terminated,Phase 1,
+Adalimumab,DB00051,Pyoderma Gangrenosum,C0085652,Withdrawn,Phase 2,Dr. Jorizzo has decided to withdraw from this study due to the time it is taking to get the
+Alfuzosin,DB00346,Bladder dysfunction,C0232841,Terminated,Phase 2/Phase 3,Lack of funding
+Pioglitazone,DB01132,Amyotrophic Lateral Sclerosis,C0002736,Terminated,Phase 2,The interim analysis showed no tendency in favour of the verum group. Therefore it was decided
+Pyrimethamine,DB00205,"Malaria, antepartum",C0747820,Terminated,Phase 3,"Malaria prev. fell in the study area, so we cannot evaluate the primary endpoint"
+Sulfadoxine,DB01299,"Malaria, antepartum",C0747820,Terminated,Phase 3,"Malaria prev. fell in the study area, so we cannot evaluate the primary endpoint"
+Treprostinil,DB00374,Hamman-Rich syndrome,C0085786,Terminated,Phase 2,Lack of enrollment to the trial. Very difficult population to recruit.
+Pemetrexed,DB00642,Primary central nervous system lymphoma,C0280803,Withdrawn,Phase 2,Lack of accrual
+Lenalidomide,DB00480,Adult T-Cell Lymphoma/Leukemia,C0023493,Terminated,Phase 0,Closed due to futility with only 1 patient accrued
+Thalidomide,DB01041,Adult T-Cell Lymphoma/Leukemia,C0023493,Terminated,Phase 0,Closed due to futility with only 1 patient accrued
+Aminolevulinic acid,DB00855,Cervical Intraepithelial Neoplasia,C0206708,Terminated,Phase 2,"Slow recruitment, study stopped with only 13 of 70 patients included in second part of the"
+Riboflavin,DB00140,progressive keratoconus,C2114756,Withdrawn,Phase 2/Phase 3,Investigator no longer at university
+Riboflavin,DB00140,Corneal ectasia,C0155135,Withdrawn,Phase 2/Phase 3,Investigator no longer at university
+Heparin,DB01109,Burn injury,C0006434,Withdrawn,Phase 2/Phase 3,
+Calfactant,DB06415,"Respiratory Distress Syndrome, Adult",C0035222,Terminated,Phase 3,Expected mortality rates in placebo and treatment groups lower than predicted
+Ethanol,DB00898,Pregnancy in Adolescence,C0032968,Terminated,Phase 0,This project was not a clinical trial requiring registration
+Mefloquine,DB00358,"Leukoencephalopathy, Progressive Multifocal",C0023524,Terminated,Phase 1/Phase 2,Primary endpoint not achieved
+Exemestane,DB00990,Advanced breast cancer,C3495917,Terminated,Phase 2,See termination reason in detailed description.
+Tenofovir,DB00300,Hepatitis B,C0019163,Terminated,Phase 3,
+,DB00300,Hepatitis B,C0019163,Terminated,Phase 3,
+Nitric Oxide,DB00435,MRSA - Methicillin resistant Staphylococcus aureus infection,C0343401,Terminated,Phase 2,Limited recruitment
+Nitric Oxide,DB00435,Chronic ulcer of lower extremity,C0263560,Terminated,Phase 2,Subject recuitment halted and won't resume; subjects are no longer being treated.
+Anidulafungin,DB00362,Fungemia,C0085082,Terminated,Phase 3,"The study was prematurely terminated on May 18, 2012 due to slow enrollment. The study was not"
+Caspofungin,DB00520,Fungemia,C0085082,Terminated,Phase 3,"The study was prematurely terminated on May 18, 2012 due to slow enrollment. The study was not"
+Budesonide,DB01222,Radiation proctitis,C0400827,Terminated,Phase 2,Study was prematurely stopped due to slow recruitment after 17 of 32 anticipated patients were
+Erlotinib,DB00530,Meningeal Carcinomatosis,C0220654,Terminated,Phase 2,low accrual rate
+Cycloserine,DB00260,Smoker,C0337664,Withdrawn,Phase 2,Study was not funded and pilot work proved impractical.
+Voriconazole,DB00582,invasive aspergillosis,C0238013,Terminated,Phase 3,"This protocol terminated prematurely on July 8, 2013 due to slow enrollment, not because of"
+Sevelamer,DB00658,Hyperphosphatemia (disorder),C0085681,Terminated,Phase 3,"After an extensive review,the ASPIRE in CKD study was terminated because it was not possible"
+Busulfan,DB01008,Refractory Brain Neoplasm,C2347923,Withdrawn,Phase 1,slow accrual
+Paroxetine,DB00715,Anxiety Disorders,C0003469,Terminated,Phase 3,Pfizer has terminated the execution of this protocol
+Amphotericin B,DB00681,"Meningitis, Cryptococcal",C0085436,Terminated,Phase 2,
+Flucytosine,DB01099,"Meningitis, Cryptococcal",C0085436,Terminated,Phase 2,
+Ampicillin,DB00415,Chorioamnionitis,C0008495,Suspended,Phase 2/Phase 3,We are currently performing and interim analysis for possible neonatal organism resistance to
+Sulbactam,DB09324,Chorioamnionitis,C0008495,Suspended,Phase 2/Phase 3,We are currently performing and interim analysis for possible neonatal organism resistance to
+Valsartan,DB00177,Oxidative Stress,C0242606,Terminated,Phase 3,insufficient enrollment and retention
+Ramipril,DB00178,Oxidative Stress,C0242606,Terminated,Phase 3,insufficient enrollment and retention
+Valsartan,DB00177,Endothelial dysfunction,C0856169,Terminated,Phase 3,insufficient enrollment and retention
+Ramipril,DB00178,Endothelial dysfunction,C0856169,Terminated,Phase 3,insufficient enrollment and retention
+Bevacizumab,DB00112,Biliary Tract Cancer,C0750952,Terminated,Phase 2,It was not possible to get insurance companies to cover bevacizumab.
+Pregabalin,DB00230,Spinal Cord Injuries,C0037929,Terminated,Phase 3,lack of funding and patients
+Pregabalin,DB00230,Orofacial Pain,C0178782,Terminated,Phase 2,difficulty to recruit patients
+Thiamine,DB00152,Hyperemesis Gravidarum,C0020450,Terminated,Phase 3,Difficulties in recruiting patients
+Promethazine,DB01069,Hyperemesis Gravidarum,C0020450,Terminated,Phase 3,Difficulties in recruiting patients
+Diphenhydramine,DB01075,Hyperemesis Gravidarum,C0020450,Terminated,Phase 3,Difficulties in recruiting patients
+Risperidone,DB00734,Bipolar I disorder,C0853193,Terminated,Phase 3,Slow Accrual
+Quetiapine,DB01224,Bipolar I disorder,C0853193,Terminated,Phase 3,Slow Accrual
+Aripiprazole,DB01238,Bipolar I disorder,C0853193,Terminated,Phase 3,Slow Accrual
+Pregabalin,DB00230,Vulvodynia,C0406670,Terminated,Phase 2,Not feasible due to low accrual
+Pregabalin,DB00230,Vulvar Vestibulitis,C0269084,Terminated,Phase 2,Not feasible due to low accrual
+Temozolomide,DB00853,Mixed Oligodendroglioma-Astrocytoma,C0280793,Terminated,Phase 3,Difficulty in recruiting patients
+Mifepristone,DB00834,"Affective Disorders, Psychotic",C0001723,Terminated,Phase 3,
+Rituximab,DB00073,Lymphoproliferative Disorders,C0024314,Terminated,Phase 2,Funding unavailable
+Bortezomib,DB00188,Lymphoproliferative Disorders,C0024314,Terminated,Phase 2,Funding unavailable
+Dacarbazine,DB00851,CNS disorder,C0007682,Terminated,Phase 1,Sponsor withdrew support; Study did not progress to Phase II.
+Temozolomide,DB00853,CNS disorder,C0007682,Terminated,Phase 1,Sponsor withdrew support; Study did not progress to Phase II.
+Dasatinib,DB01254,CNS disorder,C0007682,Terminated,Phase 1,Sponsor withdrew support; Study did not progress to Phase II.
+Dacarbazine,DB00851,Brain Diseases,C0006111,Terminated,Phase 1,Sponsor withdrew support; Study did not progress to Phase II.
+Temozolomide,DB00853,Brain Diseases,C0006111,Terminated,Phase 1,Sponsor withdrew support; Study did not progress to Phase II.
+Dasatinib,DB01254,Brain Diseases,C0006111,Terminated,Phase 1,Sponsor withdrew support; Study did not progress to Phase II.
+Cetuximab,DB00002,metastatic squamous neck cancer with occult primary squamous cell carcinoma,C0279696,Terminated,Phase 1,
+Sunitinib,DB01268,metastatic squamous neck cancer with occult primary squamous cell carcinoma,C0279696,Terminated,Phase 1,
+Cetuximab,DB00002,Nasopharyngeal squamous cell carcinoma recurrent,C0280386,Terminated,Phase 1,
+Sunitinib,DB01268,Nasopharyngeal squamous cell carcinoma recurrent,C0280386,Terminated,Phase 1,
+Cetuximab,DB00002,Salivary gland cancer stage III,C0278991,Terminated,Phase 1,
+Sunitinib,DB01268,Salivary gland cancer stage III,C0278991,Terminated,Phase 1,
+Cetuximab,DB00002,Laryngeal verrucous carcinoma stage III,C0280398,Terminated,Phase 1,
+Sunitinib,DB01268,Laryngeal verrucous carcinoma stage III,C0280398,Terminated,Phase 1,
+Cetuximab,DB00002,Verrucous carcinoma of the oral cavity stage III,C0280355,Terminated,Phase 1,
+Sunitinib,DB01268,Verrucous carcinoma of the oral cavity stage III,C0280355,Terminated,Phase 1,
+Cetuximab,DB00002,Salivary gland cancer stage IV,C0278992,Terminated,Phase 1,
+Sunitinib,DB01268,Salivary gland cancer stage IV,C0278992,Terminated,Phase 1,
+Cetuximab,DB00002,stage IV squamous cell carcinoma of the paranasal sinus and nasal cavity,C0280415,Terminated,Phase 1,
+Sunitinib,DB01268,stage IV squamous cell carcinoma of the paranasal sinus and nasal cavity,C0280415,Terminated,Phase 1,
+Cetuximab,DB00002,Laryngeal verrucous carcinoma stage IV,C0280400,Terminated,Phase 1,
+Sunitinib,DB01268,Laryngeal verrucous carcinoma stage IV,C0280400,Terminated,Phase 1,
+Cetuximab,DB00002,Verrucous carcinoma of the oral cavity stage IV,C0280360,Terminated,Phase 1,
+Sunitinib,DB01268,Verrucous carcinoma of the oral cavity stage IV,C0280360,Terminated,Phase 1,
+Cetuximab,DB00002,untreated metastatic squamous neck cancer with occult primary,C0279099,Terminated,Phase 1,
+Sunitinib,DB01268,untreated metastatic squamous neck cancer with occult primary,C0279099,Terminated,Phase 1,
+Oxytocin,DB00107,"Fetal Membranes, Premature Rupture",C0015944,Terminated,Phase 2,Inadequate Patient Recruitment.
+Zoledronic acid,DB00399,Giant Cell Tumor of Bone,C0206638,Terminated,Phase 2,low recruitment with registration denosumab
+Dexamethasone,DB01234,Acute fungal otitis externa,C0728738,Terminated,Phase 3,
+,DB01234,Acute fungal otitis externa,C0728738,Terminated,Phase 3,
+Haloperidol,DB00502,Delirium,C0011206,Terminated,Phase 3,few delirious patients were enrolled.
+Quetiapine,DB00502,Delirium,C0011206,Terminated,Phase 3,few delirious patients were enrolled.
+,DB01224,Delirium,C0011206,Terminated,Phase 3,few delirious patients were enrolled.
+Cyproheptadine,DB00434,Malnutrition,C0162429,Terminated,Phase 2,study not feasible with low accrual. DSMB recommended closure
+Cyproheptadine,DB00434,Body Weight Changes,C0005911,Terminated,Phase 2,study not feasible with low accrual. DSMB recommended closure
+Erlotinib,DB00530,Neuroendocrine Tumors,C0206754,Terminated,Phase 2,Extreme toxicity of Pertuzumab and Erlotinib combination
+Pertuzumab,DB06366,Neuroendocrine Tumors,C0206754,Terminated,Phase 2,Extreme toxicity of Pertuzumab and Erlotinib combination
+Erlotinib,DB00530,Adrenal Gland Neoplasms,C0001624,Terminated,Phase 2,Extreme toxicity of Pertuzumab and Erlotinib combination
+Pertuzumab,DB06366,Adrenal Gland Neoplasms,C0001624,Terminated,Phase 2,Extreme toxicity of Pertuzumab and Erlotinib combination
+Bevacizumab,DB00112,Intracranial Meningioma,C0349604,Terminated,Phase 2,Study terminated early due to slow accrual
+Sirolimus,DB00877,Intracranial Meningioma,C0349604,Terminated,Phase 2,Study terminated early due to slow accrual
+Everolimus,DB01590,Intracranial Meningioma,C0349604,Terminated,Phase 2,Study terminated early due to slow accrual
+Norepinephrine,DB00368,"orthostatic; hypotension, neurogenic",C1400301,Terminated,Phase 2,Enrollment issues.
+Droxidopa,DB06262,"orthostatic; hypotension, neurogenic",C1400301,Terminated,Phase 2,Enrollment issues.
+Sorafenib,DB00398,Liver cell carcinoma non-resectable,C1112459,Terminated,Phase 3,See termination reason in detailed description
+Sorafenib,DB00398,Hepatoma recurrent,C0861876,Terminated,Phase 3,See termination reason in detailed description
+Sorafenib,DB00398,Neoplasms by Histologic Type,C0027652,Terminated,Phase 3,See termination reason in detailed description
+Sorafenib,DB00398,"Neoplasms, Glandular and Epithelial",C0027660,Terminated,Phase 3,See termination reason in detailed description
+Danazol,DB01406,Dyskeratosis Congenita,C0265965,Terminated,Phase 1/Phase 2,Study was terminated due to under enrollment
+Indomethacin,DB00328,Gout acute,C2062908,Withdrawn,Phase 2,Colaborator withdrew support.
+Apremilast,DB05676,Gout acute,C2062908,Withdrawn,Phase 2,Colaborator withdrew support.
+Prednisone,DB00635,"Myasthenia Gravis, Ocular",C0751340,Terminated,Phase 3,Slow recruitment rate
+Hydroxyurea,DB01005,"Fibromatosis, Aggressive",C0079218,Withdrawn,Phase 2,Study was administratively withdrawn by the IRB; no subjects were enrolled
+Hydroxyurea,DB01005,Fibromatosis,C0016048,Withdrawn,Phase 2,Study was administratively withdrawn by the IRB; no subjects were enrolled
+Artesunate,DB09274,Plasmodium falciparum infection,C0858318,Terminated,Phase 2,Company decision to modify the ferroquine development strategy; discontinuation not due to
+Darbepoetin alfa,DB00012,Cancer anemia,C1536115,Terminated,Phase 2,slow enrollment and change in product development strategy
+Sitagliptin,DB01261,Renal Insufficiency,C1565489,Terminated,Phase 3,Technical/operational issues
+Warfarin,DB00682,Hamman-Rich syndrome,C0085786,Terminated,Phase 3,Excess of mortality in the treatment group created safety concerns.
+Bevacizumab,DB00112,Hemangioblastoma,C0206734,Terminated,Phase 0,Study terminated due to low accrual.
+Bevacizumab,DB00112,Von Hippel-Lindau Syndrome,C0019562,Terminated,Phase 0,Study terminated due to low accrual.
+Dopamine,DB00988,Malignant Carcinoid Syndrome,C0024586,Terminated,Phase 2,Preliminary data from study NCT00994214 do not support expected inhibition of GH and IGF-1
+Somatostatin,DB09099,Malignant Carcinoid Syndrome,C0024586,Terminated,Phase 2,Preliminary data from study NCT00994214 do not support expected inhibition of GH and IGF-1
+Gemcitabine,DB00441,Ovarian Diseases,C0029928,Terminated,Phase 1,Trial was terminated to allow sponsors to evaluate the future development of the drug program
+Carboplatin,DB00958,Ovarian Diseases,C0029928,Terminated,Phase 1,Trial was terminated to allow sponsors to evaluate the future development of the drug program
+Doxorubicin,DB00997,Ovarian Diseases,C0029928,Terminated,Phase 1,Trial was terminated to allow sponsors to evaluate the future development of the drug program
+Valproic Acid,DB00313,High Grade Sarcoma,C1334008,Terminated,Phase 1,Slow accrual
+Sirolimus,DB00877,Hormone refractory prostate cancer,C1328504,Terminated,Phase 1/Phase 2,Decision by funding sponsor due to poor accrual
+Bicalutamide,DB01128,Hormone refractory prostate cancer,C1328504,Terminated,Phase 1/Phase 2,Decision by funding sponsor due to poor accrual
+Everolimus,DB01590,Hormone refractory prostate cancer,C1328504,Terminated,Phase 1/Phase 2,Decision by funding sponsor due to poor accrual
+Cisplatin,DB00515,Cervical carcinoma stage IB,C0278582,Withdrawn,Phase 2,
+Cisplatin,DB00515,Cervix carcinoma stage III,C0278577,Withdrawn,Phase 2,
+Atomoxetine,DB00289,Methamphetamine abuse,C1456624,Terminated,Phase 1,End in funding
+Methamphetamine,DB01577,Methamphetamine abuse,C1456624,Terminated,Phase 1,End in funding
+Hydrocortisone,DB00741,"Pneumonia, Viral",C0032310,Terminated,Phase 3,"the H1N1 pandemic is now over, and fewer cases than expected were observed"
+,DB00741,"Pneumonia, Viral",C0032310,Terminated,Phase 3,"the H1N1 pandemic is now over, and fewer cases than expected were observed"
+Sirolimus,DB00877,Polycystic Kidney Diseases,C0022680,Terminated,Phase 2/Phase 3,"After primary completition date, experimental drug was no longer available"
+Everolimus,DB01590,Polycystic Kidney Diseases,C0022680,Terminated,Phase 2/Phase 3,"After primary completition date, experimental drug was no longer available"
+Rosuvastatin,DB01098,Precancerous Conditions,C0032927,Terminated,Phase 3,
+Irinotecan,DB00762,Malignant glioma of brain,C0349541,Terminated,Phase 2,study did not reach benchmark efficacy rule at 16 subjects
+Pegfilgrastim,DB00019,Lymphoma,C0024299,Terminated,Phase 2,"Study closed Nov 2000 by Amgen, who stopped drug delivery"
+Acetylcysteine,DB06151,Bulimia Nervosa,C2267227,Terminated,Phase 3,
+Norepinephrine,DB00368,Psychosexual Disorders,C0033953,Terminated,Phase 3,Study terminated by Sponsor for administrative reasons prior to completion of all study visits
+Flibanserin,DB04908,Psychosexual Disorders,C0033953,Terminated,Phase 3,Study terminated by Sponsor for administrative reasons prior to completion of all study visits
+Mesalazine,DB00244,Diverticulitis,C0012813,Terminated,Phase 3,Stopped due to futility.
+Propranolol,DB00571,Recurrent respiratory papillomatosis,C1168198,Withdrawn,Phase 2/Phase 3,No participants enrolled
+Cefixime,DB00671,Uterine Cervicitis,C0007860,Terminated,Phase 3,
+Dexmedetomidine,DB00633,Respiratory Failure,C1145670,Terminated,Phase 3,Poor inclusion rate.
+Rituximab,DB00073,Chronic lymphocytic leukaemia stage 1,C0278767,Terminated,Phase 1,
+Cyclophosphamide,DB00531,Chronic lymphocytic leukaemia stage 1,C0278767,Terminated,Phase 1,
+Rituximab,DB00073,B-cell small lymphocytic lymphoma stage I,C0855098,Terminated,Phase 1,
+Cyclophosphamide,DB00531,B-cell small lymphocytic lymphoma stage I,C0855098,Terminated,Phase 1,
+Rituximab,DB00073,Chronic lymphocytic leukaemia stage 2,C0854803,Terminated,Phase 1,
+Cyclophosphamide,DB00531,Chronic lymphocytic leukaemia stage 2,C0854803,Terminated,Phase 1,
+Rituximab,DB00073,B-cell small lymphocytic lymphoma stage II,C0855099,Terminated,Phase 1,
+Cyclophosphamide,DB00531,B-cell small lymphocytic lymphoma stage II,C0855099,Terminated,Phase 1,
+Fenofibrate,DB01039,Coronary Arteriosclerosis,C0010054,Terminated,Phase 3,Lack of patient population
+Atorvastatin,DB01076,Coronary Arteriosclerosis,C0010054,Terminated,Phase 3,Lack of patient population
+Sildenafil,DB00203,Hypoxic respiratory failure,C3805211,Terminated,Phase 2,See termination reason in detailed description.
+Ibuprofen,DB01050,Patent ductus arteriosus,C0013274,Withdrawn,Phase 2,Changes in approach to PDA therapy
+Cisplatin,DB00515,Carcinomatosis of peritoneal cavity,C0346990,Terminated,Phase 2,Insufficient enrollment in Pancreatic & Biliary arm
+Cisplatin,DB00515,Malignant neoplasm of gastrointestinal tract,C0685938,Terminated,Phase 2,Insufficient enrollment in Pancreatic & Biliary arm
+Cisplatin,DB00515,Mesothelioma malignant advanced,C0278752,Withdrawn,Phase 2,withdrawn
+Pemetrexed,DB00642,Mesothelioma malignant advanced,C0278752,Withdrawn,Phase 2,withdrawn
+Cisplatin,DB00515,"Epithelioid mesothelioma, malignant",C0862312,Withdrawn,Phase 2,withdrawn
+Pemetrexed,DB00642,"Epithelioid mesothelioma, malignant",C0862312,Withdrawn,Phase 2,withdrawn
+Cisplatin,DB00515,Mesothelioma malignant recurrent,C0278753,Withdrawn,Phase 2,withdrawn
+Pemetrexed,DB00642,Mesothelioma malignant recurrent,C0278753,Withdrawn,Phase 2,withdrawn
+Cisplatin,DB00515,Sarcomatoid Mesothelioma,C0334513,Withdrawn,Phase 2,withdrawn
+Pemetrexed,DB00642,Sarcomatoid Mesothelioma,C0334513,Withdrawn,Phase 2,withdrawn
+Lovastatin,DB00227,Smith-Lemli-Opitz Syndrome,C0175694,Withdrawn,Phase 2,Study was withdrawn due to lack of eligible population for study
+Lovastatin,DB00227,"Chondrodysplasia punctata, X-linked dominant type",C0282102,Withdrawn,Phase 2,Study was withdrawn due to lack of eligible population for study
+Omeprazole,DB00338,Helicobacter pylori infection,C0850666,Terminated,Phase 1/Phase 2,Poor efficacy (2 of 31 completing participants with H.pylori eradication)
+Edetic Acid,DB00974,Acetaminophen overdose,C0572025,Terminated,Phase 3,
+Acetylcysteine,DB06151,Acetaminophen overdose,C0572025,Terminated,Phase 3,
+Goserelin,DB00014,HER2/Neu Negative,C2348908,Terminated,Phase 1,Manufacturer discontinued drug development.
+Exemestane,DB00990,HER2/Neu Negative,C2348908,Terminated,Phase 1,Manufacturer discontinued drug development.
+Goserelin,DB00014,Carcinoma of Male Breast,C0238033,Terminated,Phase 1,Manufacturer discontinued drug development.
+Exemestane,DB00990,Carcinoma of Male Breast,C0238033,Terminated,Phase 1,Manufacturer discontinued drug development.
+Carboplatin,DB00958,Hepatobiliary neoplasm,C0854196,Terminated,Phase 2,"Poor accrual, lack of enthusiasm from referring physicians, unusual outcomes regarding 2"
+Amitriptyline,DB00321,Transformed migraine,C1960870,Terminated,Phase 3,Study was never initiated under new location/provider group. Contract to continue was never
+Cyclobenzaprine,DB00924,Transformed migraine,C1960870,Terminated,Phase 3,Study was never initiated under new location/provider group. Contract to continue was never
+Aminolevulinic acid,DB00855,Adult Mixed Glioma,C3900099,Terminated,Phase 1/Phase 2,
+Vitamin C,DB00126,Desmoplastic Small Round Cell Tumor,C0281508,Suspended,Phase 2,Awaiting response from FDA as to status of parenteral ascorbic acid manufactured by Bioniche
+Peginterferon alfa-2a,DB00008,Hepatitis C,C0019196,Suspended,Phase 2,Interim analysis
+Ribavirin,DB00811,Hepatitis C,C0019196,Suspended,Phase 2,Interim analysis
+Docetaxel,DB01248,Urologic Neoplasms,C0042076,Terminated,Phase 1,
+Anidulafungin,DB00362,Neuroaspergillosis,C0752342,Withdrawn,Phase 3,
+Voriconazole,DB00582,Neuroaspergillosis,C0752342,Withdrawn,Phase 3,
+Rasagiline,DB01367,Progressive supranuclear palsy,C0038868,Terminated,Phase 3,IMP used off label by phys. in pat. with PSP. Thus no more eligible patients were available
+Nicardipine,DB00622,Cerebral Hemorrhage,C2937358,Suspended,Phase 3,Pre-planned interim analysis.
+Methotrexate,DB00563,"Neoplasm, Residual",C0242596,Terminated,Phase 2,Study terminated for lack of accrual.
+Clofarabine,DB00631,"Neoplasm, Residual",C0242596,Terminated,Phase 2,Study terminated for lack of accrual.
+Cytarabine,DB00987,"Neoplasm, Residual",C0242596,Terminated,Phase 2,Study terminated for lack of accrual.
+Aldesleukin,DB00041,Renal cancer metastatic,C0919976,Terminated,Phase 2,The study was terminated because we were not able to obtain the study drug.
+Alefacept,DB00092,"transplant; failure, kidney",C1404117,Terminated,Phase 1,"Noted increased risks, greater than expected for standard of care therapy."
+Sirolimus,DB00877,Mucosal Melanoma,C3898222,Terminated,Phase 2,
+Everolimus,DB01590,Mucosal Melanoma,C3898222,Terminated,Phase 2,
+Teriparatide,DB06285,Post-surgical hypoparathyroidism,C0342341,Terminated,Phase 2,Funding problems
+Miltefosine,DB09031,Chronic urticaria,C0263338,Terminated,Phase 2,Study medication expired
+Gemcitabine,DB00441,Biliary Tract Cancer,C0750952,Terminated,Phase 2,The objective response rate by more than two people are confirmed.
+Latanoprost,DB00654,"Glaucoma, Primary Open Angle",C0339573,Terminated,Phase 1,"Study terminated early due to manufacturer not replenishing study site supply of inserts,"
+Sirolimus,DB00877,Brain Stem Neoplasms,C0677866,Withdrawn,Phase 1,
+Everolimus,DB01590,Brain Stem Neoplasms,C0677866,Withdrawn,Phase 1,
+Sunitinib,DB01268,Neuroendocrine Tumors,C0206754,Terminated,Phase 2,lack of recruitement
+Sunitinib,DB01268,advanced disease,C0679246,Terminated,Phase 2,lack of recruitement
+Doxorubicin,DB00997,Hormone-Resistant Prostate Cancer,C3898877,Suspended,Phase 1/Phase 2,Drug shortage
+Amlodipine,DB00381,Cardiovascular event,C1320716,Terminated,Phase 3,Terminated early in agreement with Health Authorities for feasibility reasons
+Hydrochlorothiazide,DB00999,Cardiovascular event,C1320716,Terminated,Phase 3,Terminated early in agreement with Health Authorities for feasibility reasons
+Erlotinib,DB00530,Ependymoma,C0014474,Terminated,Phase 2,"In a pre-planned interim analysis, OSI-774-205 met futility for efficacy with no safety"
+Amphotericin B,DB00681,Lung transplant recipient,C2063401,Suspended,Phase 2,Study has been placed on hold due to unavailability of funding.
+Cyclophosphamide,DB00531,"Polyradiculoneuropathy, Chronic Inflammatory Demyelinating",C0393819,Withdrawn,Phase 2,I am relocating to Johns Hopkins Medical Center
+Cyclophosphamide,DB00531,Malignant neoplasm of skin,C0007114,Terminated,Phase 1/Phase 2,"Unexpected toxicities, likely due to TIL/IL-12 & low % of durable responses."
+Fludarabine,DB01073,Malignant neoplasm of skin,C0007114,Terminated,Phase 1/Phase 2,"Unexpected toxicities, likely due to TIL/IL-12 & low % of durable responses."
+Infliximab,DB00065,Stevens-Johnson Syndrome,C0038325,Withdrawn,Phase 1/Phase 2,Steven Johnson's Syndrome (SJS) and Toxic Epidermal Necrolysis Syndrome (TENS) are rare (~3 in
+Norepinephrine,DB00368,Radiodermatitis,C0034561,Terminated,Phase 1,Enrollment issues
+Aldesleukin,DB00041,Stage IV Skin Melanoma,C1321872,Terminated,Phase 2,Study was terminated due to poor accrual.
+Cyclophosphamide,DB00531,Stage IV Skin Melanoma,C1321872,Terminated,Phase 2,Study was terminated due to poor accrual.
+Fludarabine,DB01073,Stage IV Skin Melanoma,C1321872,Terminated,Phase 2,Study was terminated due to poor accrual.
+Varenicline,DB01273,Drug Dependence,C1510472,Withdrawn,Phase 1,
+Ropivacaine,DB00296,Other reconstructive surgery,C0418696,Withdrawn,Phase 2,
+Clonidine,DB00575,Other reconstructive surgery,C0418696,Withdrawn,Phase 2,
+Tacrolimus,DB00864,function of renal transplant,C2170323,Terminated,Phase 3,Difficulties of recruitment
+Bupivacaine,DB00297,Fracture of lower leg,C1542178,Withdrawn,Phase 3,The Sponsor has no interest in continuing the study.
+Levobupivacaine,DB01002,Fracture of lower leg,C1542178,Withdrawn,Phase 3,The Sponsor has no interest in continuing the study.
+Gemcitabine,DB00441,advanced adult primary liver cancer,C0278774,Terminated,Phase 1,
+Cisplatin,DB00515,advanced adult primary liver cancer,C0278774,Terminated,Phase 1,
+Gemcitabine,DB00441,localized unresectable adult primary liver cancer,C0278773,Terminated,Phase 1,
+Cisplatin,DB00515,localized unresectable adult primary liver cancer,C0278773,Terminated,Phase 1,
+Gemcitabine,DB00441,Transitional cell cancer of renal pelvis and ureter metastatic,C0279937,Terminated,Phase 1,
+Cisplatin,DB00515,Transitional cell cancer of renal pelvis and ureter metastatic,C0279937,Terminated,Phase 1,
+Gemcitabine,DB00441,unresectable extrahepatic bile duct cancer,C0278811,Terminated,Phase 1,
+Cisplatin,DB00515,unresectable extrahepatic bile duct cancer,C0278811,Terminated,Phase 1,
+Gemcitabine,DB00441,unresectable gallbladder cancer,C0278807,Terminated,Phase 1,
+Cisplatin,DB00515,unresectable gallbladder cancer,C0278807,Terminated,Phase 1,
+Bortezomib,DB00188,multiple myeloma in relapse,C2349261,Withdrawn,Phase 2,Clinical trial being transferred to Columbia University with the Investigator.
+Dexamethasone,DB01234,multiple myeloma in relapse,C2349261,Withdrawn,Phase 2,Clinical trial being transferred to Columbia University with the Investigator.
+,DB01234,multiple myeloma in relapse,C2349261,Withdrawn,Phase 2,Clinical trial being transferred to Columbia University with the Investigator.
+Milnacipran,DB04896,Primary fibromyalgia syndrome,C0521517,Terminated,Phase 2,
+Cholecalciferol,DB00169,"Hyperparathyroidism, Primary",C0221002,Withdrawn,Phase 2/Phase 3,Poor enrollment
+Cholecalciferol,DB00169,Hypercalcemia,C0020437,Withdrawn,Phase 2/Phase 3,Poor enrollment
+Dexamethasone,DB01234,Liver Cirrhosis,C0023890,Terminated,Phase 3,Recruitment problems (not enough patients were found who met eligibility criteria)
+,DB01234,Liver Cirrhosis,C0023890,Terminated,Phase 3,Recruitment problems (not enough patients were found who met eligibility criteria)
+Heparin,DB01109,Coronary Artery Disease,C1956346,Terminated,Phase 2,PolyMedix decided to stop enrollment in both clinical trials due to observations of reductions
+Buprenorphine,DB00921,Other acute postoperative pain,C1719392,Withdrawn,Phase 3,Due to change in development plan.
+Buprenorphine,DB00921,INTUBATION ENDOTRACHEAL PROLONGED,C0745398,Withdrawn,Phase 3,Due to change in development plan.
+Nicotine,DB00184,Tobacco Dependence,C0040332,Terminated,Phase 3,Study terminated due to a technical issue (randomization error).
+Methylphenidate,DB00422,"central nervous system tumor, pediatric",C1377665,Terminated,Phase 2,Study only randomized 1 subject and was determined not feasible by DSMB
+Modafinil,DB00745,"central nervous system tumor, pediatric",C1377665,Terminated,Phase 2,Study only randomized 1 subject and was determined not feasible by DSMB
+Armodafinil,DB06413,"central nervous system tumor, pediatric",C1377665,Terminated,Phase 2,Study only randomized 1 subject and was determined not feasible by DSMB
+Ethanol,DB00898,Alcohol problem,C0549393,Terminated,Phase 3,
+Ethanol,DB00898,AOD misuse,C0678254,Terminated,Phase 3,
+Gemcitabine,DB00441,Non-small cell lung cancer stage III,C0278506,Withdrawn,Phase 2,"Low accrual, small patient population at center."
+Pemetrexed,DB00642,Non-small cell lung cancer stage III,C0278506,Withdrawn,Phase 2,"Low accrual, small patient population at center."
+Etoposide,DB00773,Non-small cell lung cancer stage III,C0278506,Withdrawn,Phase 2,"Low accrual, small patient population at center."
+Milnacipran,DB04896,"Fibromyalgia, Primary",C0751152,Terminated,Phase 2,
+Norepinephrine,DB00368,"Gait Disorders, Neurologic",C0751830,Withdrawn,Phase 1/Phase 2,Never initiated. Withdrawn by sponsor.
+Droxidopa,DB06262,"Gait Disorders, Neurologic",C0751830,Withdrawn,Phase 1/Phase 2,Never initiated. Withdrawn by sponsor.
+Nifedipine,DB01115,Threatened premature labor,C0473390,Withdrawn,Phase 3,
+Atomoxetine,DB00289,alcohol sensitivity,C0678306,Terminated,Phase 1,Terminated due to lack of funding
+Heparin,DB01109,Malignant Childhood Neoplasm,C0278704,Terminated,Phase 3,Poor patient accrual
+Heparin,DB01109,Metabolic Diseases,C0025517,Terminated,Phase 3,Poor patient accrual
+Prednisone,DB00635,Polymyalgia Rheumatica,C0032533,Terminated,Phase 2,Data did not show that the two biologic treatments impacted PMR disease activity to the same
+Prednisone,DB00635,Inflammatory disorder,C1290884,Terminated,Phase 2,Data did not show that the two biologic treatments impacted PMR disease activity to the same
+Clonidine,DB00575,Neonatal Abstinence Syndrome,C0027609,Terminated,Phase 2/Phase 3,The study was treminated because of low accural
+Busulfan,DB01008,Hematological Disease,C0018939,Terminated,Phase 2,did not accrue enough patients.
+Melphalan,DB01042,Hematological Disease,C0018939,Terminated,Phase 2,did not accrue enough patients.
+Fludarabine,DB01073,Hematological Disease,C0018939,Terminated,Phase 2,did not accrue enough patients.
+Cyclosporine,DB00091,Bronchiolitis Obliterans,C0006272,Terminated,Phase 2/Phase 3,"Interim analysis results revealed substantial increase of patient number, with unfeasible"
+Vitamin E,DB00163,Nonalcoholic Steatohepatitis,C3241937,Withdrawn,Phase 3,Lack of funds
+Pentoxifylline,DB00806,Nonalcoholic Steatohepatitis,C3241937,Withdrawn,Phase 3,Lack of funds
+Vorinostat,DB02546,Adult Mixed Glioma,C3900099,Terminated,Phase 1,
+Sevoflurane,DB01236,Brain Injuries,C0270611,Terminated,Phase 2,Sponsor decision
+Bortezomib,DB00188,Disorder of transplanted kidney,C1261281,Terminated,Phase 2,Study halted due to lack of funding
+Irinotecan,DB00762,Adenocarcinoma of large intestine,C1319315,Terminated,Phase 2,Sponsor closed study
+Oxytocin,DB00107,Dystocia,C0013418,Terminated,Phase 3,"Due to budgetary concerns, the TSC decided it best to adjust sample size as there was"
+Sunitinib,DB01268,Plexiform Neurofibroma,C0206728,Suspended,Phase 2,1 patient died of uncertain cause but possibly related to drug. Regulatory currently reviewing
+Norepinephrine,DB00368,Alopecia,C0002170,Terminated,Phase 1,Study site has terminated the study due to the complexity of the study
+Norepinephrine,DB00368,Radiodermatitis,C0034561,Terminated,Phase 1,Study site has terminated the study due to the complexity of the study
+Riboflavin,DB00140,Pathological Dilatation,C0012359,Terminated,Phase 3,
+Gemcitabine,DB00441,leiomyosarcoma,C0023269,Terminated,Phase 1/Phase 2,Lack of accrual
+Docetaxel,DB01248,leiomyosarcoma,C0023269,Terminated,Phase 1/Phase 2,Lack of accrual
+Sildenafil,DB00203,Respiratory Failure,C1145670,Terminated,Phase 2,
+Sildenafil,DB00203,Persistent pulmonary hypertension,C1135361,Terminated,Phase 2,
+Atomoxetine,DB00289,Craving for alcohol,C0556385,Terminated,Phase 1,
+Atomoxetine,DB00289,Mood swings,C0085633,Terminated,Phase 1,
+Bevacizumab,DB00112,Brain Neoplasms,C0006118,Withdrawn,Phase 2,
+Timolol,DB00373,Strawberry nevus of skin,C0206733,Withdrawn,Phase 2,Difficulty with recruitment
+Mupirocin,DB00410,Strawberry nevus of skin,C0206733,Withdrawn,Phase 2,Difficulty with recruitment
+Alitretinoin,DB00523,"Lupus Erythematosus, Cutaneous",C0024137,Terminated,Phase 2,
+Tretinoin,DB00755,"Lupus Erythematosus, Cutaneous",C0024137,Terminated,Phase 2,
+Verapamil,DB00661,Classical phenylketonuria,C0751434,Terminated,Phase 2,Difficulty with recruitment and agreed with Sponsor to report completed data as case reports
+Hydroxychloroquine,DB01611,Secondary malignant neoplasm of bone,C0153690,Terminated,Phase 1,Recently published data that has shown HCQ to be safe when combined with chemo and or
+Oxaliplatin,DB00526,Nasopharyngeal carcinoma,C2931822,Terminated,Phase 2,poor accrual of eligible patients
+Tigecycline,DB00560,Dialysis Catheter Infection,C1400574,Terminated,Phase 3,The study was stopped due to poor enrollment.
+Heparin,DB01109,Dialysis Catheter Infection,C1400574,Terminated,Phase 3,The study was stopped due to poor enrollment.
+Doxorubicin,DB00997,colon cancer liver metastasis,C0742558,Terminated,Phase 2,trial design contingent on RFA optimization
+Lansoprazole,DB00448,Eosinophilic esophagitis,C0341106,Withdrawn,Phase 1/Phase 2,Souces of funding have been terminated
+Lansoprazole,DB00448,Deglutition Disorders,C0011168,Withdrawn,Phase 1/Phase 2,Souces of funding have been terminated
+Pregabalin,DB00230,Neuralgia,C0027796,Terminated,Phase 2,The trial was early terminated after it was concluded that there was no added benefit from
+Tacrolimus,DB00864,Acute leukemia in remission,C0686586,Terminated,Phase 2,We could not receive the support from the national medical insurance owing to the changed
+Sirolimus,DB00877,Acute leukemia in remission,C0686586,Terminated,Phase 2,We could not receive the support from the national medical insurance owing to the changed
+Everolimus,DB01590,Acute leukemia in remission,C0686586,Terminated,Phase 2,We could not receive the support from the national medical insurance owing to the changed
+Spironolactone,DB00421,Type 2 diabetes mellitus with established diabetic nephropathy,C0837031,Terminated,Phase 1,See termination reason in detailed description.
+Paromomycin,DB01421,"Leishmaniasis, Cutaneous",C0023283,Terminated,Phase 2,This study was closed prematurely due study team travel restrictions.
+Aripiprazole,DB01238,"Depressive episode, unspecified",C0349217,Terminated,Phase 3,recruitment issues
+Pioglitazone,DB01132,Opioid-Related Disorders,C0027412,Terminated,Phase 1,
+Penciclovir,DB00299,Meniere Disease,C0025281,Terminated,Phase 3,HRI no longer conducting research.
+Famciclovir,DB00426,Meniere Disease,C0025281,Terminated,Phase 3,HRI no longer conducting research.
+Vitamin C,DB00126,Disorder of vitamin C,C1272557,Withdrawn,Phase 2,Unable to obtain funding to initiate the study. No subjects were enrolled.
+Vitamin C,DB00126,Growth Hormone Secretion Abnormality,C3536718,Withdrawn,Phase 2,Unable to obtain funding to initiate the study. No subjects were enrolled.
+Sirolimus,DB00877,Acinar cell carcinoma of pancreas,C0279661,Suspended,Phase 1,
+Everolimus,DB01590,Acinar cell carcinoma of pancreas,C0279661,Suspended,Phase 1,
+Bupivacaine,DB00297,Shoulder Pain,C0037011,Withdrawn,Phase 3,
+Dexamethasone,DB01234,Shoulder Pain,C0037011,Withdrawn,Phase 3,
+,DB01234,Shoulder Pain,C0037011,Withdrawn,Phase 3,
+Bupivacaine,DB00297,Shoulder Injuries,C0149776,Withdrawn,Phase 3,
+Dexamethasone,DB01234,Shoulder Injuries,C0149776,Withdrawn,Phase 3,
+,DB01234,Shoulder Injuries,C0149776,Withdrawn,Phase 3,
+Bupivacaine,DB00297,Disorder of shoulder,C1290859,Withdrawn,Phase 3,
+Dexamethasone,DB01234,Disorder of shoulder,C1290859,Withdrawn,Phase 3,
+,DB01234,Disorder of shoulder,C1290859,Withdrawn,Phase 3,
+Bupivacaine,DB00297,Disorder of rotator cuff,C1532240,Withdrawn,Phase 3,
+Dexamethasone,DB01234,Disorder of rotator cuff,C1532240,Withdrawn,Phase 3,
+,DB01234,Disorder of rotator cuff,C1532240,Withdrawn,Phase 3,
+Bupivacaine,DB00297,Disorder of tendon of biceps,C1996944,Withdrawn,Phase 3,
+Dexamethasone,DB01234,Disorder of tendon of biceps,C1996944,Withdrawn,Phase 3,
+,DB01234,Disorder of tendon of biceps,C1996944,Withdrawn,Phase 3,
+Panobinostat,DB06603,Malignant neoplasm of stomach stage IV,C0278498,Terminated,Phase 2,medical/ethical reasons
+Bevacizumab,DB00112,colon cancer liver metastasis,C0742558,Withdrawn,Phase 2,insufficient recruitment
+Norepinephrine,DB00368,Radiodermatitis,C0034561,Withdrawn,Phase 1/Phase 2,The principal investigator withdrew from the study. The study was withdrawn because a
+Erythromycin,DB00199,Preterm premature rupture of membranes (disorder),C0729264,Withdrawn,Phase 3,Terminated before starting due to need for IND determined by FDA.
+,DB00199,Preterm premature rupture of membranes (disorder),C0729264,Withdrawn,Phase 3,Terminated before starting due to need for IND determined by FDA.
+Torasemide,DB00214,Renal Insufficiency,C1565489,Terminated,Phase 1,
+Furosemide,DB00695,Renal Insufficiency,C1565489,Terminated,Phase 1,
+Loperamide,DB00836,Clostridium difficile diarrhea,C0235952,Terminated,Phase 2,"Study was stopped for slow enrollment - only 2 patients, no evaluable results"
+Memantine,DB01043,Asperger Syndrome,C0236792,Terminated,Phase 2,Terminated because primary efficacy parameter failed to demonstrate statistically significant
+Fluconazole,DB00196,CRYPTOCOCCAL INFECTION DISSEMINATED,C0742909,Terminated,Phase 2,Stopped in accordance with pre-specified stopping rules for poor recruitment.
+Flucytosine,DB01099,CRYPTOCOCCAL INFECTION DISSEMINATED,C0742909,Terminated,Phase 2,Stopped in accordance with pre-specified stopping rules for poor recruitment.
+Metformin,DB00331,Prostate carcinoma,C0600139,Withdrawn,Phase 2,Study closed due to slow/low enrollment; no subjects were enrolled.
+Simvastatin,DB00641,Prostate carcinoma,C0600139,Withdrawn,Phase 2,Study closed due to slow/low enrollment; no subjects were enrolled.
+Dexmedetomidine,DB00633,"Subarachnoid Hemorrhage, Aneurysmal",C0751530,Terminated,Phase 3,"Slow enrollment along with new competing studies, investigators decided to stop study"
+Carboplatin,DB00958,Chemotherapeutic Agent Toxicity,C1707372,Withdrawn,Phase 1,
+Docetaxel,DB01248,Chemotherapeutic Agent Toxicity,C1707372,Withdrawn,Phase 1,
+Rasburicase,DB00049,contiguous stage II adult Burkitt's lymphoma,C0677696,Terminated,Phase 2,low accrual
+Allopurinol,DB00437,contiguous stage II adult Burkitt's lymphoma,C0677696,Terminated,Phase 2,low accrual
+Rasburicase,DB00049,noncontiguous stage II adult Burkitt's lymphoma,C0677710,Terminated,Phase 2,low accrual
+Allopurinol,DB00437,noncontiguous stage II adult Burkitt's lymphoma,C0677710,Terminated,Phase 2,low accrual
+Rasburicase,DB00049,stage I adult Burkitt's lymphoma,C0279963,Terminated,Phase 2,low accrual
+Allopurinol,DB00437,stage I adult Burkitt's lymphoma,C0279963,Terminated,Phase 2,low accrual
+Rasburicase,DB00049,stage III adult Burkitt's lymphoma,C0280166,Terminated,Phase 2,low accrual
+Allopurinol,DB00437,stage III adult Burkitt's lymphoma,C0280166,Terminated,Phase 2,low accrual
+Rasburicase,DB00049,untreated adult acute lymphoblastic leukemia,C0279088,Terminated,Phase 2,low accrual
+Allopurinol,DB00437,untreated adult acute lymphoblastic leukemia,C0279088,Terminated,Phase 2,low accrual
+Ketoconazole,DB01026,Granulosa cell tumor of the ovary,C1370419,Terminated,Phase 2,Insufficient recruitment rate
+Adalimumab,DB00051,Inflammatory disease of mucous membrane,C0333355,Terminated,Phase 3,Not enough patient population according to selection criteria to complete the study
+L-Carnitine,DB00583,Postpoliomyelitis Syndrome,C0080040,Withdrawn,Phase 3,Study was not approved by Health Surveillance Agency
+Ropivacaine,DB00296,Appendicitis,C0003615,Terminated,Phase 2,The study was allowed to expire due to changes in standard care for the patient population
+Hydrocortisone,DB00741,Phobic anxiety disorder,C0349231,Terminated,Phase 2,Recruiting problems
+,DB00741,Phobic anxiety disorder,C0349231,Terminated,Phase 2,Recruiting problems
+Glucagon recombinant,DB00040,Short Bowel Syndrome,C0036992,Terminated,Phase 1/Phase 2,GLP-2 Drug product stability concerns
+Zonisamide,DB00909,alcohol use disorder,C0001956,Terminated,Phase 2,recruitment infeasible
+Rivaroxaban,DB06228,Heparin-induced thrombocytopenia,C0272285,Terminated,Phase 3,slow recruitment
+Folic Acid,DB00158,Pervasive Development Disorder,C0524528,Terminated,Phase 2,Non-compliance
+Leucovorin,DB00650,Pervasive Development Disorder,C0524528,Terminated,Phase 2,Non-compliance
+Levoleucovorin,DB11596,Pervasive Development Disorder,C0524528,Terminated,Phase 2,Non-compliance
+Methamphetamine,DB01577,Methamphetamine abuse,C1456624,Withdrawn,Phase 1,
+Finasteride,DB01216,Retinal Diseases,C0035309,Terminated,Phase 2,This study was terminated early due to lack of enrollment.
+Capsaicin,DB06774,Hyperalgesia,C0020429,Terminated,Phase 1,
+Capsaicin,DB06774,Allodynia,C0458247,Terminated,Phase 1,
+Timolol,DB00373,"Optic Neuropathy, Ischemic",C0155305,Withdrawn,Phase 1,Unable to recruit participants from recruiting sites.
+Timolol,DB00373,Anterior Ischemic Optic Neuropathy,C0751711,Withdrawn,Phase 1,Unable to recruit participants from recruiting sites.
+Letrozole,DB01006,"Medical abortion, complete or unspecified, without complication",C0495144,Terminated,Phase 2,No access to study drug Trilostan. Company closed down
+Trilostane,DB01108,"Medical abortion, complete or unspecified, without complication",C0495144,Terminated,Phase 2,No access to study drug Trilostan. Company closed down
+Misoprostol,DB00929,Missed abortion,C0000814,Suspended,Phase 2/Phase 3,No funding
+Udenafil,DB06267,"Heart Failure, Systolic",C1135191,Terminated,Phase 3,Substantial benefit was observed in the active treatment group
+Metformin,DB00331,Polycystic Ovary Syndrome,C0032460,Withdrawn,Phase 3,Previous studies have been done regarding same condition
+Clomifene,DB00882,Polycystic Ovary Syndrome,C0032460,Withdrawn,Phase 3,Previous studies have been done regarding same condition
+Cisplatin,DB00515,Chemotherapeutic Agent Toxicity,C1707372,Terminated,Phase 2,Due to a lack of funding
+Cisplatin,DB00515,Radiation Sickness,C1510432,Terminated,Phase 2,Due to a lack of funding
+Cisplatin,DB00515,stage IV squamous cell carcinoma of the paranasal sinus and nasal cavity,C0280415,Terminated,Phase 2,Due to a lack of funding
+Cisplatin,DB00515,Xerostomia,C0043352,Terminated,Phase 2,Due to a lack of funding
+Dexmedetomidine,DB00633,"Sleep Apnea, Obstructive",C0520679,Withdrawn,Phase 2/Phase 3,Failure to secure funding
+Cisplatin,DB00515,Nasopharyngeal squamous cell carcinoma recurrent,C0280386,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Laryngeal verrucous carcinoma stage III,C0280398,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Verrucous carcinoma of the oral cavity stage III,C0280355,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVA Laryngeal Squamous Cell Carcinoma,C1336343,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVA Lip and Oral Cavity Squamous Cell Carcinoma,C3897523,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVA Oropharyngeal Squamous Cell Carcinoma,C1336356,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVA Nasal Cavity and Paranasal Sinus Squamous Cell Carcinoma,C3897522,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVA Laryngeal Verrucous Carcinoma,C1336344,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVA Oral Cavity Verrucous Carcinoma,C1336354,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVB Laryngeal Squamous Cell Carcinoma,C1336374,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVB Lip and Oral Cavity Squamous Cell Carcinoma,C3897516,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVB Oropharyngeal Squamous Cell Carcinoma,C1336387,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVB Nasal Cavity and Paranasal Sinus Squamous Cell Carcinoma,C3897515,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVB Laryngeal Verrucous Carcinoma,C1336375,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVB Oral Cavity Verrucous Carcinoma,C1336385,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVC Laryngeal Squamous Cell Carcinoma,C1336395,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVC Lip and Oral Cavity Squamous Cell Carcinoma,C3897510,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVC Oropharyngeal Squamous Cell Carcinoma,C1336407,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVC Nasal Cavity and Paranasal Sinus Squamous Cell Carcinoma,C3897509,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVC Laryngeal Verrucous Carcinoma,C1336396,Withdrawn,Phase 1,Financial Sponsor requested termination
+Cisplatin,DB00515,Stage IVC Oral Cavity Verrucous Carcinoma,C1336405,Withdrawn,Phase 1,Financial Sponsor requested termination
+Asenapine,DB06216,Stuttering,C0038506,Suspended,Phase 3,Study transferring to another facility
+Nitric Oxide,DB00435,Bronchopulmonary Dysplasia,C0006287,Terminated,Phase 2/Phase 3,Enrollenment has been suspended due to poor enrollment
+Zinc sulfate,DB09322,Acute gastroenteritis,C0267446,Terminated,Phase 2/Phase 3,Terminated due to lack of eligible patients.
+Sorafenib,DB00398,Medullary carcinoma of thyroid,C0238462,Withdrawn,Phase 2,Study was withdrawn due to unanticipated hassle in patient recruitment.
+Cytarabine,DB00987,acute leukemia in relapse,C2367453,Terminated,Phase 1,Material sponsor withdrew support
+Mitoxantrone,DB01204,acute leukemia in relapse,C2367453,Terminated,Phase 1,Material sponsor withdrew support
+Estradiol,DB00783,Atrophy of vagina,C0241616,Terminated,Phase 3,Slow recruitment
+,DB00783,Atrophy of vagina,C0241616,Terminated,Phase 3,Slow recruitment
+Topiramate,DB00273,heavy drinking,C0687132,Terminated,Phase 2,We terminated the study due to problems recruiting alcoholic subjects with HIV.
+Isoniazid,DB00951,Latent Tuberculosis,C1609538,Terminated,Phase 3,Recruitment rythm not sufficent to reach the simple size needed.
+Levofloxacin,DB01137,Latent Tuberculosis,C1609538,Terminated,Phase 3,Recruitment rythm not sufficent to reach the simple size needed.
+Ofloxacin,DB01165,Latent Tuberculosis,C1609538,Terminated,Phase 3,Recruitment rythm not sufficent to reach the simple size needed.
+Isoniazid,DB00951,Infection in solid organ transplant recipients,C0857825,Terminated,Phase 3,Recruitment rythm not sufficent to reach the simple size needed.
+Levofloxacin,DB01137,Infection in solid organ transplant recipients,C0857825,Terminated,Phase 3,Recruitment rythm not sufficent to reach the simple size needed.
+Ofloxacin,DB01165,Infection in solid organ transplant recipients,C0857825,Terminated,Phase 3,Recruitment rythm not sufficent to reach the simple size needed.
+Belimumab,DB08879,Membranous glomerulonephritis,C0017665,Withdrawn,Phase 2,"Withdrawn due to difficulties in to recruiting due to competing studies, changing treatment"
+Fluoxetine,DB00472,Cerebral Hemorrhage,C2937358,Terminated,Phase 3,Study recruitment was suspended due to lack of funding
+Vancomycin,DB00512,Surgical Wound Infection,C0038941,Suspended,Phase 1,awaiting FDA approval for next dose group
+Oxaliplatin,DB00526,Gastric carcinoma stage IV,C0863191,Terminated,Phase 3,Poor enrollment of patients
+Fluorouracil,DB00544,Gastric carcinoma stage IV,C0863191,Terminated,Phase 3,Poor enrollment of patients
+Capecitabine,DB01101,Gastric carcinoma stage IV,C0863191,Terminated,Phase 3,Poor enrollment of patients
+Omeprazole,DB00338,Laryngomalacia,C0264303,Withdrawn,Phase 1,Unable to recruit a sufficient amount of subjects
+Simvastatin,DB00641,Rhinosinusitis,C0948780,Terminated,Phase 2,Lack of efficacy with one month of treatement
+Denileukin diftitox,DB00004,Fallopian Tube Carcinoma,C0238122,Terminated,Phase 2,Lack of funding
+Unoprostone,DB06826,Retinitis Pigmentosa,C0035334,Terminated,Phase 3,
+Heparin,DB01109,Inhalation injury,C0745334,Terminated,Phase 3,insufficient recruitment of patients and high costs associated with the purchase and blinding
+Rosuvastatin,DB01098,Influenza due to Influenza A virus subtype H1N1,C2076600,Terminated,Phase 2,H1N1 pandemic concluded
+Clofarabine,DB00631,"Histiocytosis, Langerhans-Cell",C0019621,Withdrawn,Phase 2,
+Eplerenone,DB00700,Ascites,C0003962,Withdrawn,Phase 2,difficulties to include patients
+Hydroxychloroquine,DB01611,Antiphospholipid Syndrome,C0085278,Terminated,Phase 3,low recruitment rate exacerbated by manufacturing shortage and price increase of
+Nicardipine,DB00622,Cerebral Vasospasm,C0265110,Terminated,Phase 2,Unable to secure drug.
+Ifosfamide,DB01181,adult central nervous system germ cell tumor,C0280796,Terminated,Phase 2,Due to Low Accrual
+Ifosfamide,DB01181,Adult teratoma,C1368898,Terminated,Phase 2,Due to Low Accrual
+Ifosfamide,DB01181,Malignant Extragonadal Germ Cell Tumor,C1334581,Terminated,Phase 2,Due to Low Accrual
+Ifosfamide,DB01181,Malignant Extragonadal Non-Seminomatous Germ Cell Tumor,C1334582,Terminated,Phase 2,Due to Low Accrual
+Ifosfamide,DB01181,Extragonadal Seminoma,C1333502,Terminated,Phase 2,Due to Low Accrual
+Ifosfamide,DB01181,Testis cancer recurrent,C0278841,Terminated,Phase 2,Due to Low Accrual
+Ifosfamide,DB01181,Stage IV Extragonadal Non-Seminomatous Germ Cell Tumor,C1336415,Terminated,Phase 2,Due to Low Accrual
+Ifosfamide,DB01181,Stage IV Extragonadal Seminoma,C1336416,Terminated,Phase 2,Due to Low Accrual
+Ifosfamide,DB01181,Ovarian germ cell cancer stage IV,C0279974,Terminated,Phase 2,Due to Low Accrual
+Sirolimus,DB00877,Eosinophilic gastroenteritis,C1262481,Terminated,Phase 1,
+Everolimus,DB01590,Eosinophilic gastroenteritis,C1262481,Terminated,Phase 1,
+Sirolimus,DB00877,Eosinophilic esophagitis,C0341106,Terminated,Phase 1,
+Everolimus,DB01590,Eosinophilic esophagitis,C0341106,Terminated,Phase 1,
+Ponatinib,DB08901,Thyroid Neoplasm,C0040136,Terminated,Phase 2,Recruiting halted prematurely and will not resume. New study to open soon.
+Prednisone,DB00635,Polymyalgia Rheumatica,C0032533,Terminated,Phase 3,
+Aluminum hydroxide,DB06723,"viral; infection, enterovirus",C1400756,Withdrawn,Phase 2,"Based on the previous study results, inactivated EV71 vaccine with aluminum adjuvant was"
+Sulindac,DB00605,Adenocarcinoma of large intestine,C1319315,Terminated,Phase 2,The trial was prematurely closed due to lack of accrual.
+Lidocaine,DB00281,colorectal disorders,C2103078,Withdrawn,Phase 1/Phase 2,Study was closed due to recommendations of performing a PK study first.
+Mechlorethamine,DB00888,DS Stage I Plasma Cell Myeloma,C0278722,Suspended,Phase 1/Phase 2,Accrual to dose level 3 (56 mg/m2 Carfilzomib; 100 mg/m2 Melphalan) has been met.
+Melphalan,DB01042,DS Stage I Plasma Cell Myeloma,C0278722,Suspended,Phase 1/Phase 2,Accrual to dose level 3 (56 mg/m2 Carfilzomib; 100 mg/m2 Melphalan) has been met.
+Mechlorethamine,DB00888,DS Stage II Plasma Cell Myeloma,C0278723,Suspended,Phase 1/Phase 2,Accrual to dose level 3 (56 mg/m2 Carfilzomib; 100 mg/m2 Melphalan) has been met.
+Melphalan,DB01042,DS Stage II Plasma Cell Myeloma,C0278723,Suspended,Phase 1/Phase 2,Accrual to dose level 3 (56 mg/m2 Carfilzomib; 100 mg/m2 Melphalan) has been met.
+Mechlorethamine,DB00888,DS Stage III Plasma Cell Myeloma,C0278724,Suspended,Phase 1/Phase 2,Accrual to dose level 3 (56 mg/m2 Carfilzomib; 100 mg/m2 Melphalan) has been met.
+Melphalan,DB01042,DS Stage III Plasma Cell Myeloma,C0278724,Suspended,Phase 1/Phase 2,Accrual to dose level 3 (56 mg/m2 Carfilzomib; 100 mg/m2 Melphalan) has been met.
+Tacrolimus,DB00864,Vitiligo,C0042900,Terminated,Phase 2/Phase 3,
+Paroxetine,DB00715,Hepatitis C,C0019196,Terminated,Phase 2,"Telaprevir will not be used in NL, no more inclusions are expected."
+Valproic Acid,DB00313,childhood brain tumor,C0220603,Withdrawn,Phase 1,Feasibility of the trial was proven to be absent.
+Warfarin,DB00682,primary disorders,C0277554,Terminated,Phase 2/Phase 3,because a significant decrease of viable candidates for the study.
+Melatonin,DB01065,"ENCEPHALOPATHY, HYPOXIC-ISCHEMIC, NEWBORN",C0149878,Withdrawn,Phase 1,Lack of enrollment of suitable candidates
+Octreotide,DB00104,"Carcinoma, Neuroendocrine",C0206695,Terminated,Phase 2,Slow accrual
+Abatacept,DB01281,Alopecia Areata,C0002171,Withdrawn,Phase 2,Unfortunately we did not receive funding and therefore were not able to begin the trial.
+Mifepristone,DB00834,Pituitary-dependent Cushing's disease,C0221406,Withdrawn,Phase 3,Lack of enrollment
+Vitamin C,DB00126,Blood Coagulation Disorders,C0005779,Terminated,Phase 2,Study was terminated due to inability to recruit enough patients that meet inclusion criteria.
+Vitamin E,DB00163,Blood Coagulation Disorders,C0005779,Terminated,Phase 2,Study was terminated due to inability to recruit enough patients that meet inclusion criteria.
+Trametinib,DB08911,malignant neoplasm of large intestine stage IIIc,C2217039,Suspended,Phase 1/Phase 2,Temporarily stopped for assessment. Contact ctsucontact@westat.com for specifics
+Dabrafenib,DB08912,malignant neoplasm of large intestine stage IIIc,C2217039,Suspended,Phase 1/Phase 2,Temporarily stopped for assessment. Contact ctsucontact@westat.com for specifics
+Megestrol acetate,DB00351,Atypical Endometrial Hyperplasia,C0349579,Withdrawn,Phase 2,Lack of funding
+Levonorgestrel,DB00367,Atypical Endometrial Hyperplasia,C0349579,Withdrawn,Phase 2,Lack of funding
+Norgestrel,DB09389,Atypical Endometrial Hyperplasia,C0349579,Withdrawn,Phase 2,Lack of funding
+Megestrol acetate,DB00351,Endometrial adenocarcinoma,C1153706,Withdrawn,Phase 2,Lack of funding
+Levonorgestrel,DB00367,Endometrial adenocarcinoma,C1153706,Withdrawn,Phase 2,Lack of funding
+Norgestrel,DB09389,Endometrial adenocarcinoma,C1153706,Withdrawn,Phase 2,Lack of funding
+Megestrol acetate,DB00351,Recurrent Endometrial Cancer,C0278802,Withdrawn,Phase 2,Lack of funding
+Levonorgestrel,DB00367,Recurrent Endometrial Cancer,C0278802,Withdrawn,Phase 2,Lack of funding
+Norgestrel,DB09389,Recurrent Endometrial Cancer,C0278802,Withdrawn,Phase 2,Lack of funding
+Megestrol acetate,DB00351,Endometrial cancer stage II,C0278799,Withdrawn,Phase 2,Lack of funding
+Levonorgestrel,DB00367,Endometrial cancer stage II,C0278799,Withdrawn,Phase 2,Lack of funding
+Norgestrel,DB09389,Endometrial cancer stage II,C0278799,Withdrawn,Phase 2,Lack of funding
+Chlorhexidine,DB00878,Cerebral Hemorrhage,C2937358,Terminated,Phase 1,Closed study due to issues we have encountered with meeting our enrollment goals of this study
+Doxycycline,DB00254,Non-ischemic cardiomyopathy,C0877438,Terminated,Phase 2,End of funding
+Sodium thiosulfate,DB09499,Calcinosis cutis,C0006664,Withdrawn,Phase 2,
+Ifosfamide,DB01181,"Liposarcoma, Dedifferentiated",C0205824,Suspended,Phase 2,Major amendment - change in design
+Azacitidine,DB00928,"Leukemia, Myelomonocytic, Chronic",C0023480,Terminated,Phase 1,Due to Slow Accrual study was terminated.
+Deferasirox,DB01609,Iron Overload,C0282193,Withdrawn,Phase 2,This study was withdrawn until the evaluation of the nonclinical rat findings is complete.
+Deferasirox,DB01609,Transfusion hemosiderosis,C0268064,Withdrawn,Phase 2,This study was withdrawn until the evaluation of the nonclinical rat findings is complete.
+Deferasirox,DB01609,Iron Metabolism Disorders,C0012715,Withdrawn,Phase 2,This study was withdrawn until the evaluation of the nonclinical rat findings is complete.
+Norepinephrine,DB00368,Pure Autonomic Failure,C0393911,Terminated,Phase 3,Due to potential competition with a post-marketing study requested by FDA
+Droxidopa,DB06262,Pure Autonomic Failure,C0393911,Terminated,Phase 3,Due to potential competition with a post-marketing study requested by FDA
+Norepinephrine,DB00368,dopamine beta hydroxylase deficiency,C0342687,Terminated,Phase 3,Due to potential competition with a post-marketing study requested by FDA
+Droxidopa,DB06262,dopamine beta hydroxylase deficiency,C0342687,Terminated,Phase 3,Due to potential competition with a post-marketing study requested by FDA
+Gemcitabine,DB00441,Secondary malignant neoplasm of pancreas,C0346976,Terminated,Phase 3,"The DSMB conducted an interim analysis on overall survival, which showed that the treatment"
+Cisplatin,DB00515,Stage IVA Oropharyngeal Squamous Cell Carcinoma,C1336356,Withdrawn,Phase 2,Slow accrual
+Metformin,DB00331,Stage IA Pancreatic Cancer,C2981674,Withdrawn,Phase 1,Slow accrual
+Metformin,DB00331,Stage IB Pancreatic Cancer,C2981675,Withdrawn,Phase 1,Slow accrual
+Metformin,DB00331,Stage IIA Pancreatic Cancer,C2981676,Withdrawn,Phase 1,Slow accrual
+Metformin,DB00331,Stage IIB Pancreatic Cancer,C2981677,Withdrawn,Phase 1,Slow accrual
+Fluconazole,DB00196,"Leishmaniasis, Cutaneous",C0023283,Terminated,Phase 3,Low cure rate in the study (fluconazole) group
+Mannitol,DB00742,Acute Cerebrovascular Accidents,C0751956,Withdrawn,Phase 2,Investigator is leaving the institution.
+Verapamil,DB00661,Classical phenylketonuria,C0751434,Terminated,Phase 2,Recruitment challenges
+Prednisone,DB00635,Castration-resistant prostate cancer,C4049338,Terminated,Phase 2,Study stopped after results of cabozantinib Phase 3 CRPC study XL184-307.
+Rituximab,DB00073,Non-Hodgkin's lymphoma of central nervous system,C2213246,Terminated,Phase 2,Funding Unavailable
+Trastuzumab,DB00072,Cancer of Urinary Tract,C0751571,Terminated,Phase 2,Trial was terminated prematurely because of recruitment difficulties.
+Ondansetron,DB00904,Gastroenteritis,C0017160,Terminated,Phase 3,
+Trametinib,DB08911,Colorectal cancer recurrent,C0854750,Suspended,Phase 1/Phase 2,Drug supply issues
+Trametinib,DB08911,Stage IIIA Colorectal Cancer,C2981401,Suspended,Phase 1/Phase 2,Drug supply issues
+Trametinib,DB08911,Stage IIIB Colorectal Cancer,C2981402,Suspended,Phase 1/Phase 2,Drug supply issues
+Trametinib,DB08911,Stage IIIC Colorectal Cancer,C2981403,Suspended,Phase 1/Phase 2,Drug supply issues
+Trametinib,DB08911,Stage IVA Colorectal Cancer,C2981404,Suspended,Phase 1/Phase 2,Drug supply issues
+Trametinib,DB08911,Stage IVB Colorectal Cancer,C2981405,Suspended,Phase 1/Phase 2,Drug supply issues
+Paclitaxel,DB01229,Squamous cell carcinoma of skin,C0553723,Terminated,Phase 2,Closed by sponsor
+Milrinone,DB00235,Cardiomyopathies,C0878544,Suspended,Phase 3,Drug reformulation
+Linagliptin,DB08882,Vascular inflammations,C0947751,Terminated,Phase 3,"bad recruitment of suitable participants, just 4 patients in one year"
+Prasugrel,DB06209,ST segment elevation myocardial infarction,C1536220,Terminated,Phase 3,Enrolling participants has halted prematurely and will not resume
+Ticagrelor,DB08816,ST segment elevation myocardial infarction,C1536220,Terminated,Phase 3,Enrolling participants has halted prematurely and will not resume
+Bupivacaine,DB00297,Anterior Cruciate Ligament Injuries,C1456574,Terminated,Phase 3,"Difficult to enroll, parents/subjects prefer to choose type of anesthetic block."
+Metformin,DB00331,Serous cystadenocarcinoma ovary,C0279663,Withdrawn,Phase 1,
+Carboplatin,DB00958,Serous cystadenocarcinoma ovary,C0279663,Withdrawn,Phase 1,
+Paclitaxel,DB01229,Serous cystadenocarcinoma ovary,C0279663,Withdrawn,Phase 1,
+Nitrendipine,DB01054,Isolated systolic hypertension,C0745133,Terminated,Phase 2,
+Trametinib,DB08911,hepatic complications,C1832055,Suspended,Phase 1,Drug supply issues
+Gemcitabine,DB00441,Gallbladder Carcinoma,C0235782,Suspended,Phase 1,
+Oxaliplatin,DB00526,Gallbladder Carcinoma,C0235782,Suspended,Phase 1,
+Bevacizumab,DB00112,Hereditary hemorrhagic telangiectasia,C0039445,Terminated,Phase 2/Phase 3,DSMB's decision following the first step analysis
+Azacitidine,DB00928,MYELODYSPLASTIC SYNDROME,C3463824,Terminated,Phase 2,Study terminated due to lack of efficacy
+Oxytocin,DB00107,Noninfiltrating Intraductal Carcinoma,C0007124,Suspended,Phase 0,Enrollment on hold
+Nimodipine,DB00393,Acute Cerebrovascular Accidents,C0751956,Withdrawn,Phase 2,The PI is leaving the University of Florida.
+Acetazolamide,DB00819,Acute Cerebrovascular Accidents,C0751956,Withdrawn,Phase 2,The PI is leaving the University of Florida.
+Trametinib,DB08911,Poorly Differentiated Thyroid Carcinoma,C1266050,Suspended,Phase 2,Drug supply issues
+Trametinib,DB08911,Stage IVA Thyroid Gland Follicular Carcinoma,C3897519,Suspended,Phase 2,Drug supply issues
+Trametinib,DB08911,Stage IVA Thyroid Gland Papillary Carcinoma,C3897518,Suspended,Phase 2,Drug supply issues
+Trametinib,DB08911,Stage IVB Thyroid Gland Follicular Carcinoma,C3897512,Suspended,Phase 2,Drug supply issues
+Trametinib,DB08911,Stage IVB Thyroid Gland Papillary Carcinoma,C3897511,Suspended,Phase 2,Drug supply issues
+Trametinib,DB08911,Stage IVC Thyroid Gland Follicular Carcinoma,C3897507,Suspended,Phase 2,Drug supply issues
+Trametinib,DB08911,Stage IVC Thyroid Gland Papillary Carcinoma,C3897506,Suspended,Phase 2,Drug supply issues
+Aldesleukin,DB00041,Desmoplastic Small Round Cell Tumor,C0281508,Suspended,Phase 1/Phase 2,Study on hold due to primary co-investigator leaving the institution.
+Aldesleukin,DB00041,Metastatic osteosarcoma,C0278512,Suspended,Phase 1/Phase 2,Study on hold due to primary co-investigator leaving the institution.
+Aldesleukin,DB00041,Neuroblastoma recurrent,C0278695,Suspended,Phase 1/Phase 2,Study on hold due to primary co-investigator leaving the institution.
+Aldesleukin,DB00041,Osteosarcoma recurrent,C0278779,Suspended,Phase 1/Phase 2,Study on hold due to primary co-investigator leaving the institution.
+Gemcitabine,DB00441,Pancreatic Ductal Adenocarcinoma,C1335302,Suspended,Phase 1/Phase 2,Temporarily stopped for assessment.
+Paclitaxel,DB01229,Pancreatic Ductal Adenocarcinoma,C1335302,Suspended,Phase 1/Phase 2,Temporarily stopped for assessment.
+Deferoxamine,DB00746,Subarachnoid Hemorrhage,C0038525,Terminated,Phase 0,Principle Investigator is moving to another institution and plans to restart this proctocol in
+Trametinib,DB08911,Stage IIIA Skin Melanoma,C2828034,Suspended,Phase 2,Drug Supply Issues
+Dabrafenib,DB08912,Stage IIIA Skin Melanoma,C2828034,Suspended,Phase 2,Drug Supply Issues
+Trametinib,DB08911,Stage IIIB Skin Melanoma,C2828035,Suspended,Phase 2,Drug Supply Issues
+Dabrafenib,DB08912,Stage IIIB Skin Melanoma,C2828035,Suspended,Phase 2,Drug Supply Issues
+Methylphenidate,DB00422,Conduct Disorder,C0149654,Withdrawn,Phase 1/Phase 2,
+Ezetimibe,DB00973,Non-alcoholic Fatty Liver Disease,C0400966,Terminated,Phase 2,Failure to recruit
+Estradiol,DB00783,Vaginal ulcer,C0566951,Withdrawn,Phase 2,the study was not feasible
+Caffeine,DB00201,Dyspnea,C0013404,Terminated,Phase 2,Too low enrolment rate
+Treprostinil,DB00374,Pulmonary Fibrosis,C0034069,Withdrawn,Phase 2,Study design was inadequate and would not achieve study endpoints
+Norepinephrine,DB00368,HSAN Type IV,C0020074,Withdrawn,Phase 2,
+Droxidopa,DB00368,HSAN Type IV,C0020074,Withdrawn,Phase 2,
+,DB06262,HSAN Type IV,C0020074,Withdrawn,Phase 2,
+Papaverine,DB01113,Gastroenteritis,C0017160,Terminated,Phase 3,Not enough patients
