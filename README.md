@@ -26,3 +26,20 @@
 
 **Methodology:** ChEMBL bioactivity data -> target overlap (Jaccard) + affinity similarity
 (log-scale) -> composite correlation -> Markowitz optimization via PyPortfolioOpt.
+
+---
+
+## Phase 3 - Interactive Demo
+
+Run the app locally:
+
+    cd RepurposeAlpha
+    streamlit run app/app.py
+
+Then open http://localhost:8501 in your browser.
+
+Features:
+- Correlation matrix heatmap (interactive)
+- Efficient frontier with Monte Carlo backdrop
+- Max Sharpe + Min Volatility portfolios
+- Live sensitivity analysis on the correlation assumption
