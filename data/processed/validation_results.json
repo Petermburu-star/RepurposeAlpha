@@ -1,0 +1,24 @@
+{
+  "antimalarials_L5": {
+    "n_drugs": 6,
+    "n_with_atc": 5,
+    "n_families": 2,
+    "n_within_pairs": 4,
+    "n_between_pairs": 6,
+    "within_avg": 0.31854581863462306,
+    "between_avg": 0.13898548892107318,
+    "enrichment": 2.2919358064460833,
+    "confidence": 0.22919358064460832
+  },
+  "pws_L5": {
+    "n_drugs": 5,
+    "n_with_atc": 3,
+    "n_families": 2,
+    "n_within_pairs": 1,
+    "n_between_pairs": 2,
+    "within_avg": 0.6168695638492528,
+    "between_avg": 0.10432355164831542,
+    "enrichment": 5.913042204782086,
+    "confidence": 0.5913042204782086
+  }
+}
