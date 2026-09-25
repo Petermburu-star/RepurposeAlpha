@@ -1,0 +1,4 @@
+chembl_id,drug_name,stage_str,max_phase,drug_type
+CHEMBL4297392,IOWH-032,PHASE_2,2.0,Small molecule
+CHEMBL273348,TOSUFLOXACIN,APPROVAL,4.0,Small molecule
+CHEMBL1200699,DOXYCYCLINE,APPROVAL,4.0,Small molecule

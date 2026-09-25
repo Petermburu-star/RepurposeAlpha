@@ -11,7 +11,7 @@ import time
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from weighting import compute_weights
+from .weighting import compute_weights
 
 CHEMBL_BASE = "https://www.ebi.ac.uk/chembl/api/data"
 

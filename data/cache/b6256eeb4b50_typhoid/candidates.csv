@@ -1,0 +1,3 @@
+chembl_id,drug_name,stage_str,max_phase,drug_type
+CHEMBL8,CIPROFLOXACIN,APPROVAL,4.0,Small molecule
+CHEMBL5315124,LEVOFLOXACIN,APPROVAL,4.0,Small molecule

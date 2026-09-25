@@ -1,10 +1,9 @@
 """
-RepurposeAlpha — Streamlit app (registry-driven).
+RepurposeAlpha — Streamlit app with disease query interface.
 """
 import sys
 from pathlib import Path
 
-# Make src/ importable BEFORE importing our modules
 APP_DIR = Path(__file__).resolve().parent
 ROOT    = APP_DIR.parent
 sys.path.insert(0, str(ROOT / "src"))
@@ -19,23 +18,14 @@ from pypfopt import EfficientFrontier
 
 import auth
 import assumptions
+import discovery
+import correlation
+import cache as cache_mod
 
 st.set_page_config(page_title="RepurposeAlpha", page_icon="🧬", layout="wide")
 
-# ---------- Auth gate ----------
 user = auth.require_login(min_role="viewer")
 
-# ---------- Data ----------
-DATA_DIR = ROOT / "data" / "processed"
-
-@st.cache_data
-def load_corr():
-    return pd.read_csv(DATA_DIR / "pws_correlation_matrix.csv", index_col=0)
-
-corr = load_corr()
-tickers = list(corr.columns)
-
-# ---------- Header ----------
 col_title, col_user = st.columns([5, 1])
 with col_title:
     st.title("🧬 RepurposeAlpha")
@@ -46,41 +36,109 @@ with col_user:
         st.session_state["user"] = None
         st.rerun()
 
-st.markdown("**Portfolio optimization for drug repurposing.** All inputs sourced from the assumption registry.")
+st.markdown("**Portfolio optimization for drug repurposing.** Type a disease to begin.")
 st.divider()
+
+# ============================================================
+# QUERY INTERFACE
+# ============================================================
+st.subheader("🔍 Query")
+
+col_q1, col_q2, col_q3 = st.columns([3, 1, 1])
+with col_q1:
+    disease_input = st.text_input(
+        "Disease name",
+        value=st.session_state.get("disease", "Prader-Willi syndrome"),
+        placeholder="e.g. tuberculosis, Alzheimer disease, type 2 diabetes",
+    )
+with col_q2:
+    min_phase = st.selectbox("Min phase", [1, 2, 3], index=1)
+with col_q3:
+    max_candidates = st.number_input("Max candidates", 5, 30, 10, step=5)
+
+col_b1, col_b2, col_b3 = st.columns([1, 1, 4])
+with col_b1:
+    run_analysis = st.button("🚀 Analyze", type="primary")
+with col_b2:
+    use_cache = st.checkbox("Use cache", value=True)
+
+if disease_input:
+    st.session_state["disease"] = disease_input
+
+if run_analysis and disease_input:
+    candidates = None
+    corr = None
+    meta = None
+
+    if use_cache and cache_mod.has_cache(disease_input):
+        st.info(f"📦 Loading cached analysis for '{disease_input}'...")
+        candidates, corr, meta = cache_mod.load_analysis(disease_input)
+        st.success(f"✓ Loaded from cache ({meta.get('n_candidates', '?')} candidates)")
+    else:
+        with st.status(f"Analyzing '{disease_input}'...", expanded=True) as status:
+            st.write("Step 1/3: Discovering candidate drugs from Open Targets...")
+            try:
+                candidates = discovery.get_candidates_for_disease(
+                    disease_input, min_phase=min_phase, max_results=max_candidates
+                )
+            except Exception as e:
+                status.update(label=f"❌ Discovery failed: {e}", state="error")
+                st.stop()
+
+            if candidates is None or candidates.empty:
+                status.update(label=f"❌ No candidates found for '{disease_input}'", state="error")
+                st.stop()
+
+            st.write(f"   ✓ Found {len(candidates)} candidates")
+
+            st.write("Step 2/3: Computing correlation matrix...")
+            try:
+                ids = candidates["chembl_id"].tolist()
+                corr = correlation.build_correlation_matrix(ids, verbose=False)
+            except Exception as e:
+                status.update(label=f"❌ Correlation failed: {e}", state="error")
+                st.stop()
+
+            if corr is None or corr.empty:
+                status.update(label="❌ Correlation matrix empty", state="error")
+                st.stop()
+
+            st.write(f"   ✓ Correlation matrix built ({len(corr)} × {len(corr)})")
+
+            st.write("Step 3/3: Saving to cache...")
+            cache_mod.save_analysis(disease_input, candidates, corr,
+                                     metadata={"min_phase": min_phase})
+            status.update(label=f"✅ Analysis complete for '{disease_input}'", state="complete")
+
+    st.session_state["candidates"] = candidates
+    st.session_state["corr"]       = corr
+    st.session_state["disease"]    = disease_input
+
+candidates = st.session_state.get("candidates")
+corr       = st.session_state.get("corr")
+disease    = st.session_state.get("disease", "(none)")
+
+if candidates is None or corr is None:
+    st.info("👆 Enter a disease name and click **Analyze** to begin.")
+    st.stop()
+
+tickers = list(corr.columns)
+drug_names = dict(zip(candidates["chembl_id"], candidates["drug_name"]))
 
 # ---------- Sidebar ----------
 st.sidebar.header("Assumptions")
-st.sidebar.caption("Defaults from registry · every value shows its source")
-
 rfr_entry = assumptions.load_registry().get("risk_free_rate", {})
 rfr_value  = rfr_entry.get("value", 0.02)
-rfr_source = rfr_entry.get("source", "unknown")
-
 st.sidebar.markdown(f"**Risk-free rate:** `{rfr_value:.4f}`")
-st.sidebar.caption(f"Source: {rfr_source}")
+st.sidebar.caption(f"Source: {rfr_entry.get('source', 'unknown')}")
 
-pos_phase2 = assumptions.get_value("pos.phase_2", 0.31)
 pos_phase3 = assumptions.get_value("pos.phase_3", 0.58)
+st.sidebar.caption(f"PoS Phase 3 baseline: {pos_phase3:.2f} (BIO/QLS)")
 
-st.sidebar.markdown("---")
-st.sidebar.markdown("**Per-candidate estimates**")
-st.sidebar.caption(f"PoS baseline from BIO/QLS (Phase 2 = {pos_phase2:.2f}, Phase 3 = {pos_phase3:.2f})")
-
-default_returns = {t: round(pos_phase3, 2) for t in tickers}
-default_vols    = {t: 0.30 for t in tickers}
-
-mu, sigma = {}, {}
-for t in tickers:
-    st.sidebar.markdown(f"**{t}**")
-    mu[t] = st.sidebar.slider("Return (rNPV proxy)", 0.0, 1.0, default_returns[t], 0.01, key=f"mu_{t}")
-    sigma[t] = st.sidebar.slider("Volatility", 0.05, 0.60, default_vols[t], 0.01, key=f"sig_{t}")
-
-mu_s = pd.Series(mu)
-sigma_s = pd.Series(sigma)
+mu_s    = pd.Series({t: pos_phase3 for t in tickers})
+sigma_s = pd.Series({t: 0.30 for t in tickers})
 cov = pd.DataFrame(np.outer(sigma_s, sigma_s) * corr.values, index=tickers, columns=tickers)
 
-# ---------- Solver ----------
 def solve(mode):
     ef = EfficientFrontier(mu_s, cov, weight_bounds=(0, 1))
     try:
@@ -98,23 +156,26 @@ def solve(mode):
 w_sharpe, r_s, v_s, s_s = solve("sharpe")
 w_minvol, r_m, v_m, _   = solve("minvol")
 
-# ---------- Tabs ----------
-tab_names = ["🔗 Correlation", "📈 Efficient Frontier", "💼 Optimal Portfolio", "🎚️ Sensitivity", "📋 Assumptions"]
+st.markdown(f"### Analysis: **{disease}**  ·  {len(tickers)} candidates")
+
+tab_names = ["🔗 Correlation", "📈 Frontier", "💼 Portfolio", "🎚️ Sensitivity", "📋 Assumptions"]
 if auth.has_role(user, "admin"):
     tab_names.append("🛡️ Admin")
-
 tabs = st.tabs(tab_names)
-tab1, tab2, tab3, tab4, tab5 = tabs[0], tabs[1], tabs[2], tabs[3], tabs[4]
 
-with tab1:
+with tabs[0]:
     st.subheader("Candidate correlation matrix")
-    fig = px.imshow(corr, text_auto=".2f", color_continuous_scale="RdYlGn_r", zmin=0, zmax=1, aspect="auto")
+    labelled = corr.rename(index=drug_names, columns=drug_names)
+    fig = px.imshow(labelled, text_auto=".2f", color_continuous_scale="RdYlGn_r",
+                    zmin=0, zmax=1, aspect="auto")
+    fig.update_layout(height=max(400, 25 * len(tickers)))
     st.plotly_chart(fig, use_container_width=True)
 
-with tab2:
+with tabs[1]:
     st.subheader("Efficient frontier")
     n = 3000
-    rand_w = np.random.dirichlet(np.ones(len(tickers)), n)
+    rng = np.random.default_rng(42)
+    rand_w = rng.dirichlet(np.ones(len(tickers)), n)
     rets = rand_w @ mu_s.values
     vols = np.sqrt(np.einsum("ij,jk,ik->i", rand_w, cov.values, rand_w))
     fig = go.Figure()
@@ -126,61 +187,59 @@ with tab2:
     fig.update_layout(xaxis_title="Risk", yaxis_title="Expected return", height=520)
     st.plotly_chart(fig, use_container_width=True)
 
-with tab3:
+with tabs[2]:
     st.subheader("Optimal portfolio weights")
     c1, c2 = st.columns(2)
     with c1:
         st.markdown("**Max Sharpe**")
-        st.dataframe(w_sharpe.rename("weight").to_frame().style.format("{:.3f}"))
+        df = pd.DataFrame({"weight": w_sharpe})
+        df.index = [drug_names.get(i, i) for i in df.index]
+        st.dataframe(df.style.format("{:.3f}"))
         st.metric("Expected return", f"{r_s:.3f}")
-        st.metric("Volatility", f"{v_s:.3f}")
-        st.metric("Sharpe ratio", f"{s_s:.3f}")
+        st.metric("Volatility",      f"{v_s:.3f}")
+        st.metric("Sharpe ratio",    f"{s_s:.3f}")
     with c2:
         st.markdown("**Min Volatility**")
-        st.dataframe(w_minvol.rename("weight").to_frame().style.format("{:.3f}"))
+        df = pd.DataFrame({"weight": w_minvol})
+        df.index = [drug_names.get(i, i) for i in df.index]
+        st.dataframe(df.style.format("{:.3f}"))
         st.metric("Expected return", f"{r_m:.3f}")
-        st.metric("Volatility", f"{v_m:.3f}")
+        st.metric("Volatility",      f"{v_m:.3f}")
 
-with tab4:
-    st.subheader("Sensitivity to correlation assumption")
-    rho = st.slider("Carbetocin ↔ Oxytocin correlation", 0.0, 1.0, 0.748, 0.01)
-    corr2 = corr.copy()
-    if "Carbetocin" in corr2.index and "Oxytocin" in corr2.index:
-        corr2.loc["Carbetocin", "Oxytocin"] = rho
-        corr2.loc["Oxytocin", "Carbetocin"] = rho
-    cov2 = pd.DataFrame(np.outer(sigma_s, sigma_s) * corr2.values, index=tickers, columns=tickers)
-    ef = EfficientFrontier(mu_s, cov2, weight_bounds=(0, 1))
-    try:
-        ef.max_sharpe(risk_free_rate=rfr_value)
-        st.bar_chart(pd.Series(ef.clean_weights()))
-    except Exception as e:
-        st.error(f"Solver error: {e}")
+with tabs[3]:
+    st.subheader("Sensitivity analysis")
+    if len(tickers) >= 2:
+        t1 = st.selectbox("Drug A", tickers, index=0, format_func=lambda x: drug_names.get(x, x))
+        t2 = st.selectbox("Drug B", tickers, index=1, format_func=lambda x: drug_names.get(x, x))
+        rho = st.slider("Correlation", 0.0, 1.0, float(corr.loc[t1, t2]), 0.01)
+        corr2 = corr.copy()
+        corr2.loc[t1, t2] = rho
+        corr2.loc[t2, t1] = rho
+        cov2 = pd.DataFrame(np.outer(sigma_s, sigma_s) * corr2.values, index=tickers, columns=tickers)
+        ef = EfficientFrontier(mu_s, cov2, weight_bounds=(0, 1))
+        try:
+            ef.max_sharpe(risk_free_rate=rfr_value)
+            w = pd.Series(ef.clean_weights())
+            w.index = [drug_names.get(i, i) for i in w.index]
+            st.bar_chart(w)
+        except Exception as e:
+            st.error(f"Solver error: {e}")
 
-with tab5:
-    st.subheader("📋 Assumption Registry")
-    st.caption("Every numeric input to the model, with source, confidence, and timestamp.")
+with tabs[4]:
+    st.subheader("📋 Assumption registry")
     reg = assumptions.load_registry()
-
     rows = []
     def flatten(node, prefix=""):
         for k, v in node.items():
             path = f"{prefix}.{k}" if prefix else k
             if isinstance(v, dict) and "value" in v:
-                rows.append({
-                    "key": path,
-                    "value": v["value"],
-                    "confidence": v.get("confidence", "?"),
-                    "source": v.get("source", ""),
-                    "timestamp": (v.get("timestamp") or "")[:19],
-                })
+                rows.append({"key": path, "value": v["value"],
+                             "confidence": v.get("confidence", "?"),
+                             "source": v.get("source", "")})
             elif isinstance(v, dict):
                 flatten(v, path)
     flatten(reg)
-
-    df_reg = pd.DataFrame(rows)
-    st.dataframe(df_reg, use_container_width=True, hide_index=True)
-    conf_counts = df_reg["confidence"].value_counts().to_dict()
-    st.markdown(f"**Confidence breakdown:** {conf_counts}")
+    st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
 
 if auth.has_role(user, "admin") and len(tabs) == 6:
     with tabs[5]:
@@ -191,4 +250,4 @@ if auth.has_role(user, "admin") and len(tabs) == 6:
         st.dataframe(pd.DataFrame(auth.list_audit(50), columns=["timestamp", "user", "action", "detail"]))
 
 st.divider()
-st.caption("RepurposeAlpha · Phase 5.5 · Registry-driven")
+st.caption(f"RepurposeAlpha · {disease} · {len(tickers)} candidates · Registry-driven")
