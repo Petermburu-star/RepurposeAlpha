@@ -1,0 +1,79 @@
+risk_free_rate:
+  value: 0.051100000000000007
+  source: FRED DGS10 (10-year US Treasury)
+  confidence: high
+  method: live_fetch
+  timestamp: '2026-09-25T09:31:15.486441+00:00'
+  notes: 'Latest observation date: 2026-09-23'
+pos:
+  phase_1:
+    value: 0.63
+    source: BIO/QLS Clinical Development Success Rates 2011-2020
+    confidence: high
+    method: published_benchmark
+    timestamp: '2026-09-25T09:31:15.492091+00:00'
+    notes: All-indication average; adjust for specific therapeutic area
+  phase_2:
+    value: 0.31
+    source: BIO/QLS Clinical Development Success Rates 2011-2020
+    confidence: high
+    method: published_benchmark
+    timestamp: '2026-09-25T09:31:15.497852+00:00'
+    notes: All-indication average; adjust for specific therapeutic area
+  phase_3:
+    value: 0.58
+    source: BIO/QLS Clinical Development Success Rates 2011-2020
+    confidence: high
+    method: published_benchmark
+    timestamp: '2026-09-25T09:31:15.505488+00:00'
+    notes: All-indication average; adjust for specific therapeutic area
+  nda_bla:
+    value: 0.85
+    source: BIO/QLS Clinical Development Success Rates 2011-2020
+    confidence: high
+    method: published_benchmark
+    timestamp: '2026-09-25T09:31:15.514864+00:00'
+    notes: All-indication average; adjust for specific therapeutic area
+cost:
+  phase_0_usd:
+    value: 1000000
+    source: DiMasi 2016 (J Health Econ), Wouters 2020 (JAMA)
+    confidence: medium
+    method: published_estimate
+    timestamp: '2026-09-25T09:31:15.525676+00:00'
+    notes: Mid-2020s USD, all-indication average
+  phase_1_usd:
+    value: 10000000
+    source: DiMasi 2016 (J Health Econ), Wouters 2020 (JAMA)
+    confidence: medium
+    method: published_estimate
+    timestamp: '2026-09-25T09:31:15.536379+00:00'
+    notes: Mid-2020s USD, all-indication average
+  phase_1_2_usd:
+    value: 15000000
+    source: DiMasi 2016 (J Health Econ), Wouters 2020 (JAMA)
+    confidence: medium
+    method: published_estimate
+    timestamp: '2026-09-25T09:31:15.543230+00:00'
+    notes: Mid-2020s USD, all-indication average
+  phase_2_usd:
+    value: 25000000
+    source: DiMasi 2016 (J Health Econ), Wouters 2020 (JAMA)
+    confidence: medium
+    method: published_estimate
+    timestamp: '2026-09-25T09:31:15.549627+00:00'
+    notes: Mid-2020s USD, all-indication average
+  phase_2_3_usd:
+    value: 40000000
+    source: DiMasi 2016 (J Health Econ), Wouters 2020 (JAMA)
+    confidence: medium
+    method: published_estimate
+    timestamp: '2026-09-25T09:31:15.556589+00:00'
+    notes: Mid-2020s USD, all-indication average
+  phase_3_usd:
+    value: 100000000
+    source: DiMasi 2016 (J Health Econ), Wouters 2020 (JAMA)
+    confidence: medium
+    method: published_estimate
+    timestamp: '2026-09-25T09:31:15.564225+00:00'
+    notes: Mid-2020s USD, all-indication average
