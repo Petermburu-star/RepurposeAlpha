@@ -1,40 +1,18 @@
 """
-RepurposeAlpha — authentication + role-based access control.
+RepurposeAlpha — authentication + RBAC (encrypted storage).
 """
-import sqlite3
 import bcrypt
-import streamlit as st
-from pathlib import Path
+import sqlite3
 from datetime import datetime
 
-DB_PATH = Path(__file__).resolve().parent / "users.db"
+import secure_db
+from secure_db import connect
 
 ROLE_LEVELS = {"viewer": 1, "analyst": 2, "admin": 3}
 
 
-def _conn():
-    return sqlite3.connect(DB_PATH)
-
-
 def init_db():
-    with _conn() as con:
-        con.execute("""
-            CREATE TABLE IF NOT EXISTS users (
-                username   TEXT PRIMARY KEY,
-                pw_hash    BLOB NOT NULL,
-                role       TEXT NOT NULL DEFAULT 'analyst',
-                created_at TEXT NOT NULL
-            )
-        """)
-        con.execute("""
-            CREATE TABLE IF NOT EXISTS audit_log (
-                id         INTEGER PRIMARY KEY AUTOINCREMENT,
-                ts         TEXT NOT NULL,
-                username   TEXT,
-                action     TEXT NOT NULL,
-                detail     TEXT
-            )
-        """)
+    secure_db.initialize()
 
 
 def hash_password(password: str) -> bytes:
@@ -50,9 +28,9 @@ def verify_password(password: str, pw_hash: bytes) -> bool:
 
 def create_user(username: str, password: str, role: str = "analyst") -> bool:
     if role not in ROLE_LEVELS:
-        raise ValueError(f"Unknown role: {role}. Must be one of {list(ROLE_LEVELS)}")
+        raise ValueError(f"Unknown role: {role}")
     try:
-        with _conn() as con:
+        with connect() as con:
             con.execute(
                 "INSERT INTO users (username, pw_hash, role, created_at) VALUES (?, ?, ?, ?)",
                 (username, hash_password(password), role, datetime.utcnow().isoformat()),
@@ -64,7 +42,7 @@ def create_user(username: str, password: str, role: str = "analyst") -> bool:
 
 
 def authenticate(username: str, password: str):
-    with _conn() as con:
+    with connect() as con:
         row = con.execute(
             "SELECT username, pw_hash, role FROM users WHERE username = ?",
             (username,),
@@ -77,7 +55,7 @@ def authenticate(username: str, password: str):
 
 
 def log_event(username, action, detail=None):
-    with _conn() as con:
+    with connect() as con:
         con.execute(
             "INSERT INTO audit_log (ts, username, action, detail) VALUES (?, ?, ?, ?)",
             (datetime.utcnow().isoformat(), username, action, detail),
@@ -85,14 +63,14 @@ def log_event(username, action, detail=None):
 
 
 def list_users():
-    with _conn() as con:
+    with connect() as con:
         return con.execute(
             "SELECT username, role, created_at FROM users ORDER BY created_at"
         ).fetchall()
 
 
 def list_audit(limit=50):
-    with _conn() as con:
+    with connect() as con:
         return con.execute(
             "SELECT ts, username, action, detail FROM audit_log "
             "ORDER BY id DESC LIMIT ?", (limit,)
@@ -106,22 +84,19 @@ def has_role(user, required_role: str) -> bool:
 
 
 def require_login(min_role: str = "viewer"):
-    """Streamlit guard with minimum role requirement."""
+    import streamlit as st
     if "user" in st.session_state and st.session_state["user"]:
         if has_role(st.session_state["user"], min_role):
             return st.session_state["user"]
-        st.error(f"Your role ({st.session_state['user']['role']}) cannot access this page. "
-                 f"Required: {min_role}.")
+        st.error(f"Your role cannot access this page.")
         st.stop()
 
     st.title("🔒 RepurposeAlpha")
     st.caption("Authentication required.")
-
     with st.form("login_form"):
         username = st.text_input("Username")
         password = st.text_input("Password", type="password")
         submit = st.form_submit_button("Log in")
-
     if submit:
         user = authenticate(username, password)
         if user:
