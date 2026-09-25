@@ -1,6 +1,5 @@
 """
-RepurposeAlpha — authentication module.
-Passwords hashed with bcrypt, sessions managed via Streamlit state.
+RepurposeAlpha — authentication + role-based access control.
 """
 import sqlite3
 import bcrypt
@@ -10,13 +9,14 @@ from datetime import datetime
 
 DB_PATH = Path(__file__).resolve().parent / "users.db"
 
+ROLE_LEVELS = {"viewer": 1, "analyst": 2, "admin": 3}
+
 
 def _conn():
     return sqlite3.connect(DB_PATH)
 
 
 def init_db():
-    """Create users and audit_log tables if they don't exist."""
     with _conn() as con:
         con.execute("""
             CREATE TABLE IF NOT EXISTS users (
@@ -38,12 +38,10 @@ def init_db():
 
 
 def hash_password(password: str) -> bytes:
-    """Hash a password with bcrypt (cost factor 12)."""
     return bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt(rounds=12))
 
 
 def verify_password(password: str, pw_hash: bytes) -> bool:
-    """Verify a plaintext password against a stored hash."""
     try:
         return bcrypt.checkpw(password.encode("utf-8"), pw_hash)
     except Exception:
@@ -51,7 +49,8 @@ def verify_password(password: str, pw_hash: bytes) -> bool:
 
 
 def create_user(username: str, password: str, role: str = "analyst") -> bool:
-    """Create a user. Returns True on success, False if user exists."""
+    if role not in ROLE_LEVELS:
+        raise ValueError(f"Unknown role: {role}. Must be one of {list(ROLE_LEVELS)}")
     try:
         with _conn() as con:
             con.execute(
@@ -65,7 +64,6 @@ def create_user(username: str, password: str, role: str = "analyst") -> bool:
 
 
 def authenticate(username: str, password: str):
-    """Check credentials. Returns user dict or None."""
     with _conn() as con:
         row = con.execute(
             "SELECT username, pw_hash, role FROM users WHERE username = ?",
@@ -79,7 +77,6 @@ def authenticate(username: str, password: str):
 
 
 def log_event(username, action, detail=None):
-    """Append to audit log."""
     with _conn() as con:
         con.execute(
             "INSERT INTO audit_log (ts, username, action, detail) VALUES (?, ?, ?, ?)",
@@ -87,13 +84,35 @@ def log_event(username, action, detail=None):
         )
 
 
-def require_login():
-    """
-    Streamlit guard. Returns the logged-in user dict, or renders login
-    form and stops execution until authenticated.
-    """
+def list_users():
+    with _conn() as con:
+        return con.execute(
+            "SELECT username, role, created_at FROM users ORDER BY created_at"
+        ).fetchall()
+
+
+def list_audit(limit=50):
+    with _conn() as con:
+        return con.execute(
+            "SELECT ts, username, action, detail FROM audit_log "
+            "ORDER BY id DESC LIMIT ?", (limit,)
+        ).fetchall()
+
+
+def has_role(user, required_role: str) -> bool:
+    if not user:
+        return False
+    return ROLE_LEVELS.get(user.get("role"), 0) >= ROLE_LEVELS.get(required_role, 999)
+
+
+def require_login(min_role: str = "viewer"):
+    """Streamlit guard with minimum role requirement."""
     if "user" in st.session_state and st.session_state["user"]:
-        return st.session_state["user"]
+        if has_role(st.session_state["user"], min_role):
+            return st.session_state["user"]
+        st.error(f"Your role ({st.session_state['user']['role']}) cannot access this page. "
+                 f"Required: {min_role}.")
+        st.stop()
 
     st.title("🔒 RepurposeAlpha")
     st.caption("Authentication required.")
@@ -107,7 +126,6 @@ def require_login():
         user = authenticate(username, password)
         if user:
             st.session_state["user"] = user
-            st.success(f"Welcome, {user['username']}")
             st.rerun()
         else:
             st.error("Invalid credentials.")
