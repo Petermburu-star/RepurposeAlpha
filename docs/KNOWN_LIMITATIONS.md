@@ -66,3 +66,14 @@ which the architecture supports but has not been validated at scale.
 ---
 
 *If you spot an issue we haven't documented, please open an issue on GitHub.*
+
+## 6. Correlation engine uses affinity threshold
+
+To exclude safety-pharmacology panel noise, the correlation engine only
+considers drug-target pairs with measured affinity ≤ 1 μM (1000 nM).
+This follows standard practice in secondary pharmacology: binding weaker
+than 1 μM is considered non-specific and is not treated as a biological
+mechanism.
+
+Without this filter, a single promiscuous assay panel can inflate a drug's
+target list to 30+ receptors, causing false correlation drops.

@@ -1,3 +1,10 @@
+> **Data correction (2026-09-25):** The Carbetocin–Oxytocin correlation
+> reported below is 0.748 from an initial analysis. A refined analysis using
+> 5× more bioactivity data and a pharmacological affinity threshold (≤1 μM)
+> produced a *higher* correlation of **0.839**. The refined number is the
+> more accurate one; the Phase 2 figure is retained in the text for
+> transparency about the analytical evolution.
+
 # RepurposeAlpha — Investor Case Study
 
 **Prader-Willi Syndrome: A Portfolio Approach to Drug Repurposing**
