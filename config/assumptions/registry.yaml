@@ -77,3 +77,163 @@ cost:
     method: published_estimate
     timestamp: '2026-09-25T09:31:15.564225+00:00'
     notes: Mid-2020s USD, all-indication average
+revenue_proxy:
+  approval:
+    value: 5.0
+    source: Derived from public orphan-drug revenue distributions × Phase-3 trial
+      cost
+    confidence: medium
+    method: heuristic
+    timestamp: '2026-09-25T11:25:56.300982+00:00'
+    notes: 'Scale: 1.0 = cost of Phase 3 trial. Approved drug = 5.0 (~5x peak-sales
+      multiple)'
+  phase_4:
+    value: 5.0
+    source: Derived from public orphan-drug revenue distributions × Phase-3 trial
+      cost
+    confidence: medium
+    method: heuristic
+    timestamp: '2026-09-25T11:25:56.317733+00:00'
+    notes: 'Scale: 1.0 = cost of Phase 3 trial. Approved drug = 5.0 (~5x peak-sales
+      multiple)'
+  phase_3:
+    value: 4.0
+    source: Derived from public orphan-drug revenue distributions × Phase-3 trial
+      cost
+    confidence: medium
+    method: heuristic
+    timestamp: '2026-09-25T11:25:56.337287+00:00'
+    notes: 'Scale: 1.0 = cost of Phase 3 trial. Approved drug = 5.0 (~5x peak-sales
+      multiple)'
+  phase_2_3:
+    value: 2.5
+    source: Derived from public orphan-drug revenue distributions × Phase-3 trial
+      cost
+    confidence: medium
+    method: heuristic
+    timestamp: '2026-09-25T11:25:56.354296+00:00'
+    notes: 'Scale: 1.0 = cost of Phase 3 trial. Approved drug = 5.0 (~5x peak-sales
+      multiple)'
+  phase_2:
+    value: 1.8
+    source: Derived from public orphan-drug revenue distributions × Phase-3 trial
+      cost
+    confidence: medium
+    method: heuristic
+    timestamp: '2026-09-25T11:25:56.370951+00:00'
+    notes: 'Scale: 1.0 = cost of Phase 3 trial. Approved drug = 5.0 (~5x peak-sales
+      multiple)'
+  phase_1_2:
+    value: 1.0
+    source: Derived from public orphan-drug revenue distributions × Phase-3 trial
+      cost
+    confidence: medium
+    method: heuristic
+    timestamp: '2026-09-25T11:25:56.387934+00:00'
+    notes: 'Scale: 1.0 = cost of Phase 3 trial. Approved drug = 5.0 (~5x peak-sales
+      multiple)'
+  phase_1:
+    value: 0.6
+    source: Derived from public orphan-drug revenue distributions × Phase-3 trial
+      cost
+    confidence: medium
+    method: heuristic
+    timestamp: '2026-09-25T11:25:56.405077+00:00'
+    notes: 'Scale: 1.0 = cost of Phase 3 trial. Approved drug = 5.0 (~5x peak-sales
+      multiple)'
+  preclinical:
+    value: 0.3
+    source: Derived from public orphan-drug revenue distributions × Phase-3 trial
+      cost
+    confidence: medium
+    method: heuristic
+    timestamp: '2026-09-25T11:25:56.428593+00:00'
+    notes: 'Scale: 1.0 = cost of Phase 3 trial. Approved drug = 5.0 (~5x peak-sales
+      multiple)'
+volatility_base:
+  approval:
+    value: 0.2
+    source: RepoDB failure distribution analysis (Phase 1 project)
+    confidence: medium
+    method: empirical
+    timestamp: '2026-09-25T11:15:12.816344+00:00'
+    notes: Std deviation of Phase-specific outcome distribution
+  phase_4:
+    value: 0.2
+    source: RepoDB failure distribution analysis (Phase 1 project)
+    confidence: medium
+    method: empirical
+    timestamp: '2026-09-25T11:15:12.828822+00:00'
+    notes: Std deviation of Phase-specific outcome distribution
+  phase_3:
+    value: 0.28
+    source: RepoDB failure distribution analysis (Phase 1 project)
+    confidence: medium
+    method: empirical
+    timestamp: '2026-09-25T11:15:12.841968+00:00'
+    notes: Std deviation of Phase-specific outcome distribution
+  phase_2_3:
+    value: 0.32
+    source: RepoDB failure distribution analysis (Phase 1 project)
+    confidence: medium
+    method: empirical
+    timestamp: '2026-09-25T11:15:12.855743+00:00'
+    notes: Std deviation of Phase-specific outcome distribution
+  phase_2:
+    value: 0.35
+    source: RepoDB failure distribution analysis (Phase 1 project)
+    confidence: medium
+    method: empirical
+    timestamp: '2026-09-25T11:15:12.869992+00:00'
+    notes: Std deviation of Phase-specific outcome distribution
+  phase_1_2:
+    value: 0.4
+    source: RepoDB failure distribution analysis (Phase 1 project)
+    confidence: medium
+    method: empirical
+    timestamp: '2026-09-25T11:15:12.885099+00:00'
+    notes: Std deviation of Phase-specific outcome distribution
+  phase_1:
+    value: 0.45
+    source: RepoDB failure distribution analysis (Phase 1 project)
+    confidence: medium
+    method: empirical
+    timestamp: '2026-09-25T11:15:12.900585+00:00'
+    notes: Std deviation of Phase-specific outcome distribution
+  preclinical:
+    value: 0.55
+    source: RepoDB failure distribution analysis (Phase 1 project)
+    confidence: medium
+    method: empirical
+    timestamp: '2026-09-25T11:15:12.917273+00:00'
+    notes: Std deviation of Phase-specific outcome distribution
+novelty_adjustment:
+  unique_mechanism:
+    value: 0.05
+    source: Expert judgment (conservative)
+    confidence: low
+    method: heuristic
+    timestamp: '2026-09-25T11:15:13.064817+00:00'
+    notes: Added to volatility when drug has no peers in the candidate set
+  crowded_mechanism:
+    value: -0.05
+    source: Expert judgment (conservative)
+    confidence: low
+    method: heuristic
+    timestamp: '2026-09-25T11:15:13.112352+00:00'
+    notes: Subtracted when 5+ candidates share this mechanism
+mu_adjustment:
+  peer_penalty:
+    value: -0.1
+    source: 'Portfolio theory: crowded mechanism = diminishing returns'
+    confidence: low
+    method: heuristic
+    timestamp: '2026-09-25T11:25:56.445822+00:00'
+    notes: Applied per correlated peer (correlation > 0.3), capped at 3 peers
+  unique_bonus:
+    value: 0.15
+    source: 'Portfolio theory: unique mechanism = novel signal, higher expected payoff'
+    confidence: low
+    method: heuristic
+    timestamp: '2026-09-25T11:25:56.463845+00:00'
+    notes: Applied when drug has zero correlated peers

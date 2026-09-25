@@ -1,0 +1,11 @@
+chembl_id,drug_name,phase_key,pos,revenue_proxy,cost_proxy,peers,mu,sigma,rationale,mu_norm
+CHEMBL539697,DABIGATRAN ETEXILATE,phase_2,0.31,0.4,0.35,1,-0.117,0.35,phase 2 · PoS 0.31 · rev 0.40 · cost 0.35,0.1
+CHEMBL1201837,ECALLANTIDE,phase_2,0.31,0.4,0.35,0,-0.117,0.4,phase 2 · PoS 0.31 · rev 0.40 · cost 0.35,0.1
+CHEMBL1166,ARGATROBAN,phase_2,0.31,0.4,0.35,1,-0.117,0.35,phase 2 · PoS 0.31 · rev 0.40 · cost 0.35,0.1
+CHEMBL4594458,ANTITHROMBIN GAMMA,approval,0.85,1.0,0.0,0,0.85,0.25,approval · PoS 0.85 · rev 1.00 · cost 0.00,0.9
+CHEMBL457,GEMFIBROZIL,approval,0.85,1.0,0.0,0,0.85,0.25,approval · PoS 0.85 · rev 1.00 · cost 0.00,0.9
+CHEMBL414357,EXENATIDE,phase_3,0.58,0.7,1.0,0,-0.014,0.33,phase 3 · PoS 0.58 · rev 0.70 · cost 1.00,0.18521199586349538
+CHEMBL1201476,ENOXAPARIN SODIUM,phase_3,0.58,0.7,1.0,0,-0.014,0.33,phase 3 · PoS 0.58 · rev 0.70 · cost 1.00,0.18521199586349538
+CHEMBL34259,METHOTREXATE,phase_3,0.58,0.7,1.0,0,-0.014,0.33,phase 3 · PoS 0.58 · rev 0.70 · cost 1.00,0.18521199586349538
+CHEMBL1201513,HEPARIN CALCIUM,phase_3,0.58,0.7,1.0,0,-0.014,0.33,phase 3 · PoS 0.58 · rev 0.70 · cost 1.00,0.18521199586349538
+CHEMBL1201772,PRASUGREL,phase_3,0.58,0.7,1.0,0,-0.014,0.33,phase 3 · PoS 0.58 · rev 0.70 · cost 1.00,0.18521199586349538
