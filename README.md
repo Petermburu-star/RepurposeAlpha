@@ -102,3 +102,18 @@ See [`SECURITY.md`](SECURITY.md) for our commitments and disclosure policy.
 *RepurposeAlpha is a Phase 3 prototype. All computations are deterministic,
 auditable, and reproducible. Data sources are public; no proprietary
 information is used.*
+
+## What RepurposeAlpha Is (and Isn't)
+
+**Is:** A portfolio construction tool that applies Modern Portfolio Theory
+to drug repurposing. It identifies correlated candidates and recommends
+allocations that maximize expected risk-adjusted return.
+
+**Isn't:** A machine learning predictor of clinical success. RepoDB's
+structure makes it unsuitable for supervised learning (documented in
+[`docs/KNOWN_LIMITATIONS.md`](docs/KNOWN_LIMITATIONS.md)).
+
+We could have shipped a model claiming AUC = 0.98. We didn't, because
+that model would have been wrong for subtle, structural reasons that
+would destroy credibility in a technical due-diligence review. Honesty
+compounds; hype does not.
