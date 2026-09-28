@@ -23,6 +23,7 @@ import correlation
 import cache as cache_mod
 import returns
 import reporting
+import options
 
 st.set_page_config(page_title="RepurposeAlpha", page_icon="🧬", layout="wide")
 user = auth.require_login(min_role="viewer")
@@ -186,6 +187,29 @@ with col3:
     st.metric("Expected return", f"{r_s:.3f}")
     st.metric("Volatility", f"{v_s:.3f}")
 
+# Real Options headline (uses default peak-sales estimate)
+try:
+    _pos1 = assumptions.get_value("pos.phase_1", 0.63)
+    _pos2 = assumptions.get_value("pos.phase_2", 0.31)
+    _pos3 = assumptions.get_value("pos.phase_3", 0.58)
+    _posN = assumptions.get_value("pos.nda_bla", 0.85)
+    _phases = [
+        options.Phase("Phase I",   2.0, float(assumptions.get_value("cost.phase_1_usd", 10e6)), _pos1),
+        options.Phase("Phase II",  2.0, float(assumptions.get_value("cost.phase_2_usd", 25e6)), _pos2),
+        options.Phase("Phase III", 3.0, float(assumptions.get_value("cost.phase_3_usd", 100e6)), _pos3),
+        options.Phase("NDA",       1.0, 5e6, _posN),
+    ]
+    _ro = options.RealOptionsEngine(
+        phases=_phases, peak_sales=200e6, volatility=0.40,
+        risk_free_rate=rfr_value, discount_rate=0.10,
+    ).value()
+    if _ro.option_value > 0:
+        st.success(f"⏳ Real Options: **PROCEED** (${_ro.option_value:.0f}M option value)")
+    else:
+        st.error(f"⏳ Real Options: **DO NOT START** (DCF ${_ro.asset_value:.0f}M)")
+except Exception as e:
+    st.caption(f"⏳ Real Options: (unavailable — {e})")
+
 # Flag if returns are degenerate
 if est["mu"].std() < 0.02:
     st.warning(
@@ -200,7 +224,7 @@ st.divider()
 # TABS
 # ============================================================
 tab_names = ["🔗 Correlation", "📈 Frontier", "💼 Portfolio",
-             "🎚️ Sensitivity", "📋 Assumptions", "📄 Report"]
+             "🎚️ Sensitivity", "📋 Assumptions", "📄 Report", "⏳ Real Options"]
 if auth.has_role(user, "admin"):
     tab_names.append("🛡️ Admin")
 tabs = st.tabs(tab_names)
@@ -321,8 +345,83 @@ with tabs[5]:
                            file_name=st.session_state.get("pdf_name", "report.pdf"),
                            mime="application/pdf", type="primary")
 
-if auth.has_role(user, "admin") and len(tabs) == 7:
-    with tabs[6]:
+
+# ============================================================
+# REAL OPTIONS TAB
+# ============================================================
+with tabs[6]:
+    st.subheader("⏳ Real Options Valuation")
+    st.markdown(
+        "Each drug candidate is modeled as a sequence of phase gates. "
+        "At each gate, management can abandon. The **option value** is the "
+        "value of that flexibility over a naive DCF."
+    )
+
+    # Build phases from registry
+    pos1 = assumptions.get_value("pos.phase_1", 0.63)
+    pos2 = assumptions.get_value("pos.phase_2", 0.31)
+    pos3 = assumptions.get_value("pos.phase_3", 0.58)
+    posN = assumptions.get_value("pos.nda_bla", 0.85)
+    c1 = assumptions.get_value("cost.phase_1_usd", 10e6)
+    c2 = assumptions.get_value("cost.phase_2_usd", 25e6)
+    c3 = assumptions.get_value("cost.phase_3_usd", 100e6)
+    cN = 5e6
+
+    phases = [
+        options.Phase("Phase I",   2.0, float(c1), float(pos1)),
+        options.Phase("Phase II",  2.0, float(c2), float(pos2)),
+        options.Phase("Phase III", 3.0, float(c3), float(pos3)),
+        options.Phase("NDA",       1.0, float(cN), float(posN)),
+    ]
+
+    c1_, c2_ = st.columns([1, 2])
+    with c1_:
+        peak = st.number_input("Peak sales estimate ($M)", 50, 2000, 200, step=50) * 1e6
+        vol  = st.slider("Volatility", 0.20, 0.80, 0.40, 0.05)
+    with c2_:
+        st.caption(
+            "Peak sales is your estimate of annual revenue if the drug is approved. "
+            "Volatility is the standard deviation of that estimate."
+        )
+
+    engine = options.RealOptionsEngine(
+        phases=phases, peak_sales=peak, volatility=vol,
+        risk_free_rate=rfr_value, discount_rate=0.10,
+    )
+    res = engine.value()
+
+    st.markdown("### Valuation")
+    mc1, mc2, mc3 = st.columns(3)
+    mc1.metric("DCF (no flexibility)", f"${res.asset_value:.1f}M")
+    mc2.metric("Real Options value",  f"${res.option_value:.1f}M")
+    mc3.metric("Flexibility premium", f"${res.abandonment_value:.1f}M")
+
+    # Root decision
+    if res.option_value > 0:
+        st.success(
+            f"✅ **PROCEED** — expected option value ${res.option_value:.1f}M. "
+            f"Flexibility over DCF adds ${res.abandonment_value:.1f}M."
+        )
+    else:
+        st.error(
+            f"❌ **DO NOT START** — expected option value is $0. "
+            f"DCF is ${res.asset_value:.1f}M. "
+            f"Even with the option to abandon, this project doesn't clear its cost of capital."
+        )
+
+    st.markdown("### Conditional gate decisions")
+    st.caption(
+        "Reading the table: each row answers the question "
+        "of whether continuing from that gate is worth it. "
+        "Values typically increase with depth because remaining costs shrink."
+    )
+    gate_df = pd.DataFrame(res.decision_tree)
+    gate_df.columns = ["Phase", "Cumulative cost ($M)", "Cumulative PoS", "Continue?", "E[value] at gate ($M)"]
+    st.dataframe(gate_df, use_container_width=True, hide_index=True)
+
+
+if auth.has_role(user, "admin") and len(tabs) == 8:
+    with tabs[7]:
         st.subheader("🛡️ Admin panel")
         st.markdown("**Users**")
         st.dataframe(pd.DataFrame(auth.list_users(), columns=["username", "role", "created_at"]))
