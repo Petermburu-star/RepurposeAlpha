@@ -25,6 +25,7 @@ import returns
 import reporting
 import options
 import fto
+import trials
 
 st.set_page_config(page_title="RepurposeAlpha", page_icon="🧬", layout="wide")
 user = auth.require_login(min_role="viewer")
@@ -225,6 +226,20 @@ try:
 except Exception as e:
     st.caption(f"⚖️ FTO: (unavailable — {e})")
 
+# Trials headline
+try:
+    _n_test = min(len(est), 6)
+    _designs = trials.recommend_designs(n_candidates=_n_test)
+    _cheapest = min(_designs, key=lambda d: d.expected_cost_usd)
+    _baseline = max(_designs, key=lambda d: d.expected_cost_usd)
+    _savings = _baseline.expected_cost_usd - _cheapest.expected_cost_usd
+    st.info(
+        f"🧪 Trials: **{_cheapest.name.split('(')[0].strip()}** saves "
+        f"${_savings/1e6:.1f}M vs. running {_n_test} independent RCTs"
+    )
+except Exception as e:
+    st.caption(f"🧪 Trials: (unavailable — {e})")
+
 # Flag if returns are degenerate
 if est["mu"].std() < 0.02:
     st.warning(
@@ -239,7 +254,7 @@ st.divider()
 # TABS
 # ============================================================
 tab_names = ["🔗 Correlation", "📈 Frontier", "💼 Portfolio",
-             "🎚️ Sensitivity", "📋 Assumptions", "📄 Report", "⏳ Real Options", "⚖️ FTO"]
+             "🎚️ Sensitivity", "📋 Assumptions", "📄 Report", "⏳ Real Options", "⚖️ FTO", "🧪 Trials"]
 if auth.has_role(user, "admin"):
     tab_names.append("🛡️ Admin")
 tabs = st.tabs(tab_names)
@@ -486,8 +501,55 @@ with tabs[7]:
         )
 
 
-if auth.has_role(user, "admin") and len(tabs) == 9:
-    with tabs[8]:
+
+# ============================================================
+# TRIALS TAB
+# ============================================================
+with tabs[8]:
+    st.subheader("🧪 Trial design recommender")
+    st.markdown(
+        "Given N candidates, what trial architecture minimizes cost, time, or both? "
+        "Three designs are compared."
+    )
+
+    n_test = st.slider("Candidates to test simultaneously", 2, 10, min(len(est), 6))
+
+    designs = trials.recommend_designs(n_candidates=n_test)
+    df_t = trials.format_recommendation(designs)
+
+    # Summary metrics
+    cheapest = min(designs, key=lambda d: d.expected_cost_usd)
+    fastest  = min(designs, key=lambda d: d.expected_duration_months)
+    baseline = max(designs, key=lambda d: d.expected_cost_usd)
+
+    mc1, mc2, mc3 = st.columns(3)
+    mc1.metric("Cheapest design", cheapest.name.split("(")[0].strip(),
+               f"${cheapest.expected_cost_usd/1e6:.1f}M")
+    mc2.metric("Fastest design", fastest.name.split("(")[0].strip(),
+               f"{fastest.expected_duration_months:.0f} mo")
+    mc3.metric("Savings vs. fixed RCTs",
+               f"${(baseline.expected_cost_usd - cheapest.expected_cost_usd)/1e6:.1f}M",
+               f"{(1 - cheapest.expected_cost_usd/baseline.expected_cost_usd)*100:.0f}%")
+
+    st.markdown("### Design comparison")
+    st.dataframe(
+        df_t[["Design", "Arms", "Sample size", "Duration (mo)", "Cost ($M)", "Savings ($M)", "Savings %"]],
+        use_container_width=True, hide_index=True,
+    )
+
+    st.markdown("### Description")
+    for d in designs:
+        st.markdown(f"**{d.name}**")
+        st.caption(d.description)
+
+    st.info(
+        "**Assumptions:** effect size h=0.25, alpha=0.05, power=0.80, "
+        "$25K per patient, 20 patients/month enrollment. Adjust in a future release."
+    )
+
+
+if auth.has_role(user, "admin") and len(tabs) == 10:
+    with tabs[9]:
         st.subheader("🛡️ Admin panel")
         st.markdown("**Users**")
         st.dataframe(pd.DataFrame(auth.list_users(), columns=["username", "role", "created_at"]))
