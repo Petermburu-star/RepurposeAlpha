@@ -117,3 +117,35 @@ We could have shipped a model claiming AUC = 0.98. We didn't, because
 that model would have been wrong for subtle, structural reasons that
 would destroy credibility in a technical due-diligence review. Honesty
 compounds; hype does not.
+
+---
+
+## The Seven Features
+
+RepurposeAlpha answers eight questions about any drug repurposing candidate:
+
+| Question | Feature | Tab |
+|---|---|---|
+| What should I test? | Markowitz portfolio optimization | Portfolio |
+| When should I kill it? | Real Options valuation | Real Options |
+| Can I protect it commercially? | Freedom-to-Operate screening | FTO |
+| How should I run the trial? | Adaptive trial design | Trials |
+| What else does it treat? | Cross-disease mechanism discovery | Cross-Disease |
+| Has it failed before? | Negative results intelligence | Prior Results |
+| What pairs well with it? | Combination synergy predictor | Synergy |
+| What price is sustainable? | Cost-based pricing framework | Pricing |
+
+Every numeric input is sourced. Every result is reproducible.
+
+## What Makes This Different
+
+Existing tools serve the commercial pipeline. They optimize for big pharma.
+
+RepurposeAlpha is built for non-commercial repurposing — academic labs,
+rare disease foundations, neglected tropical disease researchers — where
+market forces have failed but scientific need is greatest.
+
+## Release History
+
+- **v0.1.0** (2026-09-25) — Level 1 complete: discovery, correlation, registry, PDF
+- **v0.2.0** (2026-09-28) — Seven-feature release
