@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RepurposeAlpha — How It Works</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.65;
+    font-size: 16px;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 60px 32px; }
+  header { border-bottom: 2px solid #1e293b; padding-bottom: 40px; margin-bottom: 48px; }
+  .logo { font-size: 32px; font-weight: 700; color: #38bdf8; margin-bottom: 8px; }
+  h1 { font-size: 42px; font-weight: 700; color: #f1f5f9; margin-bottom: 16px; line-height: 1.2; }
+  .subtitle { font-size: 18px; color: #94a3b8; max-width: 640px; }
+  h2 { font-size: 24px; color: #f1f5f9; margin-top: 56px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid #1e293b; }
+  h3 { font-size: 18px; color: #38bdf8; margin-top: 32px; margin-bottom: 12px; }
+  p { margin-bottom: 16px; color: #cbd5e1; }
+  .pipeline { background: #1e293b; border-left: 4px solid #38bdf8; padding: 24px 28px; border-radius: 8px; margin: 24px 0; }
+  .pipeline ol { margin-left: 24px; color: #cbd5e1; }
+  .pipeline li { margin-bottom: 12px; }
+  .pipeline strong { color: #38bdf8; }
+  .feature { background: #1e293b; border-radius: 12px; padding: 28px 32px; margin: 28px 0; border: 1px solid #334155; }
+  .feature-header { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+  .feature-num { background: #38bdf8; color: #0f172a; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; flex-shrink: 0; }
+  .feature h3 { margin: 0; color: #f1f5f9; font-size: 20px; }
+  .feature .pitch { color: #94a3b8; font-style: italic; margin-bottom: 16px; font-size: 15px; }
+  .feature .label { color: #38bdf8; font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 16px; margin-bottom: 4px; }
+  .feature .limit { background: #422006; border-left: 3px solid #f59e0b; padding: 12px 16px; margin-top: 16px; border-radius: 4px; font-size: 14px; color: #fcd34d; }
+  .feature .limit strong { color: #fbbf24; }
+  table { width: 100%; border-collapse: collapse; margin: 20px 0; background: #1e293b; border-radius: 8px; overflow: hidden; }
+  th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #334155; }
+  th { background: #0f172a; color: #38bdf8; font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; }
+  tr:last-child td { border-bottom: none; }
+  code { background: #0f172a; color: #f472b6; padding: 2px 8px; border-radius: 4px; font-family: "SF Mono", Monaco, Consolas, monospace; font-size: 14px; }
+  .summary { background: linear-gradient(135deg, #1e3a8a 0%, #1e293b 100%); padding: 32px; border-radius: 12px; margin: 40px 0; }
+  .summary h3 { color: #93c5fd; margin-top: 0; }
+  .footer { margin-top: 80px; padding-top: 32px; border-top: 1px solid #1e293b; color: #64748b; font-size: 14px; text-align: center; }
+  .footer a { color: #38bdf8; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+  @media (max-width: 640px) { .container { padding: 32px 20px; } h1 { font-size: 32px; } .feature { padding: 20px 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="logo">RepurposeAlpha</div>
+  <h1>How It Works</h1>
+  <p class="subtitle">
+    A decision support tool for drug repurposing. Type a disease, get a portfolio
+    recommendation — with eight features covering the full lifecycle from
+    discovery to pricing.
+  </p>
+</header>
+
+<h2>The Base Pipeline</h2>
+<p>When you type a disease name and click <strong>Analyze</strong>, four things happen in sequence:</p>
+
+<div class="pipeline">
+  <ol>
+    <li><strong>Discovery</strong> — The tool asks Open Targets (a public database) "which drugs have been tested for this disease?" It returns a list of candidates.</li>
+    <li><strong>Correlation</strong> — For each pair of candidates, it computes how biologically similar they are — shared targets, chemical structure, mechanism of action.</li>
+    <li><strong>Returns</strong> — For each candidate, it estimates expected payoff using phase, success rate, and number of competitors.</li>
+    <li><strong>Optimization</strong> — With correlations and returns, it runs a Markowitz calculation to rank candidates by risk-adjusted outcome.</li>
+  </ol>
+</div>
+
+<h2>The Eight Features</h2>
+
+<div class="feature">
+  <div class="feature-header"><div class="feature-num">1</div><h3>Portfolio Optimization</h3></div>
+  <div class="pitch">"What should I test?"</div>
+  <p>Treats candidate drugs like stocks. Each has an expected return (how promising) and volatility (how uncertain). Two drugs that are highly correlated are "the same bet" — holding both wastes money.</p>
+  <div class="label">What it produces</div>
+  <p>Two portfolios — Max Sharpe (best return per unit of risk) and Min Volatility (safest bets).</p>
+  <div class="label">What a scientist does with it</div>
+  <p><em>"The tool says test Cannabidiol first, and skip Cannabidivarin — they're 50% correlated, so I'd be repeating the same experiment."</em></p>
+  <div class="limit"><strong>Honest limit:</strong> Return estimates are phase-based, not drug-specific. Two Phase 3 drugs get identical expected returns.</div>
+</div>
+
+<div class="feature">
+  <div class="feature-header"><div class="feature-num">2</div><h3>Real Options Valuation</h3></div>
+  <div class="pitch">"When should I kill it?"</div>
+  <p>Every drug project has decision points — end of Phase 1, Phase 2, Phase 3. At each gate, you can continue or quit. The ability to quit is worth real money.</p>
+  <div class="label">What it produces</div>
+  <p>A probability tree. At each gate, it asks: given the remaining cost and probability of success, is continuing worth it?</p>
+  <div class="label">What a scientist does with it</div>
+  <p><em>"The tool says don't start this PWS project — DCF is -$137M. But if you're already in Phase 2 (someone paid the early costs), continue."</em></p>
+  <div class="limit"><strong>Honest limit:</strong> Uses average industry phase costs and success rates. Real numbers vary by disease and drug class.</div>
+</div>
+
+<div class="feature">
+  <div class="feature-header"><div class="feature-num">3</div><h3>Freedom-to-Operate</h3></div>
+  <div class="pitch">"Can I sell it?"</div>
+  <p>A repurposed drug is only valuable if you can protect it commercially. If the patent expired 20 years ago and it's generic, anyone can sell it — so nobody invests to develop it.</p>
+  <div class="label">What it produces</div>
+  <p>Checks whether each candidate is already generic, still protected, or a biologic. Flags: high risk / medium / low.</p>
+  <div class="label">What a scientist does with it</div>
+  <p><em>"Half my coronary artery candidates are generic. Even if one works, I can't make money on it. But the PWS candidates are mostly protected."</em></p>
+  <div class="limit"><strong>Honest limit:</strong> Uses a curated list of known generics, not real patent data. This is a screening signal, not legal advice.</div>
+</div>
+
+<div class="feature">
+  <div class="feature-header"><div class="feature-num">4</div><h3>Adaptive Trial Design</h3></div>
+  <div class="pitch">"How should I test it?"</div>
+  <p>You can test 5 drugs in 5 separate trials (slow, expensive) or in one shared trial with a common control group (faster, cheaper). Platform trials save money by sharing infrastructure.</p>
+  <div class="label">What it produces</div>
+  <p>Compares three architectures: Fixed (N independent RCTs), Bayesian adaptive (shared control), Platform (multi-arm, add/drop).</p>
+  <div class="label">What a scientist does with it</div>
+  <p><em>"The tool says I can save $22M and 40% of patients with a platform trial instead of 6 separate trials."</em></p>
+  <div class="limit"><strong>Honest limit:</strong> Uses standard industry assumptions (effect size, enrollment rate). Real trials vary.</div>
+</div>
+
+<div class="feature">
+  <div class="feature-header"><div class="feature-num">5</div><h3>Cross-Disease Mechanism Discovery</h3></div>
+  <div class="pitch">"What else does it treat?"</div>
+  <p>A drug tested for malaria might also be in trials for cancer, lupus, and COVID. That tells you two things: it has accumulated safety data, and other scientists believe in its repurposing potential.</p>
+  <div class="label">What it produces</div>
+  <p>For each candidate, a count and list of other diseases it's being tested in.</p>
+  <div class="label">What a scientist does with it</div>
+  <p><em>"Artesunate has 15 other indications. That's a lot of accumulated evidence — lower regulatory risk if it works for malaria too."</em></p>
+  <div class="limit"><strong>Honest limit:</strong> Doesn't tell you whether those other trials succeeded — just that they exist.</div>
+</div>
+
+<div class="feature">
+  <div class="feature-header"><div class="feature-num">6</div><h3>Negative Results Intelligence</h3></div>
+  <div class="pitch">"Has it already failed?"</div>
+  <p>Trials that fail are often never published. So researchers repeat failed experiments. ClinicalTrials.gov holds terminated trials, but nobody surfaces them systematically.</p>
+  <div class="label">What it produces</div>
+  <p>Queries ClinicalTrials.gov for terminated trials, then distinguishes failure types:<br>
+  <strong>Futility</strong> — the science didn't work → skip<br>
+  <strong>Safety</strong> — the drug is dangerous → skip<br>
+  <strong>Enrollment</strong> — logistics failed, not the drug → consider retrying<br>
+  <strong>Business</strong> — the sponsor gave up, not the science → consider retrying</p>
+  <div class="label">What a scientist does with it</div>
+  <p><em>"Primaquine has 7 prior failures for malaria — but 6 are 'unknown'. Meanwhile Acetaminophen has 7 failures too, but 0 for malaria."</em></p>
+  <div class="limit"><strong>Honest limit:</strong> Most terminated trials don't state why. "Unknown" is honest.</div>
+</div>
+
+<div class="feature">
+  <div class="feature-header"><div class="feature-num">7</div><h3>Combination Synergy</h3></div>
+  <div class="pitch">"What pairs well with it?"</div>
+  <p>Some drugs work better together than alone. Two drugs that hit different parts of the same pathway often synergize. Two drugs that hit the same target are redundant.</p>
+  <div class="label">What it produces</div>
+  <p>Scores every pair of candidates on a synergy scale. Very low correlation = unrelated mechanisms. Moderate (0.1-0.5) = ideal pair. High (>0.8) = redundant.</p>
+  <div class="label">What a scientist does with it</div>
+  <p><em>"The tool flagged Sulfadiazine + Trimethoprim as a top pair. Those two are sold together as co-trimoxazole — so the tool is correct."</em></p>
+  <div class="limit"><strong>Honest limit:</strong> No real synergy data — heuristic based on correlation and prior trial presence.</div>
+</div>
+
+<div class="feature">
+  <div class="feature-header"><div class="feature-num">8</div><h3>Cost-Based Pricing</h3></div>
+  <div class="pitch">"What price works?"</div>
+  <p>If you develop a repurposed drug, you need to charge enough per patient to recover costs. For a common disease, that's ~$30/patient/year. For a rare disease with 2,000 patients, it's ~$50,000/patient/year.</p>
+  <div class="label">What it produces</div>
+  <p>Sustainable price per patient per year, and comparison to market reference prices (rare disease ~$150K, NTD ~$500, common ~$5K).</p>
+  <div class="label">What a scientist does with it</div>
+  <p><em>"The tool says I need $32/patient/year for Primaquine in malaria. That's 94% below the reference NTD price — huge headroom. Viable."</em></p>
+  <div class="limit"><strong>Honest limit:</strong> Uses category-based pricing references, not disease-specific market data.</div>
+</div>
+
+<h2>The One-Sentence Summary of Each</h2>
+
+<table>
+  <thead><tr><th>Feature</th><th>What it says</th></tr></thead>
+  <tbody>
+    <tr><td>Portfolio</td><td>"Test these 5, not those 30."</td></tr>
+    <tr><td>Real Options</td><td>"Kill this one now — the option value is zero."</td></tr>
+    <tr><td>FTO</td><td>"Half your candidates are generic — no protection."</td></tr>
+    <tr><td>Trials</td><td>"Use a platform trial — save $22M."</td></tr>
+    <tr><td>Cross-Disease</td><td>"This drug is used in 15 other diseases."</td></tr>
+    <tr><td>Prior Results</td><td>"This was tried in 2019 and failed for enrollment, not science."</td></tr>
+    <tr><td>Synergy</td><td>"Test A+B together, not separately."</td></tr>
+    <tr><td>Pricing</td><td>"You need $32/patient/year — you can afford $500."</td></tr>
+  </tbody>
+</table>
+
+<div class="summary">
+  <h3>The Big Picture</h3>
+  <p>RepurposeAlpha is a decision support tool for drug repurposing.</p>
+  <p>A scientist types a disease. The tool finds candidate drugs, scores them by portfolio return, tells you which to kill, whether you can protect them, how to test them, what else they treat, whether they've failed before, what pairs well, and what price works.</p>
+  <p><strong>Before RepurposeAlpha:</strong> a scientist manually reviews 30 candidates in Excel and makes a gut decision.</p>
+  <p><strong>After RepurposeAlpha:</strong> the tool produces a defensible recommendation with sources for every number, in about 60 seconds.</p>
+</div>
+
+<div class="footer">
+  <p>RepurposeAlpha v0.2.0 · Seven-feature release · September 2026</p>
+  <p><a href="https://github.com/Petermburu-star/RepurposeAlpha">github.com/Petermburu-star/RepurposeAlpha</a></p>
+</div>
+
+</div>
+</body>
+</html>
