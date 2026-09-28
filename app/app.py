@@ -27,6 +27,7 @@ import options
 import fto
 import trials
 import crosstarget
+import negativedata
 
 st.set_page_config(page_title="RepurposeAlpha", page_icon="🧬", layout="wide")
 user = auth.require_login(min_role="viewer")
@@ -256,6 +257,17 @@ try:
 except Exception as e:
     st.caption(f"🌐 Cross-Disease: (unavailable — {e})")
 
+try:
+    _nd = negativedata.analyze_portfolio(candidates, disease, verbose=False)
+    _high = int((_nd["risk_flag"] == "high").sum())
+    _clean = int((_nd["risk_flag"] == "clean").sum())
+    if _high > 0:
+        st.warning(f"📉 Prior Results: **{_high} with strong prior failures** · {_clean} clean")
+    else:
+        st.success(f"📉 Prior Results: **{_clean}/{len(_nd)} clean** — no red flags")
+except Exception as e:
+    st.caption(f"📉 Prior Results: (unavailable — {e})")
+
 # Flag if returns are degenerate
 if est["mu"].std() < 0.02:
     st.warning(
@@ -270,7 +282,7 @@ st.divider()
 # TABS
 # ============================================================
 tab_names = ["🔗 Correlation", "📈 Frontier", "💼 Portfolio",
-             "🎚️ Sensitivity", "📋 Assumptions", "📄 Report", "⏳ Real Options", "⚖️ FTO", "🧪 Trials", "🌐 Cross-Disease"]
+             "🎚️ Sensitivity", "📋 Assumptions", "📄 Report", "⏳ Real Options", "⚖️ FTO", "🧪 Trials", "🌐 Cross-Disease", "📉 Prior Results"]
 if auth.has_role(user, "admin"):
     tab_names.append("🛡️ Admin")
 tabs = st.tabs(tab_names)
@@ -614,8 +626,50 @@ with tabs[9]:
         )
 
 
-if auth.has_role(user, "admin") and len(tabs) == 11:
-    with tabs[10]:
+
+# ============================================================
+# PRIOR RESULTS TAB
+# ============================================================
+with tabs[10]:
+    st.subheader("📉 Prior negative results")
+    st.caption(
+        "Has this candidate been tried and failed before? "
+        "Failure reasons are weighted: futility/safety = strong signal; "
+        "enrollment/business = weak (science may still work)."
+    )
+
+    if st.button("Run prior-results analysis", type="primary"):
+        with st.spinner("Querying ClinicalTrials.gov..."):
+            try:
+                nd_result = negativedata.analyze_portfolio(candidates, disease, verbose=False)
+                st.session_state["nd_df"] = nd_result
+            except Exception as e:
+                st.error(f"Analysis failed: {e}")
+
+    nd_df = st.session_state.get("nd_df")
+    if nd_df is None:
+        st.info("Click **Run prior-results analysis** to check each candidate.")
+    else:
+        mc1, mc2, mc3, mc4 = st.columns(4)
+        counts = nd_df["risk_flag"].value_counts().to_dict()
+        mc1.metric("🔴 High",  counts.get("high", 0))
+        mc2.metric("🟡 Medium", counts.get("medium", 0))
+        mc3.metric("🟢 Low",    counts.get("low", 0))
+        mc4.metric("✅ Clean",  counts.get("clean", 0))
+
+        disp = nd_df[["drug_name", "n_failed", "n_relevant", "risk_flag", "weighted_risk", "breakdown"]].copy()
+        disp.columns = ["Drug", "# Failed", "# Relevant", "Risk", "Weighted", "Breakdown"]
+        st.dataframe(disp, width="stretch", hide_index=True)
+
+        st.markdown(
+            "**How to read:** Futility/safety failures = science disproven. "
+            "Enrollment/business failures = logistics, not biology — retrying may work. "
+            "Weighted risk discounts older failures (5-year half-life)."
+        )
+
+
+if auth.has_role(user, "admin") and len(tabs) == 12:
+    with tabs[11]:
         st.subheader("🛡️ Admin panel")
         st.markdown("**Users**")
         st.dataframe(pd.DataFrame(auth.list_users(), columns=["username", "role", "created_at"]))
