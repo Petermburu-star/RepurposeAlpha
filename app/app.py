@@ -26,6 +26,7 @@ import reporting
 import options
 import fto
 import trials
+import crosstarget
 
 st.set_page_config(page_title="RepurposeAlpha", page_icon="🧬", layout="wide")
 user = auth.require_login(min_role="viewer")
@@ -240,6 +241,21 @@ try:
 except Exception as e:
     st.caption(f"🧪 Trials: (unavailable — {e})")
 
+# Cross-disease headline
+try:
+    _cd = crosstarget.find_cross_disease_overlaps(candidates, disease, verbose=False)
+    _n_over = int((_cd["n_other_diseases"] > 0).sum())
+    if _n_over > 0:
+        _top = _cd.iloc[0]
+        st.info(
+            f"🌐 Cross-Disease: **{_n_over}/{len(_cd)} candidates** have other indications — "
+            f"top: {_top['drug_name']} ({int(_top['n_other_diseases'])} other diseases)"
+        )
+    else:
+        st.caption("🌐 Cross-Disease: no overlapping indications found")
+except Exception as e:
+    st.caption(f"🌐 Cross-Disease: (unavailable — {e})")
+
 # Flag if returns are degenerate
 if est["mu"].std() < 0.02:
     st.warning(
@@ -254,7 +270,7 @@ st.divider()
 # TABS
 # ============================================================
 tab_names = ["🔗 Correlation", "📈 Frontier", "💼 Portfolio",
-             "🎚️ Sensitivity", "📋 Assumptions", "📄 Report", "⏳ Real Options", "⚖️ FTO", "🧪 Trials"]
+             "🎚️ Sensitivity", "📋 Assumptions", "📄 Report", "⏳ Real Options", "⚖️ FTO", "🧪 Trials", "🌐 Cross-Disease"]
 if auth.has_role(user, "admin"):
     tab_names.append("🛡️ Admin")
 tabs = st.tabs(tab_names)
@@ -548,8 +564,58 @@ with tabs[8]:
     )
 
 
-if auth.has_role(user, "admin") and len(tabs) == 10:
-    with tabs[9]:
+
+# ============================================================
+# CROSS-DISEASE TAB
+# ============================================================
+with tabs[9]:
+    st.subheader("🌐 Cross-disease mechanism discovery")
+    st.caption(
+        "Which other diseases are these candidates being tested in? "
+        "Candidates with many other indications have accumulated safety data "
+        "and lower regulatory risk."
+    )
+
+    if st.button("Run cross-disease analysis", type="primary"):
+        with st.spinner("Querying Open Targets for each candidate..."):
+            try:
+                cd_result = crosstarget.find_cross_disease_overlaps(
+                    candidates, disease, verbose=False
+                )
+                st.session_state["cd_df"] = cd_result
+            except Exception as e:
+                st.error(f"Analysis failed: {e}")
+
+    cd_df = st.session_state.get("cd_df")
+    if cd_df is None:
+        st.info("Click **Run cross-disease analysis** to explore each candidate.")
+    else:
+        n_overlap = int((cd_df["n_other_diseases"] > 0).sum())
+        st.metric("Candidates with cross-disease use", f"{n_overlap}/{len(cd_df)}")
+
+        disp = cd_df[["drug_name", "n_other_diseases", "top_other_disease", "all_other_diseases"]].copy()
+        disp.columns = ["Drug", "# Other diseases", "Top overlap", "All overlaps"]
+        st.dataframe(disp, width="stretch", hide_index=True)
+
+        import plotly.express as px
+        chart_df = cd_df[cd_df["n_other_diseases"] > 0].sort_values("n_other_diseases")
+        if not chart_df.empty:
+            fig = px.bar(
+                chart_df, x="n_other_diseases", y="drug_name", orientation="h",
+                title="Candidates used across multiple diseases",
+                labels={"n_other_diseases": "# other diseases", "drug_name": ""},
+            )
+            fig.update_layout(height=max(300, 40 * len(chart_df)))
+            st.plotly_chart(fig, width="stretch")
+
+        st.caption(
+            "**Why this matters:** a drug tested in 10+ other diseases has decades of "
+            "accumulated safety data. That's a lower-risk repurposing candidate."
+        )
+
+
+if auth.has_role(user, "admin") and len(tabs) == 11:
+    with tabs[10]:
         st.subheader("🛡️ Admin panel")
         st.markdown("**Users**")
         st.dataframe(pd.DataFrame(auth.list_users(), columns=["username", "role", "created_at"]))
