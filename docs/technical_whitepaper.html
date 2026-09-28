@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RepurposeAlpha — Technical White Paper</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #e2e8f0; line-height: 1.7; font-size: 16px; }
+  .container { max-width: 1000px; margin: 0 auto; padding: 60px 40px; }
+  header { border-bottom: 2px solid #1e293b; padding-bottom: 40px; margin-bottom: 48px; }
+  .logo { font-size: 28px; font-weight: 700; color: #38bdf8; margin-bottom: 8px; }
+  h1 { font-size: 38px; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; line-height: 1.2; }
+  .subtitle { font-size: 17px; color: #94a3b8; max-width: 720px; }
+  h2 { font-size: 22px; color: #f1f5f9; margin-top: 56px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #1e293b; }
+  h3 { font-size: 17px; color: #38bdf8; margin-top: 28px; margin-bottom: 10px; }
+  h4 { font-size: 15px; color: #94a3b8; margin-top: 20px; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+  p { margin-bottom: 14px; color: #cbd5e1; }
+  .feature-card { background: #1e293b; border-radius: 12px; padding: 28px 32px; margin: 28px 0; border: 1px solid #334155; }
+  .feature-card h3 { margin-top: 0; font-size: 20px; color: #f1f5f9; }
+  .feature-card .pitch { color: #94a3b8; font-style: italic; margin-bottom: 18px; }
+  .math-block { background: #0f172a; border-left: 3px solid #38bdf8; padding: 16px 20px; border-radius: 6px; margin: 16px 0; font-family: "SF Mono", Monaco, Consolas, monospace; font-size: 14px; color: #f472b6; white-space: pre-wrap; overflow-x: auto; }
+  .assumption-table { width: 100%; border-collapse: collapse; margin: 16px 0; background: #0f172a; border-radius: 8px; overflow: hidden; }
+  .assumption-table th, .assumption-table td { padding: 10px 14px; text-align: left; border-bottom: 1px solid #334155; font-size: 14px; }
+  .assumption-table th { background: #1e293b; color: #38bdf8; font-weight: 600; }
+  .assumption-table tr:last-child td { border-bottom: none; }
+  .limit { background: #422006; border-left: 3px solid #f59e0b; padding: 12px 16px; margin: 16px 0; border-radius: 4px; font-size: 14px; color: #fcd34d; }
+  .limit strong { color: #fbbf24; }
+  .market-compare { background: #1a2e1a; border-left: 3px solid #10b981; padding: 14px 18px; margin: 16px 0; border-radius: 6px; font-size: 14px; }
+  .market-compare strong { color: #34d399; }
+  .comparison-table { width: 100%; border-collapse: collapse; margin: 24px 0; background: #1e293b; border-radius: 10px; overflow: hidden; }
+  .comparison-table th, .comparison-table td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #334155; font-size: 13px; }
+  .comparison-table th { background: #0f172a; color: #38bdf8; font-weight: 600; text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px; }
+  .comparison-table tr:last-child td { border-bottom: none; }
+  .check { color: #10b981; }
+  .cross { color: #ef4444; }
+  .partial { color: #f59e0b; }
+  .summary-box { background: linear-gradient(135deg, #1e3a8a 0%, #1e293b 100%); padding: 28px 32px; border-radius: 12px; margin: 36px 0; }
+  .summary-box h3 { color: #93c5fd; margin-top: 0; }
+  .footer { margin-top: 72px; padding-top: 28px; border-top: 1px solid #1e293b; color: #64748b; font-size: 13px; text-align: center; }
+  .footer a { color: #38bdf8; text-decoration: none; }
+  .ref { font-size: 12px; color: #64748b; vertical-align: super; }
+  @media (max-width: 700px) { .container { padding: 32px 20px; } h1 { font-size: 28px; } .feature-card { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="logo">RepurposeAlpha</div>
+  <h1>Technical White Paper</h1>
+  <p class="subtitle">
+    Feature-by-feature breakdown of mathematical logic, assumptions, data sources,
+    and comparison with existing tools in the drug repurposing landscape.
+  </p>
+  <p style="margin-top:12px; color:#64748b; font-size:14px;">Version 0.2.0 · September 2026</p>
+</header>
+
+<h2>Executive Summary</h2>
+<p>
+RepurposeAlpha is a decision support platform for non-commercial drug repurposing.
+It combines eight analytical features — portfolio optimization, real options valuation,
+freedom-to-operate screening, adaptive trial design, cross-disease discovery, negative
+results intelligence, combination synergy, and cost-based pricing — into a single tool
+built entirely on free, public data.
+</p>
+<p>
+The global drug repurposing market was valued at approximately $37 billion in 2025 and
+is projected to reach $41 billion in 2026, growing at 9.6% CAGR.<span class="ref">[12]</span>
+However, existing tools serve the commercial pipeline. Academic labs, rare disease
+foundations, and neglected tropical disease researchers lack access to the same
+decision-support capabilities.
+</p>
+<p>
+This document provides the complete mathematical foundation for each feature, the
+assumptions behind every input, and a comparison with tools currently available in
+the market.
+</p>
+
+<h2>1. The Base Pipeline</h2>
+<p>
+When a user types a disease name, four operations run in sequence:
+</p>
+
+<div class="feature-card">
+  <h3>1.1 Discovery — Disease to Candidates</h3>
+  <p><strong>Logic:</strong> Query Open Targets Platform GraphQL API for all drugs associated with the disease, filtered to max clinical stage ≥ Phase 2.</p>
+  <p><strong>Data source:</strong> Open Targets Platform (free, public). Query uses <code>drugAndClinicalCandidates</code> field on the disease type.</p>
+  <p><strong>Assumptions:</strong> None. This is raw data retrieval.</p>
+  <p><strong>Output:</strong> A DataFrame of candidates with ChEMBL IDs, drug names, and clinical stage.</p>
+</div>
+
+<div class="feature-card">
+  <h3>1.2 Correlation — Drug-Drug Similarity</h3>
+  <p><strong>Logic:</strong> For each pair of drugs, compute a composite similarity score from seven independent biological signals.</p>
+  <div class="math-block">correlation(i,j) = Σ (weight_s × similarity_s(i,j))  for s in signals
+
+Where signals = {target overlap, affinity similarity, chemical structure,
+                 Murcko scaffold match, mechanism of action, ATC code hierarchy,
+                 assay description similarity}
+
+Weights are selected by entropy weighting: signals with higher information
+content (lower entropy, higher variance) receive higher weight.</div>
+  <p><strong>Data sources:</strong> ChEMBL bioactivity data, RDKit molecular fingerprints, WHO ATC classifications.</p>
+  <table class="assumption-table">
+    <tr><th>Assumption</th><th>Value</th><th>Source</th></tr>
+    <tr><td>Binding affinity threshold</td><td>≤ 1 μM</td><td>Standard pharmacology practice</td></tr>
+    <tr><td>Tanimoto fingerprint radius</td><td>2, 2048 bits</td><td>RDKit default</td></tr>
+    <tr><td>Entropy weighting</td><td>Inverse Shannon entropy with variance floor</td><td>Information theory</td></tr>
+    <tr><td>Species blocklist</td><td>~20 whole-organism entries</td><td>Manual curation</td></tr>
+  </table>
+  <div class="limit"><strong>Validated:</strong> 11× signal-to-noise ratio on known drug families (artemisinins: 0.32 within-family vs 0.03 between-family).</div>
+</div>
+
+<div class="feature-card">
+  <h3>1.3 Returns — Expected Return Estimator</h3>
+  <p><strong>Logic:</strong> Estimate each candidate's risk-adjusted return using a phase-based rNPV proxy.</p>
+  <div class="math-block">mu(i) = PoS(phase) × revenue_proxy(phase) − (1 − PoS(phase)) × cost_proxy(phase)
+
+sigma(i) = volatility_base(phase) + novelty_adjustment
+
+Where:
+  PoS          = probability of success by phase (BIO/QLS 2021)
+  revenue_proxy = estimated revenue relative to Phase 3 cost
+  cost_proxy    = cumulative cost to reach approval from this phase
+  novelty_adj   = ±0.05 based on peer count in candidate set</div>
+  <p><strong>Final mu is normalized to [0.05, 0.20] annual return range for realistic Sharpe ratios.</strong></p>
+  <table class="assumption-table">
+    <tr><th>Assumption</th><th>Value</th><th>Source</th></tr>
+    <tr><td>PoS Phase 1</td><td>63%</td><td>BIO/QLS Clinical Development Success Rates</td></tr>
+    <tr><td>PoS Phase 2</td><td>31%</td><td>BIO/QLS</td></tr>
+    <tr><td>PoS Phase 3</td><td>58%</td><td>BIO/QLS</td></tr>
+    <tr><td>PoS NDA/BLA</td><td>85%</td><td>BIO/QLS</td></tr>
+    <tr><td>Annual return range</td><td>5–20%</td><td>Calibrated for defensible Sharpe</td></tr>
+  </table>
+  <div class="limit"><strong>Honest limit:</strong> Returns are phase-based, not drug-specific. Two Phase 3 drugs get identical expected returns.</div>
+</div>
+
+<div class="feature-card">
+  <h3>1.4 Optimization — Markowitz Portfolio</h3>
+  <p><strong>Logic:</strong> Maximize the Sharpe ratio subject to long-only constraints.</p>
+  <div class="math-block">Maximize:  (μ_p − r_f) / σ_p
+
+Where:
+  μ_p = Σ wᵢ × μᵢ                    (portfolio return)
+  σ_p = √(Σᵢ Σⱼ wᵢ × wⱼ × σᵢ × σⱼ × ρᵢⱼ)  (portfolio volatility)
+  r_f = risk-free rate (FRED DGS10, live)
+  wᵢ ≥ 0, Σ wᵢ = 1                  (long-only, fully invested)</div>
+  <p><strong>Solved using:</strong> PyPortfolioOpt (Ledoit-Wolf covariance, max Sharpe).</p>
+  <div class="market-compare">
+    <strong>Market context:</strong> Modern portfolio theory has been applied to pharma R&D since at least 2016.<span class="ref">[14]</span> BridgeBio was founded explicitly on Markowitz principles.<span class="ref">[14]</span> However, commercial platforms like Intelligencia Portfolio Optimizer and Captario SUM focus on large pharma portfolios and are priced for enterprise.<span class="ref">[1][2]</span> No open-source tool applies Markowitz to repurposing candidate selection for non-commercial users.
+  </div>
+</div>
+
+<h2>2. Feature Breakdown</h2>
+
+<div class="feature-card">
+  <h3>2.1 Real Options Valuation</h3>
+  <div class="pitch">"When should I kill it?"</div>
+  <p><strong>Logic:</strong> Model drug development as a binomial lattice with embedded abandonment options at each phase gate.</p>
+  <div class="math-block">Cox-Ross-Rubinstein parameters:
+  u = e^(σ√Δt)     (up factor)
+  d = 1/u           (down factor)
+  p = (e^(rΔt) − d) / (u − d)   (risk-neutral probability)
+
+Backward induction:
+  V(node) = max(e^(−rΔt) × [p × V_up + (1−p) × V_down] − cost, 0)
+
+Gate decision: continue if sub-tree value > 0, abandon otherwise.</div>
+  <table class="assumption-table">
+    <tr><th>Assumption</th><th>Value</th><th>Source</th></tr>
+    <tr><td>Volatility</td><td>40%</td><td>Industry benchmark</td></tr>
+    <tr><td>Profit margin</td><td>30%</td><td>Industry average</td></tr>
+    <tr><td>Time steps</td><td>10</td><td>Standard for lattice resolution</td></tr>
+    <tr><td>Phase costs</td><td>$1M–$100M</td><td>DiMasi 2016, Wouters 2020</td></tr>
+  </table>
+  <div class="limit"><strong>Honest limit:</strong> Uses industry-average phase costs and success rates. Real numbers vary by disease and drug class.</div>
+  <div class="market-compare">
+    <strong>Market context:</strong> Real options analysis is well-established in academic literature for pharmaceutical R&D.<span class="ref">[4]</span> WIPO recognises the method for valuing biotechnology assets.<span class="ref">[4]</span> However, no existing tool implements it specifically for repurposing candidate kill decisions. The method exists in theory; RepurposeAlpha implements it in practice.
+  </div>
+</div>
+
+<div class="feature-card">
+  <h3>2.2 Freedom-to-Operate Screening</h3>
+  <div class="pitch">"Can I sell it?"</div>
+  <p><strong>Logic:</strong> Rule-based scoring system using curated drug classification lists.</p>
+  <div class="math-block">score = f(stage, is_generic, is_biologic)
+
+if generic:          score = 0.15  (high risk)
+elif biologic:       score = 0.55–0.75  (low risk)
+elif approved:       score = 0.40  (medium risk)
+elif phase_3:        score = 0.65  (low risk)
+elif phase_2:        score = 0.75  (low risk)
+
+Risk buckets: ≥0.60 = low, 0.40–0.60 = medium, <0.40 = high</div>
+  <table class="assumption-table">
+    <tr><th>Assumption</th><th>Source</th><th>Confidence</th></tr>
+    <tr><td>Generic drug list (~30 entries)</td><td>Manual curation</td><td>Low</td></tr>
+    <tr><td>Biologic drug list (~10 entries)</td><td>Manual curation</td><td>Low</td></tr>
+    <tr><td>Stage-to-score mapping</td><td>Heuristic</td><td>Low</td></tr>
+  </table>
+  <div class="limit"><strong>Honest limit:</strong> This is the weakest feature. Real FTO requires FDA Orange Book, USPTO PatentsView, and actual orphan designation records — all either paywalled or complex to integrate. <strong>This is a screening signal, not legal advice.</strong></div>
+  <div class="market-compare">
+    <strong>Market context:</strong> Commercial FTO tools (DrugPatentWatch, PatSnap, CAS SciFinder) cost thousands per year and are designed for legal/IP teams.<span class="ref">[5]</span> RepurposeAlpha provides a first-pass screen at zero cost. It is not a replacement for professional FTO analysis.
+  </div>
+</div>
+
+<div class="feature-card">
+  <h3>2.3 Adaptive Trial Design Recommender</h3>
+  <div class="pitch">"How should I test it?"</div>
+  <p><strong>Logic:</strong> Compare three trial architectures by expected sample size, duration, and cost.</p>
+  <div class="math-block">Fixed sample size (2-arm, continuous endpoint):
+  n_per_arm = 2 × ((z_α/2 + z_β) / effect_size)²
+
+For N candidates:
+  n_fixed    = n_per_arm × N
+  n_adaptive = n_fixed × efficiency_ratio(N)
+  n_platform = n_fixed × (1/√N)
+
+Cost = n_total × cost_per_patient ($25,000)</div>
+  <table class="assumption-table">
+    <tr><th>Assumption</th><th>Value</th><th>Source</th></tr>
+    <tr><td>Effect size</td><td>0.25 (moderate)</td><td>Standard assumption</td></tr>
+    <tr><td>Alpha / Power</td><td>0.05 / 0.80</td><td>FDA convention</td></tr>
+    <tr><td>Cost per patient</td><td>$25,000</td><td>Industry average</td></tr>
+    <tr><td>Adaptive efficiency ratios</td><td>0.60–0.85</td><td>Empirical literature</td></tr>
+  </table>
+  <div class="market-compare">
+    <strong>Market context:</strong> Open-source packages like rpact, BATSS, and TrialSimulator provide sophisticated adaptive design simulation.<span class="ref">[6]</span> Commercial tools like Cytel East are the industry standard.<span class="ref">[6]</span> However, none of these tools combine trial design with portfolio-level candidate selection. RepurposeAlpha's unique contribution is the comparison across architectures for a <em>portfolio</em> of candidates, not a single trial.
+  </div>
+</div>
+
+<div class="feature-card">
+  <h3>2.4 Cross-Disease Mechanism Discovery</h3>
+  <div class="pitch">"What else does it treat?"</div>
+  <p><strong>Logic:</strong> Query Open Targets for all diseases associated with each drug.</p>
+  <div class="math-block">For each candidate:
+  other_diseases = OpenTargets.drug(chembl_id).indications
+  n_other = count(other_diseases excluding current disease)</div>
+  <p><strong>No mathematical assumptions.</strong> This is raw database retrieval.</p>
+  <table class="assumption-table">
+    <tr><th>Assumption</th><th>Source</th></tr>
+    <tr><td>Disease coverage</td><td>Open Targets annotation quality varies by disease area</td></tr>
+    <tr><td>No inference</td><td>We report what Open Targets records — nothing more</td></tr>
+  </table>
+  <div class="market-compare">
+    <strong>Market context:</strong> Open Targets itself provides this data through its web interface.<span class="ref">[3]</span> RepurposeAlpha's contribution is integrating it into a portfolio-level view: a scientist sees not just "this drug is used in 15 diseases" but "here's how that relates to my candidate set."
+  </div>
+</div>
+
+<div class="feature-card">
+  <h3>2.5 Negative Results Intelligence</h3>
+  <div class="pitch">"Has it already failed?"</div>
+  <p><strong>Logic:</strong> Weighted scoring of terminated trials by failure type and recency.</p>
+  <div class="math-block">weighted_risk = Σ (failure_strength × decay)
+
+Where:
+  failure_strength = {FUTILITY: 1.0, SAFETY: 1.0,
+                      ENROLLMENT: 0.3, BUSINESS: 0.2, UNKNOWN: 0.5}
+  decay = 0.5 ^ (years_ago / 5)    (5-year half-life)
+
+Risk buckets: ≥2.0 = high, 1.0–2.0 = medium, 0.3–1.0 = low, <0.3 = clean</div>
+  <table class="assumption-table">
+    <tr><th>Assumption</th><th>Value</th><th>Source</th></tr>
+    <tr><td>Failure type weights</td><td>0.2–1.0</td><td>Heuristic (see rationale below)</td></tr>
+    <tr><td>Half-life</td><td>5 years</td><td>Judgment — scientific context changes</td></tr>
+    <tr><td>Risk thresholds</td><td>0.3 / 1.0 / 2.0</td><td>Heuristic</td></tr>
+  </table>
+  <p><strong>Why the weights:</strong> Futility and safety failures are strong negative signals (the science failed). Enrollment and business failures are weak signals (logistics failed, not biology). This distinction is documented in the literature: "Clinical trials can fail for numerous reasons unrelated to drug efficacy or toxicity, such as poor participant enrollment, lack of funding."<span class="ref">[7]</span></p>
+  <div class="market-compare">
+    <strong>Market context:</strong> RepoDB is the standard dataset for repurposing success/failure benchmarking.<span class="ref">[7]</span> However, it aggregates failures without distinguishing type. ClinicalTrials.gov holds the raw data, but no tool surfaces it specifically for repurposing candidate screening. RepurposeAlpha's contribution is the failure-type weighting — a drug that failed for enrollment is not the same as one that failed for futility.
+  </div>
+</div>
+
+<div class="feature-card">
+  <h3>2.6 Combination Synergy Predictor</h3>
+  <div class="pitch">"What pairs well with it?"</div>
+  <p><strong>Logic:</strong> Score every pair by mechanism complementarity (correlation-based) plus prior combination trial evidence.</p>
+  <div class="math-block">complementarity(corr):
+  if corr < 0.05:   return 0.30 + corr × 4.0    (unrelated)
+  if 0.05 ≤ corr ≤ 0.50:  return 0.80            (sweet spot)
+  if 0.50 < corr ≤ 0.80:  return 0.80 − (corr−0.50) × 2.0
+  if corr > 0.80:   return 0.20                  (redundant)
+
+synergy = 0.7 × complementarity + 0.3 × (1 if prior_trial else 0)</div>
+  <table class="assumption-table">
+    <tr><th>Assumption</th><th>Value</th><th>Source</th></tr>
+    <tr><td>Correlation sweet spot</td><td>0.1–0.5</td><td>Judgment (shared context, different mechanism)</td></tr>
+    <tr><td>Complementarity weight</td><td>0.7</td><td>Judgment</td></tr>
+    <tr><td>Prior trial weight</td><td>0.3</td><td>Judgment</td></tr>
+  </table>
+  <p><strong>Independent validation:</strong> The tool independently identified Sulfadiazine + Trimethoprim as a top pair. Those two are sold together as co-trimoxazole — a real, marketed combination. That's one validation point, not a full validation.</p>
+  <div class="market-compare">
+    <strong>Market context:</strong> Sophisticated synergy prediction tools exist (SynergyFinder, DeepSynBa, PanThera).<span class="ref">[11]</span> These use dose-response matrices and deep learning on cell-line data. They are more accurate but require experimental data. RepurposeAlpha's heuristic works with zero experimental input — a significant limitation <em>and</em> a significant advantage for early-stage screening where no synergy data exists.
+  </div>
+</div>
+
+<div class="feature-card">
+  <h3>2.7 Cost-Based Pricing Framework</h3>
+  <div class="pitch">"What price works?"</div>
+  <p><strong>Logic:</strong> Estimate the minimum sustainable price per patient per year to recover development costs.</p>
+  <div class="math-block">required_revenue = dev_cost × (1 + WACC × years)
+sustainable_price = required_revenue / (target_patients × years)
+
+Where:
+  dev_cost = cumulative phase costs from registry
+  WACC = 10% (cost of capital)
+  years = 7 (recovery period)
+  target_patients = prevalence × market_share (15%)
+
+Market reference by disease category:
+  rare_disease: $150K  |  NTD: $500  |  common: $5K  |  oncology: $120K</div>
+  <table class="assumption-table">
+    <tr><th>Assumption</th><th>Value</th><th>Source</th></tr>
+    <tr><td>WACC</td><td>10%</td><td>Industry standard</td></tr>
+    <tr><td>Recovery years</td><td>7</td><td>Judgment</td></tr>
+    <tr><td>Market share</td><td>15%</td><td>Conservative estimate</td></tr>
+    <tr><td>Reference prices</td><td>Category averages</td><td>Public pricing databases</td></tr>
+  </table>
+  <div class="limit"><strong>Honest limit:</strong> Market share is a guess. Prevalence estimates vary. Real pricing is negotiated, not formulaic.</div>
+  <div class="market-compare">
+    <strong>Market context:</strong> Commercial pricing tools exist for market access and reimbursement strategy. However, none are designed for early-stage repurposing decision-making. RepurposeAlpha's contribution is answering "can this price even work?" before the project starts — a question no existing tool answers.
+  </div>
+</div>
+
+<h2>3. Market Landscape Comparison</h2>
+
+<h3>3.1 Commercial Platforms</h3>
+<table class="comparison-table">
+  <tr><th>Platform</th><th>Focus</th><th>Pricing</th><th>Users</th><th>RepurposeAlpha overlap</th></tr>
+  <tr><td>Intelligencia Portfolio Optimizer</td><td>PoS prediction, portfolio optimization</td><td>Enterprise (high)</td><td>Top 50 pharma</td><td>Portfolio optimization</td></tr>
+  <tr><td>Captario SUM</td><td>Probabilistic portfolio modeling, Monte Carlo</td><td>Enterprise (high)</td><td>9 of top 50 pharma</td><td>Portfolio optimization</td></tr>
+  <tr><td>Partex</td><td>AI drug asset management, licensing</td><td>Enterprise (high)</td><td>Pharma BD teams</td><td>Discovery + FTO partial</td></tr>
+  <tr><td>CAS BioFinder</td><td>Target-indication-trial linking, IP conflict</td><td>Enterprise (high)</td><td>Pharma R&D</td><td>Discovery + FTO partial</td></tr>
+</table>
+
+<h3>3.2 Open-Source Tools</h3>
+<table class="comparison-table">
+  <tr><th>Tool</th><th>Focus</th><th>License</th><th>RepurposeAlpha overlap</th></tr>
+  <tr><td>CANDO</td><td>Drug-protein-disease interaction scoring</td><td>Open source</td><td>Discovery (different method)</td></tr>
+  <tr><td>RepurposeDrugs</td><td>Drug-indication database + ML predictor</td><td>Free web-portal</td><td>Discovery</td></tr>
+  <tr><td>PharmaSight</td><td>Proteomic/molecular comparison toolkit</td><td>Open source</td><td>Discovery (different method)</td></tr>
+  <tr><td>rpact / BATSS / TrialSimulator</td><td>Adaptive trial design simulation</td><td>Open source (R)</td><td>Trials</td></tr>
+  <tr><td>SynergyFinder / DeepSynBa</td><td>Drug combination synergy</td><td>Open source</td><td>Synergy (more accurate, needs data)</td></tr>
+</table>
+
+<h3>3.3 Where RepurposeAlpha is Unique</h3>
+<table class="comparison-table">
+  <tr><th>Capability</th><th>Commercial</th><th>Open-source</th><th>RepurposeAlpha</th></tr>
+  <tr><td>Portfolio optimization (Markowitz)</td><td class="check">Yes</td><td class="cross">No</td><td class="check">Yes</td></tr>
+  <tr><td>Real options valuation</td><td class="cross">No</td><td class="cross">No</td><td class="check">Yes</td></tr>
+  <tr><td>FTO screening</td><td class="partial">Partial</td><td class="cross">No</td><td class="check">Yes (heuristic)</td></tr>
+  <tr><td>Trial design comparison</td><td class="partial">Partial</td><td class="check">Yes</td><td class="check">Yes (portfolio-level)</td></tr>
+  <tr><td>Cross-disease discovery</td><td class="cross">No</td><td class="partial">Partial</td><td class="check">Yes</td></tr>
+  <tr><td>Negative results intelligence</td><td class="cross">No</td><td class="cross">No</td><td class="check">Yes</td></tr>
+  <tr><td>Combination synergy</td><td class="check">Yes</td><td class="check">Yes</td><td class="partial">Heuristic only</td></tr>
+  <tr><td>Cost-based pricing</td><td class="check">Yes</td><td class="cross">No</td><td class="check">Yes</td></tr>
+  <tr><td>Free for non-commercial users</td><td class="cross">No</td><td class="check">Yes</td><td class="check">Yes</td></tr>
+  <tr><td>Full lifecycle in one tool</td><td class="partial">Partial</td><td class="cross">No</td><td class="check">Yes</td></tr>
+</table>
+
+<h2>4. Honest Limitations</h2>
+
+<div class="summary-box">
+  <h3>What RepurposeAlpha Is</h3>
+  <p>A decision support tool for non-commercial drug repurposing. It combines eight features that no other single tool provides, built entirely on free public data.</p>
+</div>
+
+<div class="limit">
+  <strong>What RepurposeAlpha Is Not:</strong>
+  <br>• Not a replacement for professional FTO analysis (consult a patent attorney)
+  <br>• Not a predictor of clinical success (RepoDB's structure makes supervised ML infeasible — documented)
+  <br>• Not a substitute for wet-lab validation (it prioritizes, not proves)
+  <br>• Not an enterprise SaaS (single-tenant is the current model)
+</div>
+
+<h3>Assumptions Audit</h3>
+<table class="comparison-table">
+  <tr><th>Feature</th><th>Real Data</th><th>Modeled</th><th>Placeholder</th><th>Confidence</th></tr>
+  <tr><td>Portfolio</td><td>Correlations</td><td>Returns, Volatilities</td><td>—</td><td class="partial">Medium</td></tr>
+  <tr><td>Real Options</td><td>—</td><td>All inputs</td><td>—</td><td class="partial">Medium</td></tr>
+  <tr><td>FTO</td><td>—</td><td>—</td><td>Classification lists</td><td class="cross">Low</td></tr>
+  <tr><td>Trials</td><td>—</td><td>All inputs</td><td>—</td><td class="partial">Medium</td></tr>
+  <tr><td>Cross-Disease</td><td>All data</td><td>—</td><td>—</td><td class="check">High</td></tr>
+  <tr><td>Prior Results</td><td>All data</td><td>Weights</td><td>—</td><td class="check">High</td></tr>
+  <tr><td>Synergy</td><td>Prior trials</td><td>Complementarity</td><td>—</td><td class="partial">Medium</td></tr>
+  <tr><td>Pricing</td><td>—</td><td>Formula, WACC</td><td>Reference prices</td><td class="partial">Medium</td></tr>
+</table>
+
+<h2>5. Roadmap: Strengthening the Weak Points</h2>
+<table class="comparison-table">
+  <tr><th>Priority</th><th>Feature</th><th>What to Add</th><th>Impact</th><th>Effort</th></tr>
+  <tr><td>1</td><td>FTO</td><td>FDA Orange Book API, USPTO PatentsView</td><td>Makes screening real</td><td>1–2 sessions</td></tr>
+  <tr><td>2</td><td>Pricing</td><td>Drug-specific revenue data</td><td>Differentiates within phase</td><td>1–2 sessions</td></tr>
+  <tr><td>3</td><td>Synergy</td><td>DrugComb database integration</td><td>Real synergy validation</td><td>1–2 sessions</td></tr>
+  <tr><td>4</td><td>Returns</td><td>Per-drug revenue models</td><td>Differentiates portfolio</td><td>2–3 sessions</td></tr>
+</table>
+
+<h2>6. References</h2>
+<ol style="color:#94a3b8; font-size:14px; margin-left:24px;">
+  <li>Intelligencia Portfolio Optimizer — AI-powered drug portfolio optimization. intelligencia.ai</li>
+  <li>Captario SUM — Strategic portfolio management for pharma. captario.com</li>
+  <li>Open Targets Platform — Disease-drug-target associations. platform.opentargets.org</li>
+  <li>WIPO — Intellectual Property Valuation in Biotechnology: Real Options Method. wipo.int</li>
+  <li>PatSnap / CAS SciFinder — Freedom-to-Operate analysis platforms. patsnap.com, cas.org</li>
+  <li>rpact / Cytel East — Adaptive clinical trial design software. cran.r-project.org, cytel.com</li>
+  <li>RepoDB — Standard database for drug repositioning. kghub.org</li>
+  <li>CANDO — Computational Analysis of Novel Drug Opportunities. pubs.acs.org</li>
+  <li>RepurposeDrugs — Interactive web-portal for repurposing. repurposedrugs.org</li>
+  <li>PharmaSight — Open-source proteomic comparison toolkit. github.com/Biotronics-Ai/PharmaSight</li>
+  <li>SynergyFinder / DeepSynBa — Drug combination synergy prediction. sourceforge.net, github.com/hikuru/DeepSynBa</li>
+  <li>Drug Repurposing Market Report 2026 — Research and Markets. researchandmarkets.com</li>
+  <li>Nature Reviews Drug Discovery — Computational drug repurposing review. nature.com</li>
+  <li>Modern Portfolio Theory — Markowitz, H. (1952). Journal of Finance.</li>
+</ol>
+
+<div class="footer">
+  <p>RepurposeAlpha v0.2.0 · Technical White Paper · September 2026</p>
+  <p><a href="https://github.com/Petermburu-star/RepurposeAlpha">github.com/Petermburu-star/RepurposeAlpha</a></p>
+</div>
+
+</div>
+</body>
+</html>
