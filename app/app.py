@@ -24,6 +24,7 @@ import cache as cache_mod
 import returns
 import reporting
 import options
+import fto
 
 st.set_page_config(page_title="RepurposeAlpha", page_icon="🧬", layout="wide")
 user = auth.require_login(min_role="viewer")
@@ -210,6 +211,20 @@ try:
 except Exception as e:
     st.caption(f"⏳ Real Options: (unavailable — {e})")
 
+# FTO headline
+try:
+    _fto = fto.assess_portfolio(candidates, disease, verbose=False)
+    _high = (_fto["fto_risk"] == "high").sum()
+    _low  = (_fto["fto_risk"] == "low").sum()
+    if _high == 0:
+        st.success(f"⚖️ FTO: **{_low} candidates with strong IP** — no generic-competition blockers")
+    elif _high >= len(_fto) // 2:
+        st.error(f"⚖️ FTO: **{_high}/{len(_fto)} candidates are generic** — limited commercial protection")
+    else:
+        st.warning(f"⚖️ FTO: **{_low} low-risk, {_high} high-risk** — mixed IP position")
+except Exception as e:
+    st.caption(f"⚖️ FTO: (unavailable — {e})")
+
 # Flag if returns are degenerate
 if est["mu"].std() < 0.02:
     st.warning(
@@ -224,7 +239,7 @@ st.divider()
 # TABS
 # ============================================================
 tab_names = ["🔗 Correlation", "📈 Frontier", "💼 Portfolio",
-             "🎚️ Sensitivity", "📋 Assumptions", "📄 Report", "⏳ Real Options"]
+             "🎚️ Sensitivity", "📋 Assumptions", "📄 Report", "⏳ Real Options", "⚖️ FTO"]
 if auth.has_role(user, "admin"):
     tab_names.append("🛡️ Admin")
 tabs = st.tabs(tab_names)
@@ -420,8 +435,59 @@ with tabs[6]:
     st.dataframe(gate_df, use_container_width=True, hide_index=True)
 
 
-if auth.has_role(user, "admin") and len(tabs) == 8:
-    with tabs[7]:
+
+# ============================================================
+# FTO TAB
+# ============================================================
+with tabs[7]:
+    st.subheader("⚖️ Freedom-to-Operate screening")
+    st.caption(
+        "Screening signal only. Not legal advice. "
+        "Consult a patent attorney before making IP decisions."
+    )
+
+    if st.button("Run FTO screening", type="primary"):
+        with st.spinner("Assessing IP position..."):
+            fto_result = fto.assess_portfolio(candidates, disease, verbose=False)
+            st.session_state["fto_df"] = fto_result
+
+    fto_df = st.session_state.get("fto_df")
+    if fto_df is None:
+        st.info("👆 Click **Run FTO screening** to assess IP position for each candidate.")
+    else:
+        # Summary metrics
+        mc1, mc2, mc3 = st.columns(3)
+        counts = fto_df["fto_risk"].value_counts().to_dict()
+        mc1.metric("🟢 Low risk",  counts.get("low", 0))
+        mc2.metric("🟡 Medium",     counts.get("medium", 0))
+        mc3.metric("🔴 High risk", counts.get("high", 0))
+
+        # Full table
+        disp = fto_df[["drug_name", "status", "fto_risk", "fto_score", "rationale"]].copy()
+        disp.columns = ["Drug", "Stage", "Risk", "Score", "Rationale"]
+        st.dataframe(disp, use_container_width=True, hide_index=True)
+
+        # Bar chart
+        import plotly.express as px
+        fig = px.bar(
+            fto_df.sort_values("fto_score", ascending=True),
+            x="fto_score", y="drug_name", orientation="h",
+            color="fto_risk",
+            color_discrete_map={"low": "#10b981", "medium": "#f59e0b", "high": "#ef4444"},
+            labels={"fto_score": "FTO score", "drug_name": ""},
+            title="Commercial IP position by candidate",
+        )
+        fig.update_layout(height=max(300, 30 * len(fto_df)))
+        st.plotly_chart(fig, use_container_width=True)
+
+        st.caption(
+            "**Score interpretation:** 0.0 = no protection (generic, no method-of-use). "
+            "1.0 = strong protection (novel biologic, early stage, orphan-eligible)."
+        )
+
+
+if auth.has_role(user, "admin") and len(tabs) == 9:
+    with tabs[8]:
         st.subheader("🛡️ Admin panel")
         st.markdown("**Users**")
         st.dataframe(pd.DataFrame(auth.list_users(), columns=["username", "role", "created_at"]))
