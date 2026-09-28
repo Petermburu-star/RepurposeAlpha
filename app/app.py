@@ -28,6 +28,7 @@ import fto
 import trials
 import crosstarget
 import negativedata
+import synergy
 
 st.set_page_config(page_title="RepurposeAlpha", page_icon="🧬", layout="wide")
 user = auth.require_login(min_role="viewer")
@@ -268,6 +269,17 @@ try:
 except Exception as e:
     st.caption(f"📉 Prior Results: (unavailable — {e})")
 
+try:
+    _syn = synergy.find_synergy_pairs(candidates, corr, top_n=3, check_trials=False, verbose=False)
+    if not _syn.empty:
+        _top = _syn.iloc[0]
+        st.info(
+            f"🔬 Synergy: top combo **{_top['drug_a']} + {_top['drug_b']}** "
+            f"(score {_top['synergy_score']:.2f})"
+        )
+except Exception as e:
+    st.caption(f"🔬 Synergy: (unavailable — {e})")
+
 # Flag if returns are degenerate
 if est["mu"].std() < 0.02:
     st.warning(
@@ -282,7 +294,7 @@ st.divider()
 # TABS
 # ============================================================
 tab_names = ["🔗 Correlation", "📈 Frontier", "💼 Portfolio",
-             "🎚️ Sensitivity", "📋 Assumptions", "📄 Report", "⏳ Real Options", "⚖️ FTO", "🧪 Trials", "🌐 Cross-Disease", "📉 Prior Results"]
+             "🎚️ Sensitivity", "📋 Assumptions", "📄 Report", "⏳ Real Options", "⚖️ FTO", "🧪 Trials", "🌐 Cross-Disease", "📉 Prior Results", "🔬 Synergy"]
 if auth.has_role(user, "admin"):
     tab_names.append("🛡️ Admin")
 tabs = st.tabs(tab_names)
@@ -668,8 +680,66 @@ with tabs[10]:
         )
 
 
-if auth.has_role(user, "admin") and len(tabs) == 12:
-    with tabs[11]:
+
+# ============================================================
+# SYNERGY TAB
+# ============================================================
+with tabs[11]:
+    st.subheader("🔬 Combination synergy analysis")
+    st.caption(
+        "Which pairs of candidates should be tested together? "
+        "Sweet spot: moderate correlation (shared context, different mechanism). "
+        "Very high correlation = redundant; very low = unrelated."
+    )
+
+    if st.button("Run synergy analysis", type="primary"):
+        with st.spinner("Scoring all candidate pairs..."):
+            try:
+                syn_result = synergy.find_synergy_pairs(
+                    candidates, corr, top_n=15, check_trials=False, verbose=False
+                )
+                st.session_state["syn_df"] = syn_result
+            except Exception as e:
+                st.error(f"Analysis failed: {e}")
+
+    syn_df = st.session_state.get("syn_df")
+    if syn_df is None:
+        st.info("Click **Run synergy analysis** to rank all candidate pairs.")
+    else:
+        top = synergy.top_combination_recommendation(syn_df)
+        if top.get("found"):
+            st.success(
+                f"🎯 **Top combination: {top['drug_a']} + {top['drug_b']}** "
+                f"(score {top['score']:.2f})"
+            )
+            st.caption(top["rationale"])
+
+        disp = syn_df[["drug_a", "drug_b", "correlation", "synergy_score", "rationale"]].copy()
+        disp.columns = ["Drug A", "Drug B", "Correlation", "Synergy", "Rationale"]
+        st.dataframe(disp, width="stretch", hide_index=True)
+
+        import plotly.express as px
+        chart = syn_df.head(10).copy()
+        chart["label"] = chart["drug_a"].str[:20] + " + " + chart["drug_b"].str[:20]
+        fig = px.bar(
+            chart.sort_values("synergy_score"),
+            x="synergy_score", y="label", orientation="h",
+            color="correlation",
+            color_continuous_scale="RdYlGn_r",
+            title="Top 10 combination candidates",
+            labels={"synergy_score": "Synergy score", "label": "", "correlation": "Correlation"},
+        )
+        fig.update_layout(height=max(300, 35 * len(chart)))
+        st.plotly_chart(fig, width="stretch")
+
+        st.markdown(
+            "**How to read:** synergy_score > 0.5 = strong candidate. "
+            "Correlation 0.1–0.5 = ideal (different mechanisms, shared disease context)."
+        )
+
+
+if auth.has_role(user, "admin") and len(tabs) == 13:
+    with tabs[12]:
         st.subheader("🛡️ Admin panel")
         st.markdown("**Users**")
         st.dataframe(pd.DataFrame(auth.list_users(), columns=["username", "role", "created_at"]))
