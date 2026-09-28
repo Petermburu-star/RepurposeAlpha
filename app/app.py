@@ -29,6 +29,7 @@ import trials
 import crosstarget
 import negativedata
 import synergy
+import pricing
 
 st.set_page_config(page_title="RepurposeAlpha", page_icon="🧬", layout="wide")
 user = auth.require_login(min_role="viewer")
@@ -280,6 +281,17 @@ try:
 except Exception as e:
     st.caption(f"🔬 Synergy: (unavailable — {e})")
 
+try:
+    _pr = pricing.analyze_portfolio(candidates, disease, verbose=False)
+    _viable = int((_pr["viability"] == "commercially_viable").sum())
+    _not_viable = int((_pr["viability"] == "not_viable").sum())
+    if _not_viable > 0:
+        st.warning(f"💰 Pricing: **{_not_viable} candidates not commercially viable** at reference prices · {_viable} viable")
+    else:
+        st.success(f"💰 Pricing: **{_viable}/{len(_pr)} commercially viable** at market reference prices")
+except Exception as e:
+    st.caption(f"💰 Pricing: (unavailable — {e})")
+
 # Flag if returns are degenerate
 if est["mu"].std() < 0.02:
     st.warning(
@@ -294,7 +306,7 @@ st.divider()
 # TABS
 # ============================================================
 tab_names = ["🔗 Correlation", "📈 Frontier", "💼 Portfolio",
-             "🎚️ Sensitivity", "📋 Assumptions", "📄 Report", "⏳ Real Options", "⚖️ FTO", "🧪 Trials", "🌐 Cross-Disease", "📉 Prior Results", "🔬 Synergy"]
+             "🎚️ Sensitivity", "📋 Assumptions", "📄 Report", "⏳ Real Options", "⚖️ FTO", "🧪 Trials", "🌐 Cross-Disease", "📉 Prior Results", "🔬 Synergy", "💰 Pricing"]
 if auth.has_role(user, "admin"):
     tab_names.append("🛡️ Admin")
 tabs = st.tabs(tab_names)
@@ -738,8 +750,52 @@ with tabs[11]:
         )
 
 
-if auth.has_role(user, "admin") and len(tabs) == 13:
-    with tabs[12]:
+
+# ============================================================
+# PRICING TAB
+# ============================================================
+with tabs[12]:
+    st.subheader("💰 Cost-based pricing framework")
+    st.caption(
+        "What price per patient per year do you need to recover development cost? "
+        "Compares to market reference prices for similar diseases."
+    )
+
+    if st.button("Run pricing analysis", type="primary"):
+        with st.spinner("Estimating prices..."):
+            try:
+                pr_result = pricing.analyze_portfolio(candidates, disease, verbose=False)
+                st.session_state["pr_df"] = pr_result
+            except Exception as e:
+                st.error(f"Analysis failed: {e}")
+
+    pr_df = st.session_state.get("pr_df")
+    if pr_df is None:
+        st.info("Click **Run pricing analysis** to estimate sustainable prices.")
+    else:
+        counts = pr_df["viability"].value_counts().to_dict()
+        mc1, mc2, mc3 = st.columns(3)
+        mc1.metric("🟢 Viable",  counts.get("commercially_viable", 0))
+        mc2.metric("🟡 Marginal", counts.get("marginal", 0))
+        mc3.metric("🔴 Not viable", counts.get("not_viable", 0))
+
+        disp = pr_df[["drug_name", "phase", "dev_cost_m", "patients",
+                       "sustainable_usd", "reference_usd", "headroom_pct", "viability"]].copy()
+        disp.columns = ["Drug", "Phase", "Dev $M", "Target patients",
+                        "Sustainable $/yr", "Reference $/yr", "Headroom %", "Viability"]
+        st.dataframe(disp, width="stretch", hide_index=True)
+
+        st.markdown(
+            "**How to read:** sustainable price = what you need to charge per patient per year "
+            "to recover development cost + cost of capital over 7 years. "
+            "Headroom = how far below the market reference price you can go.\n\n"
+            "**Large headroom** = commercially viable (common diseases, cheap per patient).\n"
+            "**Small/negative headroom** = requires orphan pricing or public funding (rare diseases)."
+        )
+
+
+if auth.has_role(user, "admin") and len(tabs) == 14:
+    with tabs[13]:
         st.subheader("🛡️ Admin panel")
         st.markdown("**Users**")
         st.dataframe(pd.DataFrame(auth.list_users(), columns=["username", "role", "created_at"]))
