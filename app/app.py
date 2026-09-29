@@ -169,6 +169,12 @@ with tabs[0]:
         <div style="font-size:15px; color:#cbd5e1;">{summary.one_liner}</div>
         </div>""", unsafe_allow_html=True)
 
+    st.caption(
+        "Verdict considers all seven features. **Real Options is a hard veto** — "
+        "if the project doesn't clear cost of capital, verdict cannot be RECOMMENDED. "
+        "Adjust assumptions in the Strategic tab to see how the verdict changes."
+    )
+
     # ---- NARRATIVE ----
     st.markdown("### 📖 Summary")
     st.markdown(f"<div style='font-size:15px; line-height:1.75; color:#cbd5e1;'>{summary.narrative}</div>", unsafe_allow_html=True)
@@ -315,8 +321,11 @@ with tabs[2]:
         st.markdown("**When should you kill this project?** Each candidate is modeled as a series of phase gates.")
         c1_, c2_ = st.columns([1, 2])
         with c1_:
-            peak = st.number_input("Peak sales ($M)", 50, 2000, 200, step=50) * 1e6
-            vol  = st.slider("Volatility", 0.20, 0.80, 0.40, 0.05)
+            _default_peak = int(executive.estimate_peak_sales(disease) / 1e6)
+            _default_vol  = executive.estimate_volatility(disease)
+            peak = st.number_input("Peak sales ($M)", 50, 2000, _default_peak, step=50) * 1e6
+            vol  = st.slider("Volatility", 0.20, 0.80, _default_vol, 0.05)
+            st.caption(f"Estimated from disease category: {disease}")
         _ph = [
             options.Phase("Phase I", 2.0, float(assumptions.get_value("cost.phase_1_usd", 10e6)), float(assumptions.get_value("pos.phase_1", 0.63))),
             options.Phase("Phase II", 2.0, float(assumptions.get_value("cost.phase_2_usd", 25e6)), float(assumptions.get_value("pos.phase_2", 0.31))),

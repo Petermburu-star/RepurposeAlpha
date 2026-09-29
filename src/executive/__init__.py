@@ -333,16 +333,25 @@ def build_summary(disease, candidates, corr, est, w_sharpe,
         elif card.status == "caution":
             warnings.append(Warning("medium", card.icon, f"{card.title}: {card.headline}"))
 
-    # ---------- Overall verdict ----------
+    # ---------- Overall verdict (conservative) ----------
     n_neg = sum(1 for c in cards if c.status == "negative")
     n_pos = sum(1 for c in cards if c.status == "positive")
     n_cau = sum(1 for c in cards if c.status == "caution")
 
-    if n_neg >= 2:
+    # Real Options is a HARD veto — if it says don't start, we can't recommend
+    ro_negative = (ro_result is not None) and (ro_result.option_value <= 0)
+
+    if ro_negative and n_neg >= 1:
+        # Real Options veto + another feature negative = strong NO
+        verdict, color = "NOT RECOMMENDED", "red"
+    elif ro_negative:
+        # Real Options veto alone = CAUTION (portfolio may still be useful)
+        verdict, color = "CAUTION", "yellow"
+    elif n_neg >= 2:
         verdict, color = "NOT RECOMMENDED", "red"
     elif n_neg == 1 or n_cau >= 3:
         verdict, color = "CAUTION", "yellow"
-    elif n_pos >= 4:
+    elif n_pos >= 5:
         verdict, color = "RECOMMENDED", "green"
     else:
         verdict, color = "REVIEW", "yellow"
