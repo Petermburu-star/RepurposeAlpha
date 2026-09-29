@@ -15,3 +15,18 @@ app/secrets.toml
 .streamlit/secrets.toml
 logs/
 *.log
+
+# Auth database — never commit (contains user hashes even if encrypted)
+app/users.db
+app/users.db.enc
+app/*.db
+app/*.db.enc
+
+# Analysis cache — regenerable
+data/cache/
+
+# Secrets
+.env
+.secrets/
+*.key
+*.pem
