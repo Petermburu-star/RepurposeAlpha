@@ -442,6 +442,17 @@ with tabs[3]:
             top = synergy.top_combination_recommendation(syn_df)
             if top.get("found"):
                 st.success(f"🎯 Top pair: **{top['drug_a']} + {top['drug_b']}** (score {top['score']:.2f})")
+
+            # Coverage note
+            n_real = int((syn_df["source"] == "synergxdb").sum()) if "source" in syn_df.columns else 0
+            if n_real == 0:
+                st.caption(
+                    "ℹ️ **No SYNERGxDB data for these pairs.** SYNERGxDB covers small-molecule cancer "
+                    "combinations only. For antibodies and non-cancer drugs, we use a correlation-based "
+                    "heuristic — scores are estimates, not experimental results."
+                )
+            else:
+                st.caption(f"✓ {n_real}/{len(syn_df)} pairs have real SYNERGxDB data.")
             disp = syn_df[["drug_a", "drug_b", "correlation", "synergy_score", "rationale"]].copy()
             disp.columns = ["Drug A", "Drug B", "Correlation", "Synergy", "Rationale"]
             st.dataframe(disp, width="stretch", hide_index=True)
