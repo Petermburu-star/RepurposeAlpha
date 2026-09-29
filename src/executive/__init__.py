@@ -71,6 +71,15 @@ class ExecutiveSummary:
     confidence: str
 
 
+
+
+def _md_to_html(text: str) -> str:
+    """Convert **bold** markdown to <strong> tags for Streamlit rendering."""
+    import re
+    # Replace **text** with <strong>text</strong>
+    return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
+
+
 def _safe(fn, *args, **kwargs):
     try:
         return fn(*args, **kwargs)
@@ -391,7 +400,7 @@ def build_summary(disease, candidates, corr, est, w_sharpe,
         )
 
     narrative_parts.append(f"**Overall verdict: {verdict}.**")
-    narrative = " ".join(narrative_parts)
+    narrative = _md_to_html(" ".join(narrative_parts))
 
     # ---------- One-liner ----------
     if verdict == "RECOMMENDED":

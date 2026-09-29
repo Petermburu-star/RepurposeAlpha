@@ -169,7 +169,7 @@ with tabs[0]:
 
     # ---- NARRATIVE ----
     st.markdown("### 📖 Summary")
-    st.markdown(summary.narrative)
+    st.markdown(summary.narrative, unsafe_allow_html=True)
 
     # ---- FEATURE SCORECARD ----
     st.markdown("### 🎯 Feature Scorecard")
