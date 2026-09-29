@@ -353,9 +353,18 @@ with tabs[2]:
         mc1.metric("🟢 Low", counts.get("low", 0))
         mc2.metric("🟡 Medium", counts.get("medium", 0))
         mc3.metric("🔴 High", counts.get("high", 0))
-        disp = fto_tab[["drug_name", "status", "fto_risk", "fto_score", "rationale"]].copy()
-        disp.columns = ["Drug", "Stage", "Risk", "Score", "Rationale"]
+        disp = fto_tab[[
+            "drug_name", "status", "fto_risk", "n_patents",
+            "latest_patent", "n_excl", "source", "rationale"
+        ]].copy()
+        disp.columns = ["Drug", "Stage", "Risk", "# Patents", "Latest expiry", "# Excl", "Source", "Rationale"]
         st.dataframe(disp, width="stretch", hide_index=True)
+
+        st.caption(
+            "**Source:** 'openfda' = real FDA Orange Book data · "
+            "'heuristic' = drug not in FDA data, screening estimate only. "
+            "This is a screening signal, not legal advice."
+        )
 
     with sub[2]:
         st.markdown("**Trial architecture.** Platform trials share control arms — usually cheaper and faster.")
