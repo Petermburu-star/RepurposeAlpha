@@ -33,7 +33,7 @@ class FTOAssessment:
     rationale: str
     n_patents: int = 0
     latest_patent_expiry: str = ""
-    n_exclusivity: int = 0
+    n_excl: int = 0
     approval_year: int = None
     data_source: str = "heuristic"    # or "openfda"
 
@@ -89,7 +89,7 @@ def _query_openfda(drug_name: str) -> dict:
         "found": False,
         "n_patents": 0,
         "latest_patent_expiry": "",
-        "n_exclusivity": 0,
+        "n_excl": 0,
         "application_number": "",
         "sponsor": "",
         "error": None,
@@ -127,7 +127,7 @@ def _query_openfda(drug_name: str) -> dict:
 
         result["n_patents"] = len(all_patents)
         result["latest_patent_expiry"] = max(all_patents) if all_patents else ""
-        result["n_exclusivity"] = len(all_excl)
+        result["n_excl"] = len(all_excl)
 
         # Application number from first record
         if records:
@@ -150,7 +150,7 @@ def assess_candidate(cid, drug_name, stage_str, candidates_df=None):
     fda = _query_openfda(drug_upper)
 
     n_patents = fda.get("n_patents", 0)
-    n_excl = fda.get("n_exclusivity", 0)
+    n_excl = fda.get("n_excl", 0)
     latest_expiry = fda.get("latest_patent_expiry", "")
 
     # Determine protection status
@@ -170,13 +170,13 @@ def assess_candidate(cid, drug_name, stage_str, candidates_df=None):
         data_source = "openfda"
         if has_active_patent and has_exclusivity:
             score, risk = 0.85, "low"
-            rationale = f"Active patent until {latest_expiry} · {n_exclusivity} exclusivity period(s)"
+            rationale = f"Active patent until {latest_expiry} · {n_excl} exclusivity period(s)"
         elif has_active_patent:
             score, risk = 0.70, "low"
             rationale = f"Active patent until {latest_expiry}"
         elif has_exclusivity:
             score, risk = 0.60, "medium"
-            rationale = f"{n_exclusivity} exclusivity period(s) — no active patents"
+            rationale = f"{n_excl} exclusivity period(s) — no active patents"
         elif n_patents == 0 and n_excl == 0:
             # No patents + no exclusivity = generic regardless of current trial phase
             score, risk = 0.15, "high"
@@ -223,7 +223,7 @@ def assess_candidate(cid, drug_name, stage_str, candidates_df=None):
         rationale=rationale,
         n_patents=n_patents,
         latest_patent_expiry=latest_expiry,
-        n_exclusivity=n_excl,
+        n_excl=n_excl,
         data_source=data_source,
     )
 
@@ -259,7 +259,7 @@ def assess_portfolio(candidates_df, disease_name=None, verbose=True):
             "fto_score":     a.fto_score,
             "n_patents":     a.n_patents,
             "latest_patent": a.latest_patent_expiry,
-            "n_excl":        a.n_exclusivity,
+            "n_excl":        a.n_excl,
             "source":        a.data_source,
             "rationale":     a.rationale,
         })
