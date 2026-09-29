@@ -38,6 +38,9 @@ STOPWORDS = {
     "of", "in", "the", "to", "a", "and", "or", "for", "on", "at",
     "by", "with", "activity", "assay", "inhibition", "inhibitor",
     "against", "human", "using", "based", "results", "test", "tested",
+    # Placeholders that mean "no data" — treat as empty
+    "unknown", "none", "n/a", "na", "null", "unspecified",
+    "undetermined", "unclear", "not", "available", "no",
 }
 
 
@@ -116,7 +119,12 @@ def tokenize(text):
 
 
 def moa_similarity(m1, m2):
-    return jaccard(tokenize(m1), tokenize(m2))
+    """Compare two MoA descriptions. Empty tokens = no data = 0 similarity."""
+    t1 = tokenize(m1)
+    t2 = tokenize(m2)
+    if not t1 or not t2:
+        return 0.0
+    return jaccard(t1, t2)
 
 
 def assay_similarity(d1, d2):
