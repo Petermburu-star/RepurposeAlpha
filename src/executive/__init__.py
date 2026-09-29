@@ -74,10 +74,14 @@ class ExecutiveSummary:
 
 
 def _md_to_html(text: str) -> str:
-    """Convert **bold** markdown to <strong> tags for Streamlit rendering."""
+    """Convert **bold** markdown to <strong> tags AND escape $ signs
+    so Streamlit's markdown parser doesn't interpret them as math mode."""
     import re
-    # Replace **text** with <strong>text</strong>
-    return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
+    # First, replace **bold** with <strong>bold</strong>
+    text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
+    # Then escape any remaining $ signs so markdown math-mode doesn't fire
+    text = text.replace("$", "\\$")
+    return text
 
 
 def _safe(fn, *args, **kwargs):

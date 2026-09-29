@@ -59,8 +59,8 @@ if disease_input:
     st.session_state["disease"] = disease_input
 
 if run_analysis and disease_input:
-    if use_cache and cache_mod.has_cache(disease_input):
-        candidates, corr, meta = cache_mod.load_analysis(disease_input)
+    if use_cache and cache_mod.has_cache(disease_input, min_phase=min_phase, max_candidates=max_candidates):
+        candidates, corr, meta = cache_mod.load_analysis(disease_input, min_phase=min_phase, max_candidates=max_candidates)
         st.success(f"✓ Loaded from cache ({meta.get('n_candidates', '?')} candidates)")
     else:
         with st.status(f"Analyzing {disease_input}...", expanded=True) as status:
@@ -83,7 +83,9 @@ if run_analysis and disease_input:
             st.write(f"   ✓ {len(corr)}×{len(corr)} matrix")
 
             st.write("3/3 Caching...")
-            cache_mod.save_analysis(disease_input, candidates, corr, metadata={"min_phase": min_phase})
+            cache_mod.save_analysis(disease_input, candidates, corr,
+                                     min_phase=min_phase, max_candidates=max_candidates,
+                                     metadata={"min_phase": min_phase, "max_candidates": max_candidates})
             status.update(label=f"✅ Complete", state="complete")
 
     st.session_state["candidates"] = candidates
@@ -169,7 +171,7 @@ with tabs[0]:
 
     # ---- NARRATIVE ----
     st.markdown("### 📖 Summary")
-    st.markdown(summary.narrative, unsafe_allow_html=True)
+    st.markdown(f"<div style='font-size:15px; line-height:1.75; color:#cbd5e1;'>{summary.narrative}</div>", unsafe_allow_html=True)
 
     # ---- FEATURE SCORECARD ----
     st.markdown("### 🎯 Feature Scorecard")
