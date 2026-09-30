@@ -255,11 +255,78 @@ with tabs[1]:
     sub = st.tabs(["🔗 Correlation", "📈 Frontier", "💼 Weights", "🎚️ Sensitivity"])
 
     with sub[0]:
-        st.markdown("**Biological similarity between candidates.** 1.0 = same bet, 0.0 = independent.")
-        labelled = corr.rename(index=drug_names, columns=drug_names)
-        fig = px.imshow(labelled, text_auto=".2f", color_continuous_scale="RdYlGn_r", zmin=0, zmax=1, aspect="auto")
-        fig.update_layout(height=max(400, 25 * len(tickers)))
-        st.plotly_chart(fig, width="stretch")
+        st.markdown("**When should you kill each candidate?** Per-candidate option value with priority tiers.")
+
+        # Run FTO + priors + options if not cached in session
+        if "ro_df" not in st.session_state or st.button("🔄 Recompute Real Options", key="ro_recompute"):
+            with st.spinner("Running FTO + prior results + Real Options..."):
+                try:
+                    _fto = fto.assess_portfolio(candidates, verbose=False)
+                except Exception:
+                    _fto = None
+                try:
+                    _priors = negativedata.analyze_portfolio(candidates, disease, verbose=False)
+                except Exception:
+                    _priors = None
+                try:
+                    _ro = options.assess_portfolio_options(
+                        candidates, corr, disease, rfr_value,
+                        fto_df=_fto, priors_df=_priors, verbose=False
+                    )
+                    st.session_state["ro_df"] = _ro
+                except Exception as e:
+                    st.error(f"Real Options failed: {e}")
+                    st.session_state["ro_df"] = None
+
+        ro_df = st.session_state.get("ro_df")
+        if ro_df is None or ro_df.empty:
+            st.info("Click **Recompute Real Options** to run per-candidate analysis.")
+        else:
+            # Summary metrics by tier
+            tier_counts = ro_df["tier"].value_counts().to_dict()
+            mc1, mc2, mc3, mc4 = st.columns(4)
+            mc1.metric("🟢 High priority",   tier_counts.get("High priority", 0))
+            mc2.metric("🟡 Medium priority", tier_counts.get("Medium priority", 0))
+            mc3.metric("🟠 Low priority",    tier_counts.get("Low priority", 0))
+            mc4.metric("🔴 Do not pursue",   tier_counts.get("Do not pursue", 0))
+
+            # Full table
+            disp = ro_df[["drug_name", "current_stage", "option_value_m",
+                           "flexibility_m", "tier", "decision", "adjustment"]].copy()
+            disp.columns = ["Drug", "Stage", "Option value ($M)", "Flexibility ($M)",
+                            "Tier", "Decision", "Adjustment"]
+            st.dataframe(disp, width="stretch", hide_index=True)
+
+            # Bar chart
+            import plotly.express as px
+            chart_df = ro_df.copy()
+            chart_df["color"] = chart_df["tier"].map({
+                "High priority": "#10b981",
+                "Medium priority": "#f59e0b",
+                "Low priority": "#f97316",
+                "Do not pursue": "#ef4444",
+            })
+            fig = px.bar(
+                chart_df.sort_values("option_value_m"),
+                x="option_value_m", y="drug_name", orientation="h",
+                color="tier",
+                color_discrete_map={
+                    "High priority": "#10b981",
+                    "Medium priority": "#f59e0b",
+                    "Low priority": "#f97316",
+                    "Do not pursue": "#ef4444",
+                },
+                labels={"option_value_m": "Option value ($M)", "drug_name": ""},
+                title="Option value per candidate",
+            )
+            fig.update_layout(height=max(300, 40 * len(chart_df)))
+            st.plotly_chart(fig, width="stretch")
+
+            st.caption(
+                "**How to read:** Option value = dollar value of the flexibility to abandon. "
+                "Peak sales are adjusted by FTO status (generic = 20%, medium = 60%, protected = 100%) "
+                "and PoS is adjusted by prior failures."
+            )
 
     with sub[1]:
         st.markdown("**Risk-return tradeoff.** Each point is a random portfolio.")

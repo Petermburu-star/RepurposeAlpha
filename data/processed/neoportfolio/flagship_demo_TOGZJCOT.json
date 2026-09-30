@@ -1,0 +1,46 @@
+{
+  "patient_id": "TOGZJCOT",
+  "n_candidates": 9,
+  "n_hla_alleles": 5,
+  "K": 5,
+  "portfolio": {
+    "peptides": [
+      "FVVPYMIYLL",
+      "KVDPIGHVY",
+      "KVDPIGHVYIF",
+      "LMKVDPIGHVY",
+      "SVQIISCQY"
+    ],
+    "hla": [
+      "C*03:03",
+      "A*01:01",
+      "C*05:01",
+      "B*15:01",
+      "A*30:02"
+    ],
+    "total_presentation": 3.736,
+    "avg_competition": 0.0,
+    "max_competition": 0.0
+  },
+  "baseline": {
+    "peptides": [
+      "KVDPIGHVY",
+      "LMKVDPIGHVY",
+      "KVDPIGHVYIF",
+      "SVQIISCQY",
+      "VQIISCQY"
+    ],
+    "hla": [
+      "A*01:01",
+      "B*15:01",
+      "C*05:01",
+      "A*30:02",
+      "A*30:02"
+    ],
+    "total_presentation": 4.569,
+    "avg_competition": 0.066,
+    "max_competition": 0.659
+  },
+  "conclusion": "Portfolio optimizer eliminated all pairwise HLA-level competition (0.000 vs 0.066) by rejecting a redundant A*30:02 peptide in favor of a weaker but non-competing C*03:03 peptide. Sacrificed 18% of total presentation for 100% competition reduction.",
+  "caveat": "Peptides KVDPIGHVY, KVDPIGHVYIF, and LMKVDPIGHVY are overlapping sequences from the same antigen. The current competition model captures HLA-level competition only. Same-antigen redundancy is a planned extension."
+}
